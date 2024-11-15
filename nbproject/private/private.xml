@@ -3,8 +3,29 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/BibliotecaKonrad/src/modelo/Usuario.java</file>
             <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/BibliotecaKonrad/src/vista/BuscarLibro.java</file>
+=======
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Libro.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Usuarios.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Sucursal.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Proveedor.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Ejemplar.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Multas.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Prestamo.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Notificacion.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/BuscarLibro.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Sancion.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Autor.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Editorial.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Inicio.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Devolucion.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/HistoralPrestamo.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Inventario.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Reserva.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Evento.java</file>
+>>>>>>> origin/master
         </group>
     </open-files>
 </project-private>

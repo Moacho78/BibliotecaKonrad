@@ -4,6 +4,9 @@
  */
 package vista;
 
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+
 /**
  *
  * @author USUARIO
@@ -30,11 +33,9 @@ public class Editorial extends javax.swing.JFrame {
         lblTitulo = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtNombre = new javax.swing.JTextArea();
         lblPais = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        txtPais = new javax.swing.JTextArea();
+        txtNombre = new javax.swing.JTextField();
+        txtPais = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,15 +51,7 @@ public class Editorial extends javax.swing.JFrame {
 
         lblNombre.setText("Nombre");
 
-        txtNombre.setColumns(20);
-        txtNombre.setRows(5);
-        jScrollPane1.setViewportView(txtNombre);
-
         lblPais.setText("País");
-
-        txtPais.setColumns(20);
-        txtPais.setRows(5);
-        jScrollPane2.setViewportView(txtPais);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -74,15 +67,15 @@ public class Editorial extends javax.swing.JFrame {
                         .addGap(208, 208, 208)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(124, 124, 124)
+                        .addGap(224, 224, 224)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(lblPais, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
+                            .addComponent(txtNombre))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblPais, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtPais, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))))
+                .addGap(80, 80, 80))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -93,13 +86,13 @@ public class Editorial extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNombre)
-                    .addComponent(lblPais))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(107, Short.MAX_VALUE))
+                    .addComponent(lblPais)
+                    .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtPais, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(122, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -160,12 +153,59 @@ public class Editorial extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblPais;
     private javax.swing.JLabel lblTitulo;
-    private javax.swing.JTextArea txtNombre;
-    private javax.swing.JTextArea txtPais;
+    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtPais;
     // End of variables declaration//GEN-END:variables
+
+    public JLabel getLblNombre() {
+        return lblNombre;
+    }
+
+    public void setLblNombre(JLabel lblNombre) {
+        this.lblNombre = lblNombre;
+    }
+
+    public JLabel getLblPais() {
+        return lblPais;
+    }
+
+    public void setLblPais(JLabel lblPais) {
+        this.lblPais = lblPais;
+    }
+
+    public JLabel getLblTitulo() {
+        return lblTitulo;
+    }
+
+    public void setLblTitulo(JLabel lblTitulo) {
+        this.lblTitulo = lblTitulo;
+    }
+
+    public JTextArea getTxtNombre() {
+        return txtNombre;
+    }
+
+    public void setTxtNombre(JTextArea txtNombre) {
+        this.txtNombre = txtNombre;
+    }
+
+    public JTextArea getTxtPais() {
+        return txtPais;
+    }
+
+    public void setTxtPais(JTextArea txtPais) {
+        this.txtPais = txtPais;
+    }
+
+    public Editorial(JLabel lblNombre, JLabel lblPais, JLabel lblTitulo, JTextArea txtNombre, JTextArea txtPais) {
+        this.lblNombre = lblNombre;
+        this.lblPais = lblPais;
+        this.lblTitulo = lblTitulo;
+        this.txtNombre = txtNombre;
+        this.txtPais = txtPais;
+    }
+
 }

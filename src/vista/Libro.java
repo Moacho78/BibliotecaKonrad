@@ -4,6 +4,11 @@
  */
 package vista;
 
+import javax.swing.JLabel;
+import javax.swing.JSpinner;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
 /**
  *
  * @author USUARIO
@@ -30,25 +35,20 @@ public class Libro extends javax.swing.JFrame {
         lblTitulo = new javax.swing.JLabel();
         lblAgregar = new javax.swing.JLabel();
         lblTituloLibro = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtTitulo = new javax.swing.JTextArea();
         lblFecha = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        txtFecha = new javax.swing.JTextArea();
         lblDescripcion = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        txtDescripcion = new javax.swing.JTextArea();
         lblCategoria = new javax.swing.JLabel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        txtCategoria = new javax.swing.JTextArea();
         lblEditorial = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        txtEditorial = new javax.swing.JTextArea();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        txtAutor = new javax.swing.JTextArea();
         lblAutor = new javax.swing.JLabel();
         lblCantidad = new javax.swing.JLabel();
         spnCantidad = new javax.swing.JSpinner();
+        txtNombre = new javax.swing.JTextField();
+        txtFechaPublicacion = new javax.swing.JTextField();
+        txtCategoria = new javax.swing.JTextField();
+        txtEditorial = new javax.swing.JTextField();
+        txtAutor = new javax.swing.JTextField();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        txtDescripcion = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,47 +64,37 @@ public class Libro extends javax.swing.JFrame {
         lblTituloLibro.setForeground(new java.awt.Color(51, 51, 255));
         lblTituloLibro.setText("Titulo");
 
-        txtTitulo.setColumns(20);
-        txtTitulo.setRows(5);
-        jScrollPane1.setViewportView(txtTitulo);
-
         lblFecha.setForeground(new java.awt.Color(51, 51, 255));
         lblFecha.setText("Fecha de publicación");
-
-        txtFecha.setColumns(20);
-        txtFecha.setRows(5);
-        jScrollPane2.setViewportView(txtFecha);
 
         lblDescripcion.setForeground(new java.awt.Color(51, 51, 255));
         lblDescripcion.setText("Descripción");
 
-        txtDescripcion.setColumns(20);
-        txtDescripcion.setRows(5);
-        jScrollPane3.setViewportView(txtDescripcion);
-
         lblCategoria.setForeground(new java.awt.Color(51, 51, 255));
         lblCategoria.setText("Categoria");
 
-        txtCategoria.setColumns(20);
-        txtCategoria.setRows(5);
-        jScrollPane4.setViewportView(txtCategoria);
-
         lblEditorial.setForeground(new java.awt.Color(51, 51, 255));
         lblEditorial.setText("Editorial");
-
-        txtEditorial.setColumns(20);
-        txtEditorial.setRows(5);
-        jScrollPane5.setViewportView(txtEditorial);
-
-        txtAutor.setColumns(20);
-        txtAutor.setRows(5);
-        jScrollPane6.setViewportView(txtAutor);
 
         lblAutor.setForeground(new java.awt.Color(51, 51, 255));
         lblAutor.setText("Autor");
 
         lblCantidad.setForeground(new java.awt.Color(51, 51, 255));
         lblCantidad.setText("Cantidad");
+
+        txtNombre.setText("jTextField1");
+
+        txtFechaPublicacion.setText("jTextField2");
+
+        txtCategoria.setText("jTextField4");
+
+        txtEditorial.setText("jTextField5");
+
+        txtAutor.setText("jTextField6");
+
+        txtDescripcion.setColumns(20);
+        txtDescripcion.setRows(5);
+        jScrollPane7.setViewportView(txtDescripcion);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -115,34 +105,31 @@ public class Libro extends javax.swing.JFrame {
                 .addComponent(lblAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(212, 212, 212))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(201, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(136, 136, 136))
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(63, 63, 63)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblTituloLibro, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblEditorial, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                        .addGap(29, 29, 29))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(spnCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addComponent(lblFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblTituloLibro, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(txtFechaPublicacion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
+                        .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 206, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(lblCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblEditorial, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtCategoria, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+                        .addComponent(txtEditorial)
+                        .addComponent(txtAutor))
+                    .addComponent(lblCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(111, 111, 111))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -155,31 +142,32 @@ public class Libro extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblTituloLibro)
                     .addComponent(lblCategoria))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE))
-                .addGap(26, 26, 26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblFecha)
                     .addComponent(lblEditorial))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtFechaPublicacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtEditorial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(19, 19, 19)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblDescripcion)
                     .addComponent(lblAutor))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addComponent(lblCantidad)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(spnCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtAutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblCantidad)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(spnCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(161, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -188,15 +176,15 @@ public class Libro extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -239,12 +227,7 @@ public class Libro extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JLabel lblAgregar;
     private javax.swing.JLabel lblAutor;
     private javax.swing.JLabel lblCantidad;
@@ -255,11 +238,153 @@ public class Libro extends javax.swing.JFrame {
     private javax.swing.JLabel lblTitulo;
     private javax.swing.JLabel lblTituloLibro;
     private javax.swing.JSpinner spnCantidad;
-    private javax.swing.JTextArea txtAutor;
-    private javax.swing.JTextArea txtCategoria;
+    private javax.swing.JTextField txtAutor;
+    private javax.swing.JTextField txtCategoria;
     private javax.swing.JTextArea txtDescripcion;
-    private javax.swing.JTextArea txtEditorial;
-    private javax.swing.JTextArea txtFecha;
-    private javax.swing.JTextArea txtTitulo;
+    private javax.swing.JTextField txtEditorial;
+    private javax.swing.JTextField txtFechaPublicacion;
+    private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
+
+    public JLabel getLblAgregar() {
+        return lblAgregar;
+    }
+
+    public void setLblAgregar(JLabel lblAgregar) {
+        this.lblAgregar = lblAgregar;
+    }
+
+    public JLabel getLblAutor() {
+        return lblAutor;
+    }
+
+    public void setLblAutor(JLabel lblAutor) {
+        this.lblAutor = lblAutor;
+    }
+
+    public JLabel getLblCantidad() {
+        return lblCantidad;
+    }
+
+    public void setLblCantidad(JLabel lblCantidad) {
+        this.lblCantidad = lblCantidad;
+    }
+
+    public JLabel getLblCategoria() {
+        return lblCategoria;
+    }
+
+    public void setLblCategoria(JLabel lblCategoria) {
+        this.lblCategoria = lblCategoria;
+    }
+
+    public JLabel getLblDescripcion() {
+        return lblDescripcion;
+    }
+
+    public void setLblDescripcion(JLabel lblDescripcion) {
+        this.lblDescripcion = lblDescripcion;
+    }
+
+    public JLabel getLblEditorial() {
+        return lblEditorial;
+    }
+
+    public void setLblEditorial(JLabel lblEditorial) {
+        this.lblEditorial = lblEditorial;
+    }
+
+    public JLabel getLblFecha() {
+        return lblFecha;
+    }
+
+    public void setLblFecha(JLabel lblFecha) {
+        this.lblFecha = lblFecha;
+    }
+
+    public JLabel getLblTitulo() {
+        return lblTitulo;
+    }
+
+    public void setLblTitulo(JLabel lblTitulo) {
+        this.lblTitulo = lblTitulo;
+    }
+
+    public JLabel getLblTituloLibro() {
+        return lblTituloLibro;
+    }
+
+    public void setLblTituloLibro(JLabel lblTituloLibro) {
+        this.lblTituloLibro = lblTituloLibro;
+    }
+
+    public JSpinner getSpnCantidad() {
+        return spnCantidad;
+    }
+
+    public void setSpnCantidad(JSpinner spnCantidad) {
+        this.spnCantidad = spnCantidad;
+    }
+
+    public JTextField getTxtAutor() {
+        return txtAutor;
+    }
+
+    public void setTxtAutor(JTextField txtAutor) {
+        this.txtAutor = txtAutor;
+    }
+
+    public JTextField getTxtCategoria() {
+        return txtCategoria;
+    }
+
+    public void setTxtCategoria(JTextField txtCategoria) {
+        this.txtCategoria = txtCategoria;
+    }
+
+    public JTextArea getTxtDescripcion() {
+        return txtDescripcion;
+    }
+
+    public void setTxtDescripcion(JTextArea txtDescripcion) {
+        this.txtDescripcion = txtDescripcion;
+    }
+
+    public JTextField getTxtEditorial() {
+        return txtEditorial;
+    }
+
+    public void setTxtEditorial(JTextField txtEditorial) {
+        this.txtEditorial = txtEditorial;
+    }
+
+    public JTextField getTxtNombre() {
+        return txtNombre;
+    }
+
+    public void setTxtNombre(JTextField txtNombre) {
+        this.txtNombre = txtNombre;
+    }
+
+    public Libro(JLabel lblAgregar, JLabel lblAutor, JLabel lblCantidad, JLabel lblCategoria, JLabel lblDescripcion, JLabel lblEditorial, JLabel lblFecha, JLabel lblTitulo, JLabel lblTituloLibro, JSpinner spnCantidad, JTextField txtAutor, JTextField txtCategoria, JTextArea txtDescripcion, JTextField txtEditorial, JTextField txtFechaPublicacion, JTextField txtNombre) {
+        this.lblAgregar = lblAgregar;
+        this.lblAutor = lblAutor;
+        this.lblCantidad = lblCantidad;
+        this.lblCategoria = lblCategoria;
+        this.lblDescripcion = lblDescripcion;
+        this.lblEditorial = lblEditorial;
+        this.lblFecha = lblFecha;
+        this.lblTitulo = lblTitulo;
+        this.lblTituloLibro = lblTituloLibro;
+        this.spnCantidad = spnCantidad;
+        this.txtAutor = txtAutor;
+        this.txtCategoria = txtCategoria;
+        this.txtDescripcion = txtDescripcion;
+        this.txtEditorial = txtEditorial;
+        this.txtFechaPublicacion = txtFechaPublicacion;
+        this.txtNombre = txtNombre;
+    }
+
+   
+
 }

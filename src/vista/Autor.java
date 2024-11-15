@@ -4,9 +4,10 @@
  */
 package vista;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 /**
  *
@@ -30,7 +31,6 @@ public class Autor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTitulo = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
         lblApellido = new javax.swing.JLabel();
@@ -41,13 +41,19 @@ public class Autor extends javax.swing.JFrame {
         txtNacionalidad = new javax.swing.JTextField();
         txtCorreo = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
+        btnAgregar = new javax.swing.JButton();
+        lblEvento = new javax.swing.JLabel();
+        lblDevoluciones = new javax.swing.JLabel();
+        cmbOpciones = new javax.swing.JComboBox<>();
+        cmbCrear = new javax.swing.JComboBox<>();
+        lblLogo = new javax.swing.JLabel();
+        lblBiblioteca = new javax.swing.JLabel();
+        lblkonrad = new javax.swing.JLabel();
+        lblInicio = new javax.swing.JLabel();
+        lblComprar = new javax.swing.JLabel();
+        lblReserva = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        lblTitulo.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        lblTitulo.setForeground(new java.awt.Color(51, 51, 255));
-        lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTitulo.setText("Biblioteca Konrad");
 
         jLabel1.setForeground(new java.awt.Color(51, 51, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -63,22 +69,41 @@ public class Autor extends javax.swing.JFrame {
 
         jLabel2.setText("jLabel2");
 
+        btnAgregar.setText("Agregar");
+
+        lblEvento.setText("Eventos");
+
+        lblDevoluciones.setText("Devoluciones");
+
+        cmbOpciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "Inventario", "Historial de prestamos", "Multas", "Notificaciones", "Sanciones" }));
+        cmbOpciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbOpcionesActionPerformed(evt);
+            }
+        });
+
+        cmbCrear.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Crear", "Libro", "Autor", "Usuario", "Editorial", "Sucursal" }));
+
+        lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/konrad2.png"))); // NOI18N
+
+        lblBiblioteca.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblBiblioteca.setText("Biblioteca");
+
+        lblkonrad.setText("Konrad");
+
+        lblInicio.setText("Inicio");
+
+        lblComprar.setText("Comprar");
+
+        lblReserva.setText("Reserva");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(168, 168, 168))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(239, 239, 239))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(74, 74, 74)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(55, 55, 55)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -95,26 +120,69 @@ public class Autor extends javax.swing.JFrame {
                             .addComponent(txtCorreo)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(lblApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE)))))
                 .addGap(91, 91, 91))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblLogo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addComponent(lblInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addComponent(cmbCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblReserva, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblEvento, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblDevoluciones, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(cmbOpciones, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnAgregar)
+                        .addGap(282, 282, 282))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(244, 244, 244))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblBiblioteca)
+                            .addComponent(lblInicio)
+                            .addComponent(lblComprar)
+                            .addComponent(lblEvento)
+                            .addComponent(lblDevoluciones)
+                            .addComponent(lblReserva)
+                            .addComponent(cmbOpciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblkonrad))
+                    .addComponent(lblLogo))
+                .addGap(7, 7, 7)
                 .addComponent(jLabel1)
-                .addGap(56, 56, 56)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNombre)
-                    .addComponent(lblApellido))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblApellido, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblNombre))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtApellido, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
                             .addComponent(txtNombre))
@@ -127,11 +195,17 @@ public class Autor extends javax.swing.JFrame {
                             .addComponent(txtCorreo, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
                             .addComponent(txtNacionalidad)))
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btnAgregar)
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void cmbOpcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbOpcionesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbOpcionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,13 +243,23 @@ public class Autor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAgregar;
+    private javax.swing.JComboBox<String> cmbCrear;
+    private javax.swing.JComboBox<String> cmbOpciones;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblApellido;
+    private javax.swing.JLabel lblBiblioteca;
+    private javax.swing.JLabel lblComprar;
     private javax.swing.JLabel lblCorreo;
+    private javax.swing.JLabel lblDevoluciones;
+    private javax.swing.JLabel lblEvento;
+    private javax.swing.JLabel lblInicio;
+    private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblNacionalidad;
     private javax.swing.JLabel lblNombre;
-    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JLabel lblReserva;
+    private javax.swing.JLabel lblkonrad;
     private javax.swing.JTextField txtApellido;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JTextField txtNacionalidad;
@@ -214,56 +298,172 @@ public class Autor extends javax.swing.JFrame {
         this.lblNombre = lblNombre;
     }
 
-    public JLabel getLblTitulo() {
-        return lblTitulo;
-    }
+   
 
-    public void setLblTitulo(JLabel lblTitulo) {
-        this.lblTitulo = lblTitulo;
-    }
-
-    public JTextArea getTxtApellido() {
+    public JTextField getTxtApellido() {
         return txtApellido;
     }
 
-    public void setTxtApellido(JTextArea txtApellido) {
+    public void setTxtApellido(JTextField txtApellido) {
         this.txtApellido = txtApellido;
     }
 
-    public JTextArea getTxtCorreo() {
+    public JTextField getTxtCorreo() {
         return txtCorreo;
     }
 
-    public void setTxtCorreo(JTextArea txtCorreo) {
+    public void setTxtCorreo(JTextField txtCorreo) {
         this.txtCorreo = txtCorreo;
     }
 
-    public JTextArea getTxtNacionalidad() {
+    public JTextField getTxtNacionalidad() {
         return txtNacionalidad;
     }
 
-    public void setTxtNacionalidad(JTextArea txtNacionalidad) {
+    public void setTxtNacionalidad(JTextField txtNacionalidad) {
         this.txtNacionalidad = txtNacionalidad;
     }
 
-    public JTextArea getTxtNombre() {
+    public JTextField getTxtNombre() {
         return txtNombre;
     }
 
-    public void setTxtNombre(JTextArea txtNombre) {
+    public void setTxtNombre(JTextField txtNombre) {
         this.txtNombre = txtNombre;
     }
 
-    public Autor(JLabel lblApellido, JLabel lblCorreo, JLabel lblNacionalidad, JLabel lblNombre, JTextArea txtApellido, JTextArea txtCorreo, JTextArea txtNacionalidad, JTextArea txtNombre) {
+    public JButton getBtnAgregar() {
+        return btnAgregar;
+    }
+
+    public void setBtnAgregar(JButton btnAgregar) {
+        this.btnAgregar = btnAgregar;
+    }
+
+    public JComboBox<String> getCmbCrear() {
+        return cmbCrear;
+    }
+
+    public void setCmbCrear(JComboBox<String> cmbCrear) {
+        this.cmbCrear = cmbCrear;
+    }
+
+    public JComboBox<String> getCmbOpciones() {
+        return cmbOpciones;
+    }
+
+    public void setCmbOpciones(JComboBox<String> cmbOpciones) {
+        this.cmbOpciones = cmbOpciones;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public void setjLabel1(JLabel jLabel1) {
+        this.jLabel1 = jLabel1;
+    }
+
+    public JLabel getjLabel2() {
+        return jLabel2;
+    }
+
+    public void setjLabel2(JLabel jLabel2) {
+        this.jLabel2 = jLabel2;
+    }
+
+    public JLabel getLblBiblioteca() {
+        return lblBiblioteca;
+    }
+
+    public void setLblBiblioteca(JLabel lblBiblioteca) {
+        this.lblBiblioteca = lblBiblioteca;
+    }
+
+    public JLabel getLblComprar() {
+        return lblComprar;
+    }
+
+    public void setLblComprar(JLabel lblComprar) {
+        this.lblComprar = lblComprar;
+    }
+
+    public JLabel getLblDevoluciones() {
+        return lblDevoluciones;
+    }
+
+    public void setLblDevoluciones(JLabel lblDevoluciones) {
+        this.lblDevoluciones = lblDevoluciones;
+    }
+
+    public JLabel getLblEvento() {
+        return lblEvento;
+    }
+
+    public void setLblEvento(JLabel lblEvento) {
+        this.lblEvento = lblEvento;
+    }
+
+    public JLabel getLblInicio() {
+        return lblInicio;
+    }
+
+    public void setLblInicio(JLabel lblInicio) {
+        this.lblInicio = lblInicio;
+    }
+
+    public JLabel getLblLogo() {
+        return lblLogo;
+    }
+
+    public void setLblLogo(JLabel lblLogo) {
+        this.lblLogo = lblLogo;
+    }
+
+    public JLabel getLblReserva() {
+        return lblReserva;
+    }
+
+    public void setLblReserva(JLabel lblReserva) {
+        this.lblReserva = lblReserva;
+    }
+
+    public JLabel getLblkonrad() {
+        return lblkonrad;
+    }
+
+    public void setLblkonrad(JLabel lblkonrad) {
+        this.lblkonrad = lblkonrad;
+    }
+
+    public Autor(JButton btnAgregar, JComboBox<String> cmbCrear, JComboBox<String> cmbOpciones, JLabel jLabel1, JLabel jLabel2, JLabel lblApellido, JLabel lblBiblioteca, JLabel lblComprar, JLabel lblCorreo, JLabel lblDevoluciones, JLabel lblEvento, JLabel lblInicio, JLabel lblLogo, JLabel lblNacionalidad, JLabel lblNombre, JLabel lblReserva, JLabel lblkonrad, JTextField txtApellido, JTextField txtCorreo, JTextField txtNacionalidad, JTextField txtNombre) {
+        this.btnAgregar = btnAgregar;
+        this.cmbCrear = cmbCrear;
+        this.cmbOpciones = cmbOpciones;
+        this.jLabel1 = jLabel1;
+        this.jLabel2 = jLabel2;
         this.lblApellido = lblApellido;
+        this.lblBiblioteca = lblBiblioteca;
+        this.lblComprar = lblComprar;
         this.lblCorreo = lblCorreo;
+        this.lblDevoluciones = lblDevoluciones;
+        this.lblEvento = lblEvento;
+        this.lblInicio = lblInicio;
+        this.lblLogo = lblLogo;
         this.lblNacionalidad = lblNacionalidad;
         this.lblNombre = lblNombre;
+        this.lblReserva = lblReserva;
+        this.lblkonrad = lblkonrad;
         this.txtApellido = txtApellido;
         this.txtCorreo = txtCorreo;
         this.txtNacionalidad = txtNacionalidad;
         this.txtNombre = txtNombre;
     }
 
+   
+
+   
+
+  
     
 }

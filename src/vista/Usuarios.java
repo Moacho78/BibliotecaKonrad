@@ -34,7 +34,7 @@ public class Usuarios extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        lblAgregarUsuario = new javax.swing.JLabel();
+        lblRegistro = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
         lblApellido = new javax.swing.JLabel();
         lblCorreo = new javax.swing.JLabel();
@@ -49,23 +49,17 @@ public class Usuarios extends javax.swing.JFrame {
         txtDireccion = new javax.swing.JTextField();
         lblImagen = new javax.swing.JLabel();
         btnGuardar = new javax.swing.JButton();
-        lblkonrad = new javax.swing.JLabel();
-        lblInicio = new javax.swing.JLabel();
-        lblComprar = new javax.swing.JLabel();
-        lblReserva = new javax.swing.JLabel();
-        lblEvento = new javax.swing.JLabel();
-        lblDevoluciones = new javax.swing.JLabel();
-        cmbOpciones = new javax.swing.JComboBox<>();
-        cmbCrear = new javax.swing.JComboBox<>();
+        lblRol = new javax.swing.JLabel();
+        cmbRol = new javax.swing.JComboBox<>();
         lblLogo = new javax.swing.JLabel();
         lblBiblioteca = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblAgregarUsuario.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblAgregarUsuario.setForeground(new java.awt.Color(51, 51, 255));
-        lblAgregarUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblAgregarUsuario.setText("Agrega un Usuario");
+        lblRegistro.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblRegistro.setForeground(new java.awt.Color(51, 51, 255));
+        lblRegistro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblRegistro.setText("Registrate");
 
         lblNombre.setText("Nombre");
 
@@ -83,31 +77,15 @@ public class Usuarios extends javax.swing.JFrame {
 
         btnGuardar.setText("Guardar");
 
-        lblkonrad.setText("Konrad");
+        lblRol.setText("Rol");
 
-        lblInicio.setText("Inicio");
-
-        lblComprar.setText("Comprar");
-
-        lblReserva.setText("Reserva");
-
-        lblEvento.setText("Eventos");
-
-        lblDevoluciones.setText("Devoluciones");
-
-        cmbOpciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "Inventario", "Historial de prestamos", "Multas", "Notificaciones", "Sanciones" }));
-        cmbOpciones.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbOpcionesActionPerformed(evt);
-            }
-        });
-
-        cmbCrear.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Crear", "Libro", "Autor", "Usuario", "Editorial", "Sucursal" }));
+        cmbRol.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "Empleado", "Usuario" }));
 
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/konrad2.png"))); // NOI18N
 
+        lblBiblioteca.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         lblBiblioteca.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lblBiblioteca.setText("Biblioteca");
+        lblBiblioteca.setText("Biblioteca  Konrad");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -115,85 +93,61 @@ public class Usuarios extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblLogo)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblRol, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(158, 158, 158)
-                                        .addComponent(lblApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(lblCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(lblDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(87, 87, 87)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtTelefono, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
-                                            .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(lblTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtCorreo)))))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(cmbRol, javax.swing.GroupLayout.Alignment.LEADING, 0, 164, Short.MAX_VALUE)
+                                    .addComponent(lblDireccion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblCedula, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCedula, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtDireccion, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addGap(65, 65, 65)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtTelefono)
+                                    .addComponent(txtApellido, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
+                                    .addComponent(txtCorreo)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(167, 167, 167)
-                                .addComponent(btnGuardar)
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addContainerGap(63, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(lblAgregarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(lblLogo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addComponent(lblInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(cmbCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblReserva, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblEvento, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblDevoluciones, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cmbOpciones, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                                .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(158, 158, 158)
+                                .addComponent(lblApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(113, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addComponent(btnGuardar)
+                            .addGap(297, 297, 297))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addComponent(lblRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(254, 254, 254)))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBiblioteca)
-                            .addComponent(lblInicio)
-                            .addComponent(lblComprar)
-                            .addComponent(lblEvento)
-                            .addComponent(lblDevoluciones)
-                            .addComponent(lblReserva)
-                            .addComponent(cmbOpciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cmbCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblkonrad))
+                    .addComponent(lblBiblioteca)
                     .addComponent(lblLogo))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addGap(1, 1, 1)
+                .addComponent(lblRegistro)
+                .addGap(6, 6, 6)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(58, 58, 58))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblAgregarUsuario)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblApellido)
                             .addComponent(lblNombre))
@@ -218,11 +172,12 @@ public class Usuarios extends javax.swing.JFrame {
                             .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
+                        .addComponent(lblRol)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cmbRol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                         .addComponent(btnGuardar)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58))))
+                        .addGap(15, 15, 15))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -235,18 +190,11 @@ public class Usuarios extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void cmbOpcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbOpcionesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbOpcionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -285,25 +233,19 @@ public class Usuarios extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
-    private javax.swing.JComboBox<String> cmbCrear;
-    private javax.swing.JComboBox<String> cmbOpciones;
+    private javax.swing.JComboBox<String> cmbRol;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblAgregarUsuario;
     private javax.swing.JLabel lblApellido;
     private javax.swing.JLabel lblBiblioteca;
     private javax.swing.JLabel lblCedula;
-    private javax.swing.JLabel lblComprar;
     private javax.swing.JLabel lblCorreo;
-    private javax.swing.JLabel lblDevoluciones;
     private javax.swing.JLabel lblDireccion;
-    private javax.swing.JLabel lblEvento;
     private javax.swing.JLabel lblImagen;
-    private javax.swing.JLabel lblInicio;
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblNombre;
-    private javax.swing.JLabel lblReserva;
+    private javax.swing.JLabel lblRegistro;
+    private javax.swing.JLabel lblRol;
     private javax.swing.JLabel lblTelefono;
-    private javax.swing.JLabel lblkonrad;
     private javax.swing.JTextField txtApellido;
     private javax.swing.JTextField txtCedula;
     private javax.swing.JTextField txtCorreo;
@@ -312,12 +254,28 @@ public class Usuarios extends javax.swing.JFrame {
     private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 
-    public JLabel getLblAgregarUsuario() {
-        return lblAgregarUsuario;
+    public JButton getBtnGuardar() {
+        return btnGuardar;
     }
 
-    public void setLblAgregarUsuario(JLabel lblAgregarUsuario) {
-        this.lblAgregarUsuario = lblAgregarUsuario;
+    public void setBtnGuardar(JButton btnGuardar) {
+        this.btnGuardar = btnGuardar;
+    }
+
+    public JComboBox<String> getCmbRol() {
+        return cmbRol;
+    }
+
+    public void setCmbRol(JComboBox<String> cmbRol) {
+        this.cmbRol = cmbRol;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public void setjPanel1(JPanel jPanel1) {
+        this.jPanel1 = jPanel1;
     }
 
     public JLabel getLblApellido() {
@@ -326,6 +284,14 @@ public class Usuarios extends javax.swing.JFrame {
 
     public void setLblApellido(JLabel lblApellido) {
         this.lblApellido = lblApellido;
+    }
+
+    public JLabel getLblBiblioteca() {
+        return lblBiblioteca;
+    }
+
+    public void setLblBiblioteca(JLabel lblBiblioteca) {
+        this.lblBiblioteca = lblBiblioteca;
     }
 
     public JLabel getLblCedula() {
@@ -360,12 +326,36 @@ public class Usuarios extends javax.swing.JFrame {
         this.lblImagen = lblImagen;
     }
 
+    public JLabel getLblLogo() {
+        return lblLogo;
+    }
+
+    public void setLblLogo(JLabel lblLogo) {
+        this.lblLogo = lblLogo;
+    }
+
     public JLabel getLblNombre() {
         return lblNombre;
     }
 
     public void setLblNombre(JLabel lblNombre) {
         this.lblNombre = lblNombre;
+    }
+
+    public JLabel getLblRegistro() {
+        return lblRegistro;
+    }
+
+    public void setLblRegistro(JLabel lblRegistro) {
+        this.lblRegistro = lblRegistro;
+    }
+
+    public JLabel getLblRol() {
+        return lblRol;
+    }
+
+    public void setLblRol(JLabel lblRol) {
+        this.lblRol = lblRol;
     }
 
     public JLabel getLblTelefono() {
@@ -375,8 +365,6 @@ public class Usuarios extends javax.swing.JFrame {
     public void setLblTelefono(JLabel lblTelefono) {
         this.lblTelefono = lblTelefono;
     }
-
-    
 
     public JTextField getTxtApellido() {
         return txtApellido;
@@ -426,123 +414,21 @@ public class Usuarios extends javax.swing.JFrame {
         this.txtTelefono = txtTelefono;
     }
 
-    public JButton getBtnGuardar() {
-        return btnGuardar;
-    }
-
-    public void setBtnGuardar(JButton btnGuardar) {
+    public Usuarios(JButton btnGuardar, JComboBox<String> cmbRol, JPanel jPanel1, JLabel lblApellido, JLabel lblBiblioteca, JLabel lblCedula, JLabel lblCorreo, JLabel lblDireccion, JLabel lblImagen, JLabel lblLogo, JLabel lblNombre, JLabel lblRegistro, JLabel lblRol, JLabel lblTelefono, JTextField txtApellido, JTextField txtCedula, JTextField txtCorreo, JTextField txtDireccion, JTextField txtNombre, JTextField txtTelefono) {
         this.btnGuardar = btnGuardar;
-    }
-
-    public JComboBox<String> getCmbCrear() {
-        return cmbCrear;
-    }
-
-    public void setCmbCrear(JComboBox<String> cmbCrear) {
-        this.cmbCrear = cmbCrear;
-    }
-
-    public JComboBox<String> getCmbOpciones() {
-        return cmbOpciones;
-    }
-
-    public void setCmbOpciones(JComboBox<String> cmbOpciones) {
-        this.cmbOpciones = cmbOpciones;
-    }
-
-    public JPanel getjPanel1() {
-        return jPanel1;
-    }
-
-    public void setjPanel1(JPanel jPanel1) {
+        this.cmbRol = cmbRol;
         this.jPanel1 = jPanel1;
-    }
-
-    public JLabel getLblBiblioteca() {
-        return lblBiblioteca;
-    }
-
-    public void setLblBiblioteca(JLabel lblBiblioteca) {
-        this.lblBiblioteca = lblBiblioteca;
-    }
-
-    public JLabel getLblComprar() {
-        return lblComprar;
-    }
-
-    public void setLblComprar(JLabel lblComprar) {
-        this.lblComprar = lblComprar;
-    }
-
-    public JLabel getLblDevoluciones() {
-        return lblDevoluciones;
-    }
-
-    public void setLblDevoluciones(JLabel lblDevoluciones) {
-        this.lblDevoluciones = lblDevoluciones;
-    }
-
-    public JLabel getLblEvento() {
-        return lblEvento;
-    }
-
-    public void setLblEvento(JLabel lblEvento) {
-        this.lblEvento = lblEvento;
-    }
-
-    public JLabel getLblInicio() {
-        return lblInicio;
-    }
-
-    public void setLblInicio(JLabel lblInicio) {
-        this.lblInicio = lblInicio;
-    }
-
-    public JLabel getLblLogo() {
-        return lblLogo;
-    }
-
-    public void setLblLogo(JLabel lblLogo) {
-        this.lblLogo = lblLogo;
-    }
-
-    public JLabel getLblReserva() {
-        return lblReserva;
-    }
-
-    public void setLblReserva(JLabel lblReserva) {
-        this.lblReserva = lblReserva;
-    }
-
-    public JLabel getLblkonrad() {
-        return lblkonrad;
-    }
-
-    public void setLblkonrad(JLabel lblkonrad) {
-        this.lblkonrad = lblkonrad;
-    }
-
-    public Usuarios(JButton btnGuardar, JComboBox<String> cmbCrear, JComboBox<String> cmbOpciones, JPanel jPanel1, JLabel lblAgregarUsuario, JLabel lblApellido, JLabel lblBiblioteca, JLabel lblCedula, JLabel lblComprar, JLabel lblCorreo, JLabel lblDevoluciones, JLabel lblDireccion, JLabel lblEvento, JLabel lblImagen, JLabel lblInicio, JLabel lblLogo, JLabel lblNombre, JLabel lblReserva, JLabel lblTelefono, JLabel lblkonrad, JTextField txtApellido, JTextField txtCedula, JTextField txtCorreo, JTextField txtDireccion, JTextField txtNombre, JTextField txtTelefono) {
-        this.btnGuardar = btnGuardar;
-        this.cmbCrear = cmbCrear;
-        this.cmbOpciones = cmbOpciones;
-        this.jPanel1 = jPanel1;
-        this.lblAgregarUsuario = lblAgregarUsuario;
         this.lblApellido = lblApellido;
         this.lblBiblioteca = lblBiblioteca;
         this.lblCedula = lblCedula;
-        this.lblComprar = lblComprar;
         this.lblCorreo = lblCorreo;
-        this.lblDevoluciones = lblDevoluciones;
         this.lblDireccion = lblDireccion;
-        this.lblEvento = lblEvento;
         this.lblImagen = lblImagen;
-        this.lblInicio = lblInicio;
         this.lblLogo = lblLogo;
         this.lblNombre = lblNombre;
-        this.lblReserva = lblReserva;
+        this.lblRegistro = lblRegistro;
+        this.lblRol = lblRol;
         this.lblTelefono = lblTelefono;
-        this.lblkonrad = lblkonrad;
         this.txtApellido = txtApellido;
         this.txtCedula = txtCedula;
         this.txtCorreo = txtCorreo;
@@ -550,11 +436,5 @@ public class Usuarios extends javax.swing.JFrame {
         this.txtNombre = txtNombre;
         this.txtTelefono = txtTelefono;
     }
-
- 
-    
-    
-
-   
 
 }

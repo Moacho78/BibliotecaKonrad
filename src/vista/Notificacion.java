@@ -40,16 +40,6 @@ public class Notificacion extends javax.swing.JFrame {
         lblMensaje = new javax.swing.JLabel();
         lblImagen = new javax.swing.JLabel();
         btnEnviar = new javax.swing.JButton();
-        lblkonrad = new javax.swing.JLabel();
-        lblInicio = new javax.swing.JLabel();
-        lblComprar = new javax.swing.JLabel();
-        lblReserva = new javax.swing.JLabel();
-        lblEvento = new javax.swing.JLabel();
-        lblDevoluciones = new javax.swing.JLabel();
-        cmbOpciones = new javax.swing.JComboBox<>();
-        cmbCrear = new javax.swing.JComboBox<>();
-        lblLogo = new javax.swing.JLabel();
-        lblBiblioteca = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -73,32 +63,6 @@ public class Notificacion extends javax.swing.JFrame {
             }
         });
 
-        lblkonrad.setText("Konrad");
-
-        lblInicio.setText("Inicio");
-
-        lblComprar.setText("Comprar");
-
-        lblReserva.setText("Reserva");
-
-        lblEvento.setText("Eventos");
-
-        lblDevoluciones.setText("Devoluciones");
-
-        cmbOpciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "Inventario", "Historial de prestamos", "Multas", "Notificaciones", "Sanciones" }));
-        cmbOpciones.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbOpcionesActionPerformed(evt);
-            }
-        });
-
-        cmbCrear.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Crear", "Libro", "Autor", "Usuario", "Editorial", "Sucursal" }));
-
-        lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/konrad2.png"))); // NOI18N
-
-        lblBiblioteca.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lblBiblioteca.setText("Biblioteca");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -108,63 +72,25 @@ public class Notificacion extends javax.swing.JFrame {
                 .addComponent(btnEnviar)
                 .addGap(215, 215, 215))
             .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(66, 66, 66)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane1)
-                                    .addComponent(txtCorreo)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblLogo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(66, 66, 66)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(40, 40, 40)
-                        .addComponent(lblInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(1, 1, 1)
-                        .addComponent(cmbCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblReserva, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblEvento, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblDevoluciones, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(cmbOpciones, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane1)
+                            .addComponent(txtCorreo)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(262, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBiblioteca)
-                            .addComponent(lblInicio)
-                            .addComponent(lblComprar)
-                            .addComponent(lblEvento)
-                            .addComponent(lblDevoluciones)
-                            .addComponent(lblReserva)
-                            .addComponent(cmbOpciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cmbCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblkonrad))
-                    .addComponent(lblLogo))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(85, 85, 85)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
@@ -188,10 +114,6 @@ public class Notificacion extends javax.swing.JFrame {
     private void btnEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEnviarActionPerformed
-
-    private void cmbOpcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbOpcionesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbOpcionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -230,21 +152,11 @@ public class Notificacion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEnviar;
-    private javax.swing.JComboBox<String> cmbCrear;
-    private javax.swing.JComboBox<String> cmbOpciones;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblBiblioteca;
-    private javax.swing.JLabel lblComprar;
     private javax.swing.JLabel lblCorreo;
-    private javax.swing.JLabel lblDevoluciones;
-    private javax.swing.JLabel lblEvento;
     private javax.swing.JLabel lblImagen;
-    private javax.swing.JLabel lblInicio;
-    private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblMensaje;
-    private javax.swing.JLabel lblReserva;
-    private javax.swing.JLabel lblkonrad;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JTextArea txtMensaje;
     // End of variables declaration//GEN-END:variables

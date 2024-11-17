@@ -32,7 +32,11 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -42,6 +46,22 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jLabel1" min="-2" pref="156" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="btnEditorial" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnLibro" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="btnSucursal" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnAutor" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="btnProveedor" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="lblLogo" min="-2" max="-2" attributes="0"/>
@@ -55,7 +75,7 @@
                           <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="lblInicio" min="-2" pref="39" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButton2" min="-2" pref="66" max="-2" attributes="0"/>
+                          <Component id="btnCrear" min="-2" pref="66" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="btnEvento" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -79,7 +99,7 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
@@ -93,7 +113,7 @@
                               <Component id="btnNotificacion" alignment="1" min="-2" pref="35" max="-2" attributes="0"/>
                               <Group type="103" alignment="1" groupAlignment="3" attributes="0">
                                   <Component id="lblInicio" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnCrear" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnEvento" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnDevoluciones" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnReservas" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -106,13 +126,61 @@
                       </Group>
                       <Component id="btnIcono" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="221" max="32767" attributes="0"/>
+                  <EmptySpace pref="48" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel1" alignment="3" min="-2" pref="260" max="-2" attributes="0"/>
+                              <Component id="btnLibro" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnAutor" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnEditorial" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnSucursal" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnProveedor" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jLabel1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnEditorial">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Editorial"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnLibro">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Libro"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnSucursal">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sucursal"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAutor">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Autor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnProveedor">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Proveerdor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnCrear">
           <Properties>
             <Property name="text" type="java.lang.String" value="Crear "/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>

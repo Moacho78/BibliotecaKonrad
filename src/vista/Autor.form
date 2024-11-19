@@ -41,6 +41,7 @@
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Component id="txtNacionalidad" pref="171" max="32767" attributes="0"/>
                           <Component id="txtNombre" max="32767" attributes="0"/>
+                          <Component id="btnVolver" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
@@ -52,6 +53,7 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="lblCorreo" min="-2" pref="100" max="-2" attributes="0"/>
                                   <Component id="txtCorreo" min="-2" pref="217" max="-2" attributes="0"/>
+                                  <Component id="btnAgregar" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -69,11 +71,11 @@
                           <Component id="lblkonrad" alignment="0" max="32767" attributes="0"/>
                           <Component id="lblBiblioteca" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="lblInicio" min="-2" pref="39" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="btnInicio" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="lblCrear" min="-2" pref="60" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" pref="66" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="btnEvento" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="btnDevoluciones" min="-2" max="-2" attributes="0"/>
@@ -90,20 +92,12 @@
                   </Group>
                   <Component id="btnPerfil" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="9" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="btnAgregar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="402" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel1" min="-2" pref="169" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="356" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
+              <Component id="jLabel1" min="-2" pref="169" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="356" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -121,13 +115,13 @@
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="btnNotificacion" alignment="1" min="-2" pref="35" max="-2" attributes="0"/>
                           <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="lblInicio" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnEvento" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnDevoluciones" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnReservas" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnBuscar" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnEjemplar" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnInicio" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCrear" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -162,9 +156,18 @@
                   </Group>
                   <Component id="jLabel2" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="btnAgregar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="36" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="26" max="32767" attributes="0"/>
+                      <Component id="btnAgregar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="btnVolver" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -215,12 +218,6 @@
     <Component class="javax.swing.JButton" name="btnAgregar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Agregar"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Crear "/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnReservas">
@@ -287,11 +284,6 @@
         <Property name="text" type="java.lang.String" value="Konrad"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblInicio">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Inicio"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="btnEvento">
       <Properties>
         <Property name="text" type="java.lang.String" value="Eventos"/>
@@ -302,6 +294,22 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Devoluciones"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnInicio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Inicio"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCrear">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Crear"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnVolver">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Volver"/>
       </Properties>
     </Component>
   </SubComponents>

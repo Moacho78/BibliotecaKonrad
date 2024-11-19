@@ -71,11 +71,13 @@ public class MiPerfilE extends javax.swing.JFrame {
         lblMostrarTelefono = new javax.swing.JLabel();
         lblMostrarCorreo = new javax.swing.JLabel();
         btnInventario = new javax.swing.JButton();
-        btnHistorial = new javax.swing.JButton();
         btnMultas = new javax.swing.JButton();
         btnSanciones = new javax.swing.JButton();
         btnNotificaciones = new javax.swing.JButton();
         btnCerrarSesion = new javax.swing.JButton();
+        lblContraseña = new javax.swing.JLabel();
+        lblContraseña1 = new javax.swing.JLabel();
+        btnHistorial = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
 
@@ -149,9 +151,6 @@ public class MiPerfilE extends javax.swing.JFrame {
         btnInventario.setText("Inventario");
         btnInventario.setContentAreaFilled(false);
 
-        btnHistorial.setText("Historial de Préstamo");
-        btnHistorial.setContentAreaFilled(false);
-
         btnMultas.setText("Multas");
         btnMultas.setContentAreaFilled(false);
 
@@ -168,6 +167,14 @@ public class MiPerfilE extends javax.swing.JFrame {
 
         btnCerrarSesion.setText("Cerrar Sesión");
         btnCerrarSesion.setContentAreaFilled(false);
+
+        lblContraseña.setText("Contraseña");
+
+        lblContraseña1.setText("jLabel4");
+        lblContraseña1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        btnHistorial.setText("Historial de Préstamo");
+        btnHistorial.setContentAreaFilled(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -188,32 +195,41 @@ public class MiPerfilE extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnInventario, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(btnSanciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnMultas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnNotificaciones, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE))
-                            .addComponent(btnHistorial))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(36, 36, 36)
+                                .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(btnInventario, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(btnSanciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btnMultas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btnNotificaciones, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE))))
+                        .addGap(56, 56, 56))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(btnHistorial, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(btnVolver)
                         .addGap(190, 190, 190))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblDireccion1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblMostrarCedula, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblMostrarNombre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblCedula1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
-                            .addComponent(lblMostrarDireccion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblContraseña1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblMostrarCedula, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblMostrarNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblCedula1, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
+                            .addComponent(lblMostrarDireccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblContraseña, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblDireccion1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblApellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -242,10 +258,11 @@ public class MiPerfilE extends javax.swing.JFrame {
                     .addComponent(lblApellido1)
                     .addComponent(lblNombre1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblMostrarNombre)
-                    .addComponent(lblMostrarApellido)
-                    .addComponent(btnInventario))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnInventario, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblMostrarNombre)
+                        .addComponent(lblMostrarApellido)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
@@ -270,8 +287,12 @@ public class MiPerfilE extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnMultas)))
                 .addGap(18, 18, 18)
-                .addComponent(btnHistorial)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblContraseña)
+                    .addComponent(btnHistorial))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblContraseña1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnVolver)
                     .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -289,7 +310,9 @@ public class MiPerfilE extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -354,6 +377,8 @@ public class MiPerfilE extends javax.swing.JFrame {
     private javax.swing.JLabel lblApellido1;
     private javax.swing.JLabel lblCedula;
     private javax.swing.JLabel lblCedula1;
+    private javax.swing.JLabel lblContraseña;
+    private javax.swing.JLabel lblContraseña1;
     private javax.swing.JLabel lblCorreo;
     private javax.swing.JLabel lblCorreo1;
     private javax.swing.JLabel lblDireccion;
@@ -636,7 +661,7 @@ public class MiPerfilE extends javax.swing.JFrame {
         this.lblTelefono1 = lblTelefono1;
     }
 
-    public MiPerfilE(JButton btnCerrarSesion, JButton btnGuardar, JButton btnHistorial, JButton btnInventario, JButton btnMultas, JButton btnNotificaciones, JButton btnSanciones, JButton btnVolver, JLabel jLabel1, JLabel jLabel2, JPanel jPanel1, JLabel lblApellido, JLabel lblApellido1, JLabel lblCedula, JLabel lblCedula1, JLabel lblCorreo, JLabel lblCorreo1, JLabel lblDireccion, JLabel lblDireccion1, JLabel lblIcono, JLabel lblImagen, JLabel lblMostrar, JLabel lblMostrarApellido, JLabel lblMostrarCedula, JLabel lblMostrarCorreo, JLabel lblMostrarDireccion, JLabel lblMostrarNombre, JLabel lblMostrarTelefono, JLabel lblNombre, JLabel lblNombre1, JLabel lblTelefono, JLabel lblTelefono1) {
+    public MiPerfilE(JButton btnCerrarSesion, JButton btnGuardar, JButton btnHistorial, JButton btnInventario, JButton btnMultas, JButton btnNotificaciones, JButton btnSanciones, JButton btnVolver, JLabel jLabel1, JLabel jLabel2, JPanel jPanel1, JLabel lblApellido, JLabel lblApellido1, JLabel lblCedula, JLabel lblCedula1, JLabel lblContraseña, JLabel lblContraseña1, JLabel lblCorreo, JLabel lblCorreo1, JLabel lblDireccion, JLabel lblDireccion1, JLabel lblIcono, JLabel lblImagen, JLabel lblMostrar, JLabel lblMostrarApellido, JLabel lblMostrarCedula, JLabel lblMostrarCorreo, JLabel lblMostrarDireccion, JLabel lblMostrarNombre, JLabel lblMostrarTelefono, JLabel lblNombre, JLabel lblNombre1, JLabel lblRol, JLabel lblTelefono, JLabel lblTelefono1) {
         this.btnCerrarSesion = btnCerrarSesion;
         this.btnGuardar = btnGuardar;
         this.btnHistorial = btnHistorial;
@@ -652,6 +677,8 @@ public class MiPerfilE extends javax.swing.JFrame {
         this.lblApellido1 = lblApellido1;
         this.lblCedula = lblCedula;
         this.lblCedula1 = lblCedula1;
+        this.lblContraseña = lblContraseña;
+        this.lblContraseña1 = lblContraseña1;
         this.lblCorreo = lblCorreo;
         this.lblCorreo1 = lblCorreo1;
         this.lblDireccion = lblDireccion;
@@ -667,10 +694,12 @@ public class MiPerfilE extends javax.swing.JFrame {
         this.lblMostrarTelefono = lblMostrarTelefono;
         this.lblNombre = lblNombre;
         this.lblNombre1 = lblNombre1;
+        this.lblRol = lblRol;
         this.lblTelefono = lblTelefono;
         this.lblTelefono1 = lblTelefono1;
     }
 
+    
    
 
 }

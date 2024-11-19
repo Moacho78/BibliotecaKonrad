@@ -42,8 +42,6 @@ public class Sucursal extends javax.swing.JFrame {
         lblImagen = new javax.swing.JLabel();
         btnGuardar = new javax.swing.JButton();
         lblkonrad = new javax.swing.JLabel();
-        lblInicio = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         btnEvento = new javax.swing.JButton();
         btnReservas = new javax.swing.JButton();
         btnDevoluciones = new javax.swing.JButton();
@@ -54,6 +52,8 @@ public class Sucursal extends javax.swing.JFrame {
         btnEjemplar = new javax.swing.JButton();
         lblLogo = new javax.swing.JLabel();
         lblBiblioteca = new javax.swing.JLabel();
+        btnInicio = new javax.swing.JButton();
+        lblCrear = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,11 +70,6 @@ public class Sucursal extends javax.swing.JFrame {
         btnGuardar.setText("Guardar");
 
         lblkonrad.setText("Konrad");
-
-        lblInicio.setText("Inicio");
-
-        jButton2.setText("Crear ");
-        jButton2.setContentAreaFilled(false);
 
         btnEvento.setText("Eventos");
         btnEvento.setContentAreaFilled(false);
@@ -115,6 +110,11 @@ public class Sucursal extends javax.swing.JFrame {
         lblBiblioteca.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblBiblioteca.setText("Biblioteca");
 
+        btnInicio.setText("Inicio");
+        btnInicio.setContentAreaFilled(false);
+
+        lblCrear.setText("Crear");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -151,11 +151,11 @@ public class Sucursal extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(40, 40, 40)
-                                .addComponent(lblInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(36, 36, 36)
+                                .addComponent(lblCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnEvento)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(btnDevoluciones)
@@ -186,13 +186,13 @@ public class Sucursal extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(lblInicio)
-                                .addComponent(jButton2)
                                 .addComponent(btnEvento)
                                 .addComponent(btnDevoluciones)
                                 .addComponent(btnReservas)
                                 .addComponent(btnBuscar)
-                                .addComponent(btnEjemplar)))
+                                .addComponent(btnEjemplar)
+                                .addComponent(btnInicio)
+                                .addComponent(lblCrear)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnPerfil))
                     .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -286,15 +286,15 @@ public class Sucursal extends javax.swing.JFrame {
     private javax.swing.JButton btnEvento;
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnIcono;
+    private javax.swing.JButton btnInicio;
     private javax.swing.JButton btnNotificacion;
     private javax.swing.JButton btnPerfil;
     private javax.swing.JButton btnReservas;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblBiblioteca;
+    private javax.swing.JLabel lblCrear;
     private javax.swing.JLabel lblImagen;
-    private javax.swing.JLabel lblInicio;
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblUbicacion;
@@ -351,6 +351,14 @@ public class Sucursal extends javax.swing.JFrame {
         this.btnIcono = btnIcono;
     }
 
+    public JButton getBtnInicio() {
+        return btnInicio;
+    }
+
+    public void setBtnInicio(JButton btnInicio) {
+        this.btnInicio = btnInicio;
+    }
+
     public JButton getBtnNotificacion() {
         return btnNotificacion;
     }
@@ -373,14 +381,6 @@ public class Sucursal extends javax.swing.JFrame {
 
     public void setBtnReservas(JButton btnReservas) {
         this.btnReservas = btnReservas;
-    }
-
-    public JButton getjButton2() {
-        return jButton2;
-    }
-
-    public void setjButton2(JButton jButton2) {
-        this.jButton2 = jButton2;
     }
 
     public JLabel getjLabel1() {
@@ -407,20 +407,20 @@ public class Sucursal extends javax.swing.JFrame {
         this.lblBiblioteca = lblBiblioteca;
     }
 
+    public JLabel getLblCrear() {
+        return lblCrear;
+    }
+
+    public void setLblCrear(JLabel lblCrear) {
+        this.lblCrear = lblCrear;
+    }
+
     public JLabel getLblImagen() {
         return lblImagen;
     }
 
     public void setLblImagen(JLabel lblImagen) {
         this.lblImagen = lblImagen;
-    }
-
-    public JLabel getLblInicio() {
-        return lblInicio;
-    }
-
-    public void setLblInicio(JLabel lblInicio) {
-        this.lblInicio = lblInicio;
     }
 
     public JLabel getLblLogo() {
@@ -471,22 +471,22 @@ public class Sucursal extends javax.swing.JFrame {
         this.txtUbicacion = txtUbicacion;
     }
 
-    public Sucursal(JButton btnBuscar, JButton btnDevoluciones, JButton btnEjemplar, JButton btnEvento, JButton btnGuardar, JButton btnIcono, JButton btnNotificacion, JButton btnPerfil, JButton btnReservas, JButton jButton2, JLabel jLabel1, JPanel jPanel1, JLabel lblBiblioteca, JLabel lblImagen, JLabel lblInicio, JLabel lblLogo, JLabel lblNombre, JLabel lblUbicacion, JLabel lblkonrad, JTextField txtNombre, JTextField txtUbicacion) {
+    public Sucursal(JButton btnBuscar, JButton btnDevoluciones, JButton btnEjemplar, JButton btnEvento, JButton btnGuardar, JButton btnIcono, JButton btnInicio, JButton btnNotificacion, JButton btnPerfil, JButton btnReservas, JLabel jLabel1, JPanel jPanel1, JLabel lblBiblioteca, JLabel lblCrear, JLabel lblImagen, JLabel lblLogo, JLabel lblNombre, JLabel lblUbicacion, JLabel lblkonrad, JTextField txtNombre, JTextField txtUbicacion) {
         this.btnBuscar = btnBuscar;
         this.btnDevoluciones = btnDevoluciones;
         this.btnEjemplar = btnEjemplar;
         this.btnEvento = btnEvento;
         this.btnGuardar = btnGuardar;
         this.btnIcono = btnIcono;
+        this.btnInicio = btnInicio;
         this.btnNotificacion = btnNotificacion;
         this.btnPerfil = btnPerfil;
         this.btnReservas = btnReservas;
-        this.jButton2 = jButton2;
         this.jLabel1 = jLabel1;
         this.jPanel1 = jPanel1;
         this.lblBiblioteca = lblBiblioteca;
+        this.lblCrear = lblCrear;
         this.lblImagen = lblImagen;
-        this.lblInicio = lblInicio;
         this.lblLogo = lblLogo;
         this.lblNombre = lblNombre;
         this.lblUbicacion = lblUbicacion;
@@ -494,5 +494,6 @@ public class Sucursal extends javax.swing.JFrame {
         this.txtNombre = txtNombre;
         this.txtUbicacion = txtUbicacion;
     }
- 
+
+   
 }

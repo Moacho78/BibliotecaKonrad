@@ -49,15 +49,22 @@
                           <Component id="lblImagen" min="-2" pref="161" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblRol" min="-2" pref="52" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="lblNombre" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="158" max="-2" attributes="0"/>
+                                  <Component id="lblApellido" min="-2" pref="71" max="-2" attributes="0"/>
+                              </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="cmbRol" alignment="0" pref="164" max="32767" attributes="0"/>
-                                      <Component id="lblDireccion" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
-                                      <Component id="txtNombre" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="lblCedula" alignment="0" min="-2" pref="142" max="-2" attributes="0"/>
-                                      <Component id="txtCedula" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtDireccion" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="cmbRol" alignment="0" pref="164" max="32767" attributes="0"/>
+                                          <Component id="lblDireccion" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
+                                          <Component id="txtNombre" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblCedula" alignment="0" min="-2" pref="142" max="-2" attributes="0"/>
+                                          <Component id="txtCedula" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtDireccion" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="lblRol" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -66,12 +73,9 @@
                                       <Component id="txtTelefono" alignment="0" max="32767" attributes="0"/>
                                       <Component id="txtApellido" alignment="0" pref="167" max="32767" attributes="0"/>
                                       <Component id="txtCorreo" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="pwdContraseña" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="lblContraseña" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
                                   </Group>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="lblNombre" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="158" max="-2" attributes="0"/>
-                                  <Component id="lblApellido" min="-2" pref="71" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -144,9 +148,15 @@
                               <Component id="txtDireccion" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="lblRol" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblRol" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblContraseña" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="cmbRol" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cmbRol" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="pwdContraseña" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <EmptySpace pref="41" max="32767" attributes="0"/>
                           <Component id="btnGuardar" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
@@ -254,6 +264,16 @@
             </Property>
             <Property name="horizontalAlignment" type="int" value="2"/>
             <Property name="text" type="java.lang.String" value="Biblioteca  Konrad"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JPasswordField" name="pwdContrase&#xf1;a">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jPasswordField1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblContrase&#xf1;a">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Contrase&#xf1;a"/>
           </Properties>
         </Component>
       </SubComponents>

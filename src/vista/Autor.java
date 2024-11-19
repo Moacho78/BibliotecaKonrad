@@ -42,7 +42,6 @@ public class Autor extends javax.swing.JFrame {
         txtCorreo = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         btnAgregar = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         btnReservas = new javax.swing.JButton();
         btnPerfil = new javax.swing.JButton();
         btnNotificacion = new javax.swing.JButton();
@@ -52,9 +51,11 @@ public class Autor extends javax.swing.JFrame {
         lblLogo = new javax.swing.JLabel();
         lblBiblioteca = new javax.swing.JLabel();
         lblkonrad = new javax.swing.JLabel();
-        lblInicio = new javax.swing.JLabel();
         btnEvento = new javax.swing.JButton();
         btnDevoluciones = new javax.swing.JButton();
+        btnInicio = new javax.swing.JButton();
+        lblCrear = new javax.swing.JLabel();
+        btnVolver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -73,9 +74,6 @@ public class Autor extends javax.swing.JFrame {
         jLabel2.setText("jLabel2");
 
         btnAgregar.setText("Agregar");
-
-        jButton2.setText("Crear ");
-        jButton2.setContentAreaFilled(false);
 
         btnReservas.setText("Reservas");
         btnReservas.setContentAreaFilled(false);
@@ -112,13 +110,18 @@ public class Autor extends javax.swing.JFrame {
 
         lblkonrad.setText("Konrad");
 
-        lblInicio.setText("Inicio");
-
         btnEvento.setText("Eventos");
         btnEvento.setContentAreaFilled(false);
 
         btnDevoluciones.setText("Devoluciones");
         btnDevoluciones.setContentAreaFilled(false);
+
+        btnInicio.setText("Inicio");
+        btnInicio.setContentAreaFilled(false);
+
+        lblCrear.setText("Crear");
+
+        btnVolver.setText("Volver");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -139,7 +142,8 @@ public class Autor extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(txtNacionalidad, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
-                            .addComponent(txtNombre))
+                            .addComponent(txtNombre)
+                            .addComponent(btnVolver))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(107, 107, 107)
@@ -148,7 +152,8 @@ public class Autor extends javax.swing.JFrame {
                                 .addGap(105, 105, 105)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addGap(172, 172, 172))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
@@ -159,11 +164,11 @@ public class Autor extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(40, 40, 40)
-                        .addComponent(lblInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnInicio)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnEvento)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnDevoluciones)
@@ -178,16 +183,11 @@ public class Autor extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnPerfil, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(9, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnAgregar)
-                        .addGap(402, 402, 402))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(356, 356, 356))))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(356, 356, 356))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -202,13 +202,13 @@ public class Autor extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(lblInicio)
-                                .addComponent(jButton2)
                                 .addComponent(btnEvento)
                                 .addComponent(btnDevoluciones)
                                 .addComponent(btnReservas)
                                 .addComponent(btnBuscar)
-                                .addComponent(btnEjemplar)))
+                                .addComponent(btnEjemplar)
+                                .addComponent(btnInicio)
+                                .addComponent(lblCrear)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnPerfil))
                     .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -233,9 +233,15 @@ public class Autor extends javax.swing.JFrame {
                             .addComponent(txtNacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtCorreo)))
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addComponent(btnAgregar)
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                        .addComponent(btnAgregar)
+                        .addGap(28, 28, 28))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(btnVolver)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         pack();
@@ -291,16 +297,17 @@ public class Autor extends javax.swing.JFrame {
     private javax.swing.JButton btnEjemplar;
     private javax.swing.JButton btnEvento;
     private javax.swing.JButton btnIcono;
+    private javax.swing.JButton btnInicio;
     private javax.swing.JButton btnNotificacion;
     private javax.swing.JButton btnPerfil;
     private javax.swing.JButton btnReservas;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblApellido;
     private javax.swing.JLabel lblBiblioteca;
     private javax.swing.JLabel lblCorreo;
-    private javax.swing.JLabel lblInicio;
+    private javax.swing.JLabel lblCrear;
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblNacionalidad;
     private javax.swing.JLabel lblNombre;
@@ -359,6 +366,14 @@ public class Autor extends javax.swing.JFrame {
         this.btnIcono = btnIcono;
     }
 
+    public JButton getBtnInicio() {
+        return btnInicio;
+    }
+
+    public void setBtnInicio(JButton btnInicio) {
+        this.btnInicio = btnInicio;
+    }
+
     public JButton getBtnNotificacion() {
         return btnNotificacion;
     }
@@ -383,12 +398,12 @@ public class Autor extends javax.swing.JFrame {
         this.btnReservas = btnReservas;
     }
 
-    public JButton getjButton2() {
-        return jButton2;
+    public JButton getBtnVolver() {
+        return btnVolver;
     }
 
-    public void setjButton2(JButton jButton2) {
-        this.jButton2 = jButton2;
+    public void setBtnVolver(JButton btnVolver) {
+        this.btnVolver = btnVolver;
     }
 
     public JLabel getjLabel1() {
@@ -431,12 +446,12 @@ public class Autor extends javax.swing.JFrame {
         this.lblCorreo = lblCorreo;
     }
 
-    public JLabel getLblInicio() {
-        return lblInicio;
+    public JLabel getLblCrear() {
+        return lblCrear;
     }
 
-    public void setLblInicio(JLabel lblInicio) {
-        this.lblInicio = lblInicio;
+    public void setLblCrear(JLabel lblCrear) {
+        this.lblCrear = lblCrear;
     }
 
     public JLabel getLblLogo() {
@@ -503,23 +518,24 @@ public class Autor extends javax.swing.JFrame {
         this.txtNombre = txtNombre;
     }
 
-    public Autor(JButton btnAgregar, JButton btnBuscar, JButton btnDevoluciones, JButton btnEjemplar, JButton btnEvento, JButton btnIcono, JButton btnNotificacion, JButton btnPerfil, JButton btnReservas, JButton jButton2, JLabel jLabel1, JLabel jLabel2, JLabel lblApellido, JLabel lblBiblioteca, JLabel lblCorreo, JLabel lblInicio, JLabel lblLogo, JLabel lblNacionalidad, JLabel lblNombre, JLabel lblkonrad, JTextField txtApellido, JTextField txtCorreo, JTextField txtNacionalidad, JTextField txtNombre) {
+    public Autor(JButton btnAgregar, JButton btnBuscar, JButton btnDevoluciones, JButton btnEjemplar, JButton btnEvento, JButton btnIcono, JButton btnInicio, JButton btnNotificacion, JButton btnPerfil, JButton btnReservas, JButton btnVolver, JLabel jLabel1, JLabel jLabel2, JLabel lblApellido, JLabel lblBiblioteca, JLabel lblCorreo, JLabel lblCrear, JLabel lblLogo, JLabel lblNacionalidad, JLabel lblNombre, JLabel lblkonrad, JTextField txtApellido, JTextField txtCorreo, JTextField txtNacionalidad, JTextField txtNombre) {
         this.btnAgregar = btnAgregar;
         this.btnBuscar = btnBuscar;
         this.btnDevoluciones = btnDevoluciones;
         this.btnEjemplar = btnEjemplar;
         this.btnEvento = btnEvento;
         this.btnIcono = btnIcono;
+        this.btnInicio = btnInicio;
         this.btnNotificacion = btnNotificacion;
         this.btnPerfil = btnPerfil;
         this.btnReservas = btnReservas;
-        this.jButton2 = jButton2;
+        this.btnVolver = btnVolver;
         this.jLabel1 = jLabel1;
         this.jLabel2 = jLabel2;
         this.lblApellido = lblApellido;
         this.lblBiblioteca = lblBiblioteca;
         this.lblCorreo = lblCorreo;
-        this.lblInicio = lblInicio;
+        this.lblCrear = lblCrear;
         this.lblLogo = lblLogo;
         this.lblNacionalidad = lblNacionalidad;
         this.lblNombre = lblNombre;
@@ -529,5 +545,6 @@ public class Autor extends javax.swing.JFrame {
         this.txtNacionalidad = txtNacionalidad;
         this.txtNombre = txtNombre;
     }
- 
+
+  
 }

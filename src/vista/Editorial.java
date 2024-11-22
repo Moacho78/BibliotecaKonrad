@@ -40,16 +40,20 @@ public class Editorial extends javax.swing.JFrame {
         txtNombre = new javax.swing.JTextField();
         txtPais = new javax.swing.JTextField();
         btnAgregar = new javax.swing.JButton();
-        lblEvento = new javax.swing.JLabel();
-        lblDevoluciones = new javax.swing.JLabel();
-        cmbOpciones = new javax.swing.JComboBox<>();
-        cmbCrear = new javax.swing.JComboBox<>();
+        btnReservas = new javax.swing.JButton();
+        btnPerfil = new javax.swing.JButton();
+        btnNotificacion = new javax.swing.JButton();
+        btnIcono = new javax.swing.JButton();
+        btnBuscar = new javax.swing.JButton();
+        btnEjemplar = new javax.swing.JButton();
         lblLogo = new javax.swing.JLabel();
         lblBiblioteca = new javax.swing.JLabel();
         lblkonrad = new javax.swing.JLabel();
-        lblInicio = new javax.swing.JLabel();
-        lblComprar = new javax.swing.JLabel();
-        lblReserva = new javax.swing.JLabel();
+        btnEvento = new javax.swing.JButton();
+        btnDevoluciones = new javax.swing.JButton();
+        btnInicio = new javax.swing.JButton();
+        lblCrear = new javax.swing.JLabel();
+        lblImagen = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,18 +68,33 @@ public class Editorial extends javax.swing.JFrame {
 
         btnAgregar.setText("Agregar");
 
-        lblEvento.setText("Eventos");
+        btnReservas.setText("Reservas");
+        btnReservas.setContentAreaFilled(false);
 
-        lblDevoluciones.setText("Devoluciones");
-
-        cmbOpciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "Inventario", "Historial de prestamos", "Multas", "Notificaciones", "Sanciones" }));
-        cmbOpciones.addActionListener(new java.awt.event.ActionListener() {
+        btnPerfil.setText("Mi perfil");
+        btnPerfil.setContentAreaFilled(false);
+        btnPerfil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbOpcionesActionPerformed(evt);
+                btnPerfilActionPerformed(evt);
             }
         });
 
-        cmbCrear.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Crear", "Libro", "Autor", "Usuario", "Editorial", "Sucursal" }));
+        btnNotificacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/Notifiacion.png"))); // NOI18N
+        btnNotificacion.setContentAreaFilled(false);
+
+        btnIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/Usuario.png"))); // NOI18N
+        btnIcono.setContentAreaFilled(false);
+        btnIcono.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIconoActionPerformed(evt);
+            }
+        });
+
+        btnBuscar.setText("Buscar Libro");
+        btnBuscar.setContentAreaFilled(false);
+
+        btnEjemplar.setText("Ejemplar");
+        btnEjemplar.setContentAreaFilled(false);
 
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/konrad2.png"))); // NOI18N
 
@@ -84,41 +103,52 @@ public class Editorial extends javax.swing.JFrame {
 
         lblkonrad.setText("Konrad");
 
-        lblInicio.setText("Inicio");
+        btnEvento.setText("Eventos");
+        btnEvento.setContentAreaFilled(false);
 
-        lblComprar.setText("Comprar");
+        btnDevoluciones.setText("Devoluciones");
+        btnDevoluciones.setContentAreaFilled(false);
 
-        lblReserva.setText("Reserva");
+        btnInicio.setText("Inicio");
+        btnInicio.setContentAreaFilled(false);
+
+        lblCrear.setText("Crear");
+
+        lblImagen.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(lblLogo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addComponent(lblInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(cmbCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblReserva, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblEvento, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblDevoluciones, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cmbOpciones, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 12, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnAgregar)
-                .addGap(272, 272, 272))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnInicio)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnEvento)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnDevoluciones)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnReservas)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBuscar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnEjemplar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnPerfil, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap(9, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -131,40 +161,57 @@ public class Editorial extends javax.swing.JFrame {
                             .addComponent(lblPais, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtPais, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(206, 206, 206)
+                        .addGap(307, 307, 307)
+                        .addComponent(btnAgregar))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(280, 280, 280)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBiblioteca)
-                            .addComponent(lblInicio)
-                            .addComponent(lblComprar)
-                            .addComponent(lblEvento)
-                            .addComponent(lblDevoluciones)
-                            .addComponent(lblReserva)
-                            .addComponent(cmbOpciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cmbCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblBiblioteca)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblkonrad))
-                    .addComponent(lblLogo))
-                .addGap(8, 8, 8)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblPais)
-                    .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(lblLogo)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(btnEvento)
+                                .addComponent(btnDevoluciones)
+                                .addComponent(btnReservas)
+                                .addComponent(btnBuscar)
+                                .addComponent(btnEjemplar)
+                                .addComponent(btnInicio)
+                                .addComponent(lblCrear)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnPerfil))
+                    .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtPais, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                .addComponent(btnAgregar)
-                .addGap(55, 55, 55))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblPais)
+                            .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPais, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(51, 51, 51)
+                        .addComponent(btnAgregar))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -187,9 +234,13 @@ public class Editorial extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cmbOpcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbOpcionesActionPerformed
+    private void btnPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPerfilActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmbOpcionesActionPerformed
+    }//GEN-LAST:event_btnPerfilActionPerformed
+
+    private void btnIconoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIconoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnIconoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -228,57 +279,27 @@ public class Editorial extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregar;
-    private javax.swing.JComboBox<String> cmbCrear;
-    private javax.swing.JComboBox<String> cmbOpciones;
+    private javax.swing.JButton btnBuscar;
+    private javax.swing.JButton btnDevoluciones;
+    private javax.swing.JButton btnEjemplar;
+    private javax.swing.JButton btnEvento;
+    private javax.swing.JButton btnIcono;
+    private javax.swing.JButton btnInicio;
+    private javax.swing.JButton btnNotificacion;
+    private javax.swing.JButton btnPerfil;
+    private javax.swing.JButton btnReservas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblBiblioteca;
-    private javax.swing.JLabel lblComprar;
-    private javax.swing.JLabel lblDevoluciones;
-    private javax.swing.JLabel lblEvento;
-    private javax.swing.JLabel lblInicio;
+    private javax.swing.JLabel lblCrear;
+    private javax.swing.JLabel lblImagen;
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblPais;
-    private javax.swing.JLabel lblReserva;
     private javax.swing.JLabel lblkonrad;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtPais;
     // End of variables declaration//GEN-END:variables
-
-    public JLabel getLblNombre() {
-        return lblNombre;
-    }
-
-    public void setLblNombre(JLabel lblNombre) {
-        this.lblNombre = lblNombre;
-    }
-
-    public JLabel getLblPais() {
-        return lblPais;
-    }
-
-    public void setLblPais(JLabel lblPais) {
-        this.lblPais = lblPais;
-    }
-
-    
-
-    public JTextField getTxtNombre() {
-        return txtNombre;
-    }
-
-    public void setTxtNombre(JTextField txtNombre) {
-        this.txtNombre = txtNombre;
-    }
-
-    public JTextField getTxtPais() {
-        return txtPais;
-    }
-
-    public void setTxtPais(JTextField txtPais) {
-        this.txtPais = txtPais;
-    }
 
     public JButton getBtnAgregar() {
         return btnAgregar;
@@ -288,20 +309,76 @@ public class Editorial extends javax.swing.JFrame {
         this.btnAgregar = btnAgregar;
     }
 
-    public JComboBox<String> getCmbCrear() {
-        return cmbCrear;
+    public JButton getBtnBuscar() {
+        return btnBuscar;
     }
 
-    public void setCmbCrear(JComboBox<String> cmbCrear) {
-        this.cmbCrear = cmbCrear;
+    public void setBtnBuscar(JButton btnBuscar) {
+        this.btnBuscar = btnBuscar;
     }
 
-    public JComboBox<String> getCmbOpciones() {
-        return cmbOpciones;
+    public JButton getBtnDevoluciones() {
+        return btnDevoluciones;
     }
 
-    public void setCmbOpciones(JComboBox<String> cmbOpciones) {
-        this.cmbOpciones = cmbOpciones;
+    public void setBtnDevoluciones(JButton btnDevoluciones) {
+        this.btnDevoluciones = btnDevoluciones;
+    }
+
+    public JButton getBtnEjemplar() {
+        return btnEjemplar;
+    }
+
+    public void setBtnEjemplar(JButton btnEjemplar) {
+        this.btnEjemplar = btnEjemplar;
+    }
+
+    public JButton getBtnEvento() {
+        return btnEvento;
+    }
+
+    public void setBtnEvento(JButton btnEvento) {
+        this.btnEvento = btnEvento;
+    }
+
+    public JButton getBtnIcono() {
+        return btnIcono;
+    }
+
+    public void setBtnIcono(JButton btnIcono) {
+        this.btnIcono = btnIcono;
+    }
+
+    public JButton getBtnInicio() {
+        return btnInicio;
+    }
+
+    public void setBtnInicio(JButton btnInicio) {
+        this.btnInicio = btnInicio;
+    }
+
+    public JButton getBtnNotificacion() {
+        return btnNotificacion;
+    }
+
+    public void setBtnNotificacion(JButton btnNotificacion) {
+        this.btnNotificacion = btnNotificacion;
+    }
+
+    public JButton getBtnPerfil() {
+        return btnPerfil;
+    }
+
+    public void setBtnPerfil(JButton btnPerfil) {
+        this.btnPerfil = btnPerfil;
+    }
+
+    public JButton getBtnReservas() {
+        return btnReservas;
+    }
+
+    public void setBtnReservas(JButton btnReservas) {
+        this.btnReservas = btnReservas;
     }
 
     public JLabel getjLabel1() {
@@ -328,36 +405,20 @@ public class Editorial extends javax.swing.JFrame {
         this.lblBiblioteca = lblBiblioteca;
     }
 
-    public JLabel getLblComprar() {
-        return lblComprar;
+    public JLabel getLblCrear() {
+        return lblCrear;
     }
 
-    public void setLblComprar(JLabel lblComprar) {
-        this.lblComprar = lblComprar;
+    public void setLblCrear(JLabel lblCrear) {
+        this.lblCrear = lblCrear;
     }
 
-    public JLabel getLblDevoluciones() {
-        return lblDevoluciones;
+    public JLabel getLblImagen() {
+        return lblImagen;
     }
 
-    public void setLblDevoluciones(JLabel lblDevoluciones) {
-        this.lblDevoluciones = lblDevoluciones;
-    }
-
-    public JLabel getLblEvento() {
-        return lblEvento;
-    }
-
-    public void setLblEvento(JLabel lblEvento) {
-        this.lblEvento = lblEvento;
-    }
-
-    public JLabel getLblInicio() {
-        return lblInicio;
-    }
-
-    public void setLblInicio(JLabel lblInicio) {
-        this.lblInicio = lblInicio;
+    public void setLblImagen(JLabel lblImagen) {
+        this.lblImagen = lblImagen;
     }
 
     public JLabel getLblLogo() {
@@ -368,12 +429,20 @@ public class Editorial extends javax.swing.JFrame {
         this.lblLogo = lblLogo;
     }
 
-    public JLabel getLblReserva() {
-        return lblReserva;
+    public JLabel getLblNombre() {
+        return lblNombre;
     }
 
-    public void setLblReserva(JLabel lblReserva) {
-        this.lblReserva = lblReserva;
+    public void setLblNombre(JLabel lblNombre) {
+        this.lblNombre = lblNombre;
+    }
+
+    public JLabel getLblPais() {
+        return lblPais;
+    }
+
+    public void setLblPais(JLabel lblPais) {
+        this.lblPais = lblPais;
     }
 
     public JLabel getLblkonrad() {
@@ -384,28 +453,47 @@ public class Editorial extends javax.swing.JFrame {
         this.lblkonrad = lblkonrad;
     }
 
-    public Editorial(JButton btnAgregar, JComboBox<String> cmbCrear, JComboBox<String> cmbOpciones, JLabel jLabel1, JPanel jPanel1, JLabel lblBiblioteca, JLabel lblComprar, JLabel lblDevoluciones, JLabel lblEvento, JLabel lblInicio, JLabel lblLogo, JLabel lblNombre, JLabel lblPais, JLabel lblReserva, JLabel lblkonrad, JTextField txtNombre, JTextField txtPais) {
+    public JTextField getTxtNombre() {
+        return txtNombre;
+    }
+
+    public void setTxtNombre(JTextField txtNombre) {
+        this.txtNombre = txtNombre;
+    }
+
+    public JTextField getTxtPais() {
+        return txtPais;
+    }
+
+    public void setTxtPais(JTextField txtPais) {
+        this.txtPais = txtPais;
+    }
+
+    public Editorial(JButton btnAgregar, JButton btnBuscar, JButton btnDevoluciones, JButton btnEjemplar, JButton btnEvento, JButton btnIcono, JButton btnInicio, JButton btnNotificacion, JButton btnPerfil, JButton btnReservas, JLabel jLabel1, JPanel jPanel1, JLabel lblBiblioteca, JLabel lblCrear, JLabel lblImagen, JLabel lblLogo, JLabel lblNombre, JLabel lblPais, JLabel lblkonrad, JTextField txtNombre, JTextField txtPais) {
         this.btnAgregar = btnAgregar;
-        this.cmbCrear = cmbCrear;
-        this.cmbOpciones = cmbOpciones;
+        this.btnBuscar = btnBuscar;
+        this.btnDevoluciones = btnDevoluciones;
+        this.btnEjemplar = btnEjemplar;
+        this.btnEvento = btnEvento;
+        this.btnIcono = btnIcono;
+        this.btnInicio = btnInicio;
+        this.btnNotificacion = btnNotificacion;
+        this.btnPerfil = btnPerfil;
+        this.btnReservas = btnReservas;
         this.jLabel1 = jLabel1;
         this.jPanel1 = jPanel1;
         this.lblBiblioteca = lblBiblioteca;
-        this.lblComprar = lblComprar;
-        this.lblDevoluciones = lblDevoluciones;
-        this.lblEvento = lblEvento;
-        this.lblInicio = lblInicio;
+        this.lblCrear = lblCrear;
+        this.lblImagen = lblImagen;
         this.lblLogo = lblLogo;
         this.lblNombre = lblNombre;
         this.lblPais = lblPais;
-        this.lblReserva = lblReserva;
         this.lblkonrad = lblkonrad;
         this.txtNombre = txtNombre;
         this.txtPais = txtPais;
     }
 
-    
+  
 
-    
 
 }

@@ -5,22 +5,19 @@
 package vista;
 
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
 
 /**
  *
  * @author USUARIO
  */
-public class Proveedor extends javax.swing.JFrame {
+public class Crear extends javax.swing.JFrame {
 
     /**
-     * Creates new form Proveedor
+     * Creates new form Crear
      */
-    public Proveedor() {
+    public Crear() {
         initComponents();
     }
 
@@ -35,17 +32,12 @@ public class Proveedor extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        lblNombre = new javax.swing.JLabel();
-        lblTelefono = new javax.swing.JLabel();
-        lblCorreo = new javax.swing.JLabel();
-        txtNombre = new javax.swing.JTextField();
-        txtTelefono = new javax.swing.JTextField();
-        txtCorreo = new javax.swing.JTextField();
-        btnGuardar = new javax.swing.JButton();
-        lblkonrad = new javax.swing.JLabel();
-        btnEvento = new javax.swing.JButton();
+        btnEditorial = new javax.swing.JButton();
+        btnLibro = new javax.swing.JButton();
+        btnSucursal = new javax.swing.JButton();
+        btnAutor = new javax.swing.JButton();
+        btnProveedor = new javax.swing.JButton();
         btnReservas = new javax.swing.JButton();
-        btnDevoluciones = new javax.swing.JButton();
         btnPerfil = new javax.swing.JButton();
         btnNotificacion = new javax.swing.JButton();
         btnIcono = new javax.swing.JButton();
@@ -53,34 +45,29 @@ public class Proveedor extends javax.swing.JFrame {
         btnEjemplar = new javax.swing.JButton();
         lblLogo = new javax.swing.JLabel();
         lblBiblioteca = new javax.swing.JLabel();
+        lblkonrad = new javax.swing.JLabel();
+        btnEvento = new javax.swing.JButton();
+        btnDevoluciones = new javax.swing.JButton();
         btnInicio = new javax.swing.JButton();
         lblCrear = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Agregar Proveedor");
+        jLabel1.setText("jLabel1");
 
-        lblNombre.setText("Nombre");
+        btnEditorial.setText("Editorial");
 
-        lblTelefono.setText("Teléfono");
+        btnLibro.setText("Libro");
 
-        lblCorreo.setText("Correo");
+        btnSucursal.setText("Sucursal");
 
-        btnGuardar.setText("Guardar");
+        btnAutor.setText("Autor");
 
-        lblkonrad.setText("Konrad");
-
-        btnEvento.setText("Eventos");
-        btnEvento.setContentAreaFilled(false);
+        btnProveedor.setText("Proveerdor");
 
         btnReservas.setText("Reservas");
         btnReservas.setContentAreaFilled(false);
-
-        btnDevoluciones.setText("Devoluciones");
-        btnDevoluciones.setContentAreaFilled(false);
 
         btnPerfil.setText("Mi perfil");
         btnPerfil.setContentAreaFilled(false);
@@ -112,54 +99,65 @@ public class Proveedor extends javax.swing.JFrame {
         lblBiblioteca.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblBiblioteca.setText("Biblioteca");
 
+        lblkonrad.setText("Konrad");
+
+        btnEvento.setText("Eventos");
+        btnEvento.setContentAreaFilled(false);
+
+        btnDevoluciones.setText("Devoluciones");
+        btnDevoluciones.setContentAreaFilled(false);
+
         btnInicio.setText("Inicio");
         btnInicio.setContentAreaFilled(false);
 
         lblCrear.setText("Crear");
+
+        jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(87, 87, 87)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(txtCorreo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
-                                        .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.LEADING)))
-                                .addGap(127, 127, 127)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lblTelefono, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
-                                    .addComponent(txtTelefono)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(231, 231, 231)
-                                .addComponent(btnGuardar))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(200, 200, 200)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(lblLogo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(414, 414, 414)
+                        .addComponent(btnProveedor)
+                        .addGap(48, 48, 48))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnLibro)
+                        .addGap(133, 133, 133)
+                        .addComponent(btnAutor)
+                        .addGap(133, 133, 133)))
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblLogo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnPerfil, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnInicio)
-                                .addGap(30, 30, 30)
-                                .addComponent(lblCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnEvento)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGap(24, 24, 24)
+                                .addComponent(lblCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(btnEditorial)
+                                .addGap(40, 40, 40)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnEvento)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnSucursal)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(btnDevoluciones)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnReservas)
@@ -170,9 +168,8 @@ public class Proveedor extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(btnPerfil, javax.swing.GroupLayout.Alignment.TRAILING))))
-                .addContainerGap())
+                                .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -198,23 +195,24 @@ public class Proveedor extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnPerfil))
                     .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNombre)
-                    .addComponent(lblTelefono))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addComponent(lblCorreo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(btnGuardar)
-                .addGap(49, 49, 49))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnEditorial)
+                            .addComponent(btnSucursal)
+                            .addComponent(btnProveedor))
+                        .addGap(56, 56, 56)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnAutor)
+                            .addComponent(btnLibro))
+                        .addGap(94, 94, 94))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -262,48 +260,55 @@ public class Proveedor extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Proveedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Crear.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Proveedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Crear.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Proveedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Crear.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Proveedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Crear.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Proveedor().setVisible(true);
+                new Crear().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAutor;
     private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnDevoluciones;
+    private javax.swing.JButton btnEditorial;
     private javax.swing.JButton btnEjemplar;
     private javax.swing.JButton btnEvento;
-    private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnIcono;
     private javax.swing.JButton btnInicio;
+    private javax.swing.JButton btnLibro;
     private javax.swing.JButton btnNotificacion;
     private javax.swing.JButton btnPerfil;
+    private javax.swing.JButton btnProveedor;
     private javax.swing.JButton btnReservas;
+    private javax.swing.JButton btnSucursal;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblBiblioteca;
-    private javax.swing.JLabel lblCorreo;
     private javax.swing.JLabel lblCrear;
     private javax.swing.JLabel lblLogo;
-    private javax.swing.JLabel lblNombre;
-    private javax.swing.JLabel lblTelefono;
     private javax.swing.JLabel lblkonrad;
-    private javax.swing.JTextField txtCorreo;
-    private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getBtnAutor() {
+        return btnAutor;
+    }
+
+    public void setBtnAutor(JButton btnAutor) {
+        this.btnAutor = btnAutor;
+    }
 
     public JButton getBtnBuscar() {
         return btnBuscar;
@@ -319,6 +324,14 @@ public class Proveedor extends javax.swing.JFrame {
 
     public void setBtnDevoluciones(JButton btnDevoluciones) {
         this.btnDevoluciones = btnDevoluciones;
+    }
+
+    public JButton getBtnEditorial() {
+        return btnEditorial;
+    }
+
+    public void setBtnEditorial(JButton btnEditorial) {
+        this.btnEditorial = btnEditorial;
     }
 
     public JButton getBtnEjemplar() {
@@ -337,14 +350,6 @@ public class Proveedor extends javax.swing.JFrame {
         this.btnEvento = btnEvento;
     }
 
-    public JButton getBtnGuardar() {
-        return btnGuardar;
-    }
-
-    public void setBtnGuardar(JButton btnGuardar) {
-        this.btnGuardar = btnGuardar;
-    }
-
     public JButton getBtnIcono() {
         return btnIcono;
     }
@@ -359,6 +364,14 @@ public class Proveedor extends javax.swing.JFrame {
 
     public void setBtnInicio(JButton btnInicio) {
         this.btnInicio = btnInicio;
+    }
+
+    public JButton getBtnLibro() {
+        return btnLibro;
+    }
+
+    public void setBtnLibro(JButton btnLibro) {
+        this.btnLibro = btnLibro;
     }
 
     public JButton getBtnNotificacion() {
@@ -377,6 +390,14 @@ public class Proveedor extends javax.swing.JFrame {
         this.btnPerfil = btnPerfil;
     }
 
+    public JButton getBtnProveedor() {
+        return btnProveedor;
+    }
+
+    public void setBtnProveedor(JButton btnProveedor) {
+        this.btnProveedor = btnProveedor;
+    }
+
     public JButton getBtnReservas() {
         return btnReservas;
     }
@@ -385,12 +406,28 @@ public class Proveedor extends javax.swing.JFrame {
         this.btnReservas = btnReservas;
     }
 
+    public JButton getBtnSucursal() {
+        return btnSucursal;
+    }
+
+    public void setBtnSucursal(JButton btnSucursal) {
+        this.btnSucursal = btnSucursal;
+    }
+
     public JLabel getjLabel1() {
         return jLabel1;
     }
 
     public void setjLabel1(JLabel jLabel1) {
         this.jLabel1 = jLabel1;
+    }
+
+    public JLabel getjLabel2() {
+        return jLabel2;
+    }
+
+    public void setjLabel2(JLabel jLabel2) {
+        this.jLabel2 = jLabel2;
     }
 
     public JPanel getjPanel1() {
@@ -409,14 +446,6 @@ public class Proveedor extends javax.swing.JFrame {
         this.lblBiblioteca = lblBiblioteca;
     }
 
-    public JLabel getLblCorreo() {
-        return lblCorreo;
-    }
-
-    public void setLblCorreo(JLabel lblCorreo) {
-        this.lblCorreo = lblCorreo;
-    }
-
     public JLabel getLblCrear() {
         return lblCrear;
     }
@@ -433,22 +462,6 @@ public class Proveedor extends javax.swing.JFrame {
         this.lblLogo = lblLogo;
     }
 
-    public JLabel getLblNombre() {
-        return lblNombre;
-    }
-
-    public void setLblNombre(JLabel lblNombre) {
-        this.lblNombre = lblNombre;
-    }
-
-    public JLabel getLblTelefono() {
-        return lblTelefono;
-    }
-
-    public void setLblTelefono(JLabel lblTelefono) {
-        this.lblTelefono = lblTelefono;
-    }
-
     public JLabel getLblkonrad() {
         return lblkonrad;
     }
@@ -457,56 +470,31 @@ public class Proveedor extends javax.swing.JFrame {
         this.lblkonrad = lblkonrad;
     }
 
-    public JTextField getTxtCorreo() {
-        return txtCorreo;
-    }
-
-    public void setTxtCorreo(JTextField txtCorreo) {
-        this.txtCorreo = txtCorreo;
-    }
-
-    public JTextField getTxtNombre() {
-        return txtNombre;
-    }
-
-    public void setTxtNombre(JTextField txtNombre) {
-        this.txtNombre = txtNombre;
-    }
-
-    public JTextField getTxtTelefono() {
-        return txtTelefono;
-    }
-
-    public void setTxtTelefono(JTextField txtTelefono) {
-        this.txtTelefono = txtTelefono;
-    }
-
-    public Proveedor(JButton btnBuscar, JButton btnDevoluciones, JButton btnEjemplar, JButton btnEvento, JButton btnGuardar, JButton btnIcono, JButton btnInicio, JButton btnNotificacion, JButton btnPerfil, JButton btnReservas, JLabel jLabel1, JPanel jPanel1, JLabel lblBiblioteca, JLabel lblCorreo, JLabel lblCrear, JLabel lblLogo, JLabel lblNombre, JLabel lblTelefono, JLabel lblkonrad, JTextField txtCorreo, JTextField txtNombre, JTextField txtTelefono) {
+    public Crear(JButton btnAutor, JButton btnBuscar, JButton btnDevoluciones, JButton btnEditorial, JButton btnEjemplar, JButton btnEvento, JButton btnIcono, JButton btnInicio, JButton btnLibro, JButton btnNotificacion, JButton btnPerfil, JButton btnProveedor, JButton btnReservas, JButton btnSucursal, JLabel jLabel1, JLabel jLabel2, JPanel jPanel1, JLabel lblBiblioteca, JLabel lblCrear, JLabel lblLogo, JLabel lblkonrad) {
+        this.btnAutor = btnAutor;
         this.btnBuscar = btnBuscar;
         this.btnDevoluciones = btnDevoluciones;
+        this.btnEditorial = btnEditorial;
         this.btnEjemplar = btnEjemplar;
         this.btnEvento = btnEvento;
-        this.btnGuardar = btnGuardar;
         this.btnIcono = btnIcono;
         this.btnInicio = btnInicio;
+        this.btnLibro = btnLibro;
         this.btnNotificacion = btnNotificacion;
         this.btnPerfil = btnPerfil;
+        this.btnProveedor = btnProveedor;
         this.btnReservas = btnReservas;
+        this.btnSucursal = btnSucursal;
         this.jLabel1 = jLabel1;
+        this.jLabel2 = jLabel2;
         this.jPanel1 = jPanel1;
         this.lblBiblioteca = lblBiblioteca;
-        this.lblCorreo = lblCorreo;
         this.lblCrear = lblCrear;
         this.lblLogo = lblLogo;
-        this.lblNombre = lblNombre;
-        this.lblTelefono = lblTelefono;
         this.lblkonrad = lblkonrad;
-        this.txtCorreo = txtCorreo;
-        this.txtNombre = txtNombre;
-        this.txtTelefono = txtTelefono;
     }
 
-    
-
+   
 
 }
+

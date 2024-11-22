@@ -26,21 +26,139 @@ public class Multas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblLogo = new javax.swing.JLabel();
+        btnPrestamo = new javax.swing.JButton();
+        btnMulta = new javax.swing.JButton();
+        btnBuscar = new javax.swing.JButton();
+        lblBiblioteca = new javax.swing.JLabel();
+        btnDevolucion = new javax.swing.JButton();
+        lblkonrad = new javax.swing.JLabel();
+        lblInicio = new javax.swing.JLabel();
+        btnEventos = new javax.swing.JButton();
+        btnReserva = new javax.swing.JButton();
+        btnComprar = new javax.swing.JButton();
+        btnPerfil = new javax.swing.JButton();
+        btnNotificacion = new javax.swing.JButton();
+        btnIcono = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/konrad2.png"))); // NOI18N
+
+        btnPrestamo.setText("Prestamo");
+        btnPrestamo.setContentAreaFilled(false);
+        btnPrestamo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPrestamoActionPerformed(evt);
+            }
+        });
+
+        btnMulta.setText("Multas");
+        btnMulta.setContentAreaFilled(false);
+
+        btnBuscar.setText("Buscar Libro");
+        btnBuscar.setContentAreaFilled(false);
+
+        lblBiblioteca.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblBiblioteca.setText("Biblioteca");
+
+        btnDevolucion.setText("Devolución");
+        btnDevolucion.setContentAreaFilled(false);
+
+        lblkonrad.setText("Konrad");
+
+        lblInicio.setText("Inicio");
+
+        btnEventos.setText("Eventos");
+        btnEventos.setContentAreaFilled(false);
+
+        btnReserva.setText("Reserva");
+        btnReserva.setContentAreaFilled(false);
+
+        btnComprar.setText("Comprar");
+        btnComprar.setContentAreaFilled(false);
+
+        btnPerfil.setText("Mi perfil");
+        btnPerfil.setContentAreaFilled(false);
+
+        btnNotificacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/Notifiacion.png"))); // NOI18N
+        btnNotificacion.setContentAreaFilled(false);
+
+        btnIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/Usuario.png"))); // NOI18N
+        btnIcono.setContentAreaFilled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblLogo)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(40, 40, 40)
+                        .addComponent(lblInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnComprar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnReserva)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnEventos)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnDevolucion)
+                        .addGap(13, 13, 13)
+                        .addComponent(btnBuscar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnMulta)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnPrestamo)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnNotificacion)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnIcono)
+                        .addContainerGap(98, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnPerfil)
+                        .addGap(83, 83, 83))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblBiblioteca)
+                            .addComponent(lblInicio)
+                            .addComponent(btnBuscar)
+                            .addComponent(btnDevolucion)
+                            .addComponent(btnEventos)
+                            .addComponent(btnReserva)
+                            .addComponent(btnComprar)
+                            .addComponent(btnMulta)
+                            .addComponent(btnPrestamo))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblkonrad))
+                    .addComponent(lblLogo)
+                    .addComponent(btnNotificacion)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnIcono)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnPerfil)))
+                .addContainerGap(213, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnPrestamoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrestamoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPrestamoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +196,19 @@ public class Multas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBuscar;
+    private javax.swing.JButton btnComprar;
+    private javax.swing.JButton btnDevolucion;
+    private javax.swing.JButton btnEventos;
+    private javax.swing.JButton btnIcono;
+    private javax.swing.JButton btnMulta;
+    private javax.swing.JButton btnNotificacion;
+    private javax.swing.JButton btnPerfil;
+    private javax.swing.JButton btnPrestamo;
+    private javax.swing.JButton btnReserva;
+    private javax.swing.JLabel lblBiblioteca;
+    private javax.swing.JLabel lblInicio;
+    private javax.swing.JLabel lblLogo;
+    private javax.swing.JLabel lblkonrad;
     // End of variables declaration//GEN-END:variables
 }

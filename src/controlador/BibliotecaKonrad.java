@@ -4,17 +4,27 @@
  */
 package controlador;
 
+import modelo.SQLServerConnection;
+import modelo.Usuario;
+
+
 /**
  *
  * @author migue
  */
+
 public class BibliotecaKonrad {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+         Controlador obj = new Controlador();
+     // Usuario u = new Usuario();
+       //u.insertarUsuario("1097781744", "Miguel Angel", "Arenas Reyes", "miguel@", "3164430592", 0, "1234");
+      //Usuario prueba= u.loginUsuario("miguel@", "1234");
+      //System.out.print("El usuario logueado es  "+prueba.toString());
     }
     
 }

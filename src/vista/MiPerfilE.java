@@ -22,6 +22,12 @@ public class MiPerfilE extends javax.swing.JFrame {
      */
     public MiPerfilE() {
         initComponents();
+        
+          java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new MiPerfilE().setVisible(false);
+            }
+        });
     }
 
     /**
@@ -325,37 +331,7 @@ public class MiPerfilE extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MiPerfilE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MiPerfilE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MiPerfilE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MiPerfilE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MiPerfilE().setVisible(true);
-            }
-        });
-    }
+  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCerrarSesion;
@@ -697,6 +673,30 @@ public class MiPerfilE extends javax.swing.JFrame {
         this.lblRol = lblRol;
         this.lblTelefono = lblTelefono;
         this.lblTelefono1 = lblTelefono1;
+    }
+
+    public JLabel getLblContraseña() {
+        return lblContraseña;
+    }
+
+    public void setLblContraseña(JLabel lblContraseña) {
+        this.lblContraseña = lblContraseña;
+    }
+
+    public JLabel getLblContraseña1() {
+        return lblContraseña1;
+    }
+
+    public void setLblContraseña1(JLabel lblContraseña1) {
+        this.lblContraseña1 = lblContraseña1;
+    }
+
+    public JLabel getLblRol() {
+        return lblRol;
+    }
+
+    public void setLblRol(JLabel lblRol) {
+        this.lblRol = lblRol;
     }
 
     

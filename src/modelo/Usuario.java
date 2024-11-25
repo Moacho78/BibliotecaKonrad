@@ -10,39 +10,74 @@ package modelo;
  */
 import java.util.Date;
 
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.ResultSet;
+
 public class Usuario {
-    private int usuarioID;
+
+    private String usuarioID;
     private String nombre;
     private String apellido;
     private String correo;
     private String telefono;
-    private String direccion;
     private Date fechaRegistro;
+    private String clave;
+    private int rol;
+    private String Direccion; 
 
     // Constructor vacío
     public Usuario() {
     }
 
-    // Constructor con parámetros
-    public Usuario(int usuarioID, String nombre, String apellido, String correo, String telefono, String direccion, Date fechaRegistro) {
+    public Usuario(String usuarioID, String nombre, String apellido, String correo, String telefono, Date fechaRegistro, String clave, int rol, String Direccion) {
         this.usuarioID = usuarioID;
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
         this.telefono = telefono;
-        this.direccion = direccion;
         this.fechaRegistro = fechaRegistro;
+        this.clave = clave;
+        this.rol = rol;
+        this.Direccion = Direccion;
     }
 
-    // Getters y Setters
-    public int getUsuarioID() {
+    public String getDireccion() {
+        return Direccion;
+    }
+
+    public void setDireccion(String Direccion) {
+        this.Direccion = Direccion;
+    }
+
+   
+
+    public int getRol() {
+        return rol;
+    }
+
+    public void setRol(int rol) {
+        this.rol = rol;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
+    public String getUsuarioID() {
         return usuarioID;
     }
 
-    public void setUsuarioID(int usuarioID) {
+    public void setUsuarioID(String usuarioID) {
         this.usuarioID = usuarioID;
     }
 
+    // Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -75,14 +110,6 @@ public class Usuario {
         this.telefono = telefono;
     }
 
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
     public Date getFechaRegistro() {
         return fechaRegistro;
     }
@@ -91,17 +118,45 @@ public class Usuario {
         this.fechaRegistro = fechaRegistro;
     }
 
-    // Método toString
     @Override
     public String toString() {
-        return "Usuario{" +
-                "usuarioID=" + usuarioID +
-                ", nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", correo='" + correo + '\'' +
-                ", telefono='" + telefono + '\'' +
-                ", direccion='" + direccion + '\'' +
-                ", fechaRegistro=" + fechaRegistro +
-                '}';
+        return "Usuario{" + "usuarioID=" + usuarioID + ", nombre=" + nombre + ", apellido=" + apellido + ", correo=" + correo + ", telefono=" + telefono + ", fechaRegistro=" + fechaRegistro + ", clave=" + clave + ", rol=" + rol + '}';
     }
-}
+
+    public Usuario loginUsuario(String Email, String clave) {
+        SQLServerConnection conexionSQL = new SQLServerConnection();
+        String sql = "{call sp_LoginUsuario(?, ?)}";
+
+        try (Connection conexion = conexionSQL.getConexion(); CallableStatement stmt = conexion.prepareCall(sql)) {
+            // Establecer los parámetros
+            stmt.setString(1, Email);
+            stmt.setString(2, clave);
+
+            // Ejecutar el procedimiento almacenado
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    // Crear y devolver el objeto Usuario con todas las propiedades
+                    return new Usuario(
+                            rs.getString("UsuarioID"),
+                            rs.getString("Nombre"),
+                            rs.getString("Apellido"),
+                            rs.getString("Email"),
+                            rs.getString("Telefono"),
+                            rs.getDate("FechaRegistro"),
+                            rs.getString("Clave"),
+                            rs.getInt("rol"),
+                            rs.getString("Direccion")
+                    );
+                } else {
+                    System.out.println("Credenciales incorrectas.");
+                    return null; // O puedes lanzar una excepción
+                }
+            }
+        } catch (SQLException e) {
+            System.err.println("Error al realizar el login: " + e.getMessage());
+            e.printStackTrace();
+            return null; // O lanzar una excepción
+        }
+    }
+
+}// cierra class

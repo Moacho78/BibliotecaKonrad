@@ -4,6 +4,7 @@
  */
 package controlador;
 
+import modelo.ProveedorLibro;
 import modelo.SQLServerConnection;
 import modelo.Usuario;
 
@@ -20,11 +21,11 @@ public class BibliotecaKonrad {
      */
     public static void main(String[] args) {
         
-         Controlador obj = new Controlador();
+        Controlador obj = new Controlador();
      // Usuario u = new Usuario();
        //u.insertarUsuario("1097781744", "Miguel Angel", "Arenas Reyes", "miguel@", "3164430592", 0, "1234");
       //Usuario prueba= u.loginUsuario("miguel@", "1234");
-      //System.out.print("El usuario logueado es  "+prueba.toString());
+     
     }
     
 }

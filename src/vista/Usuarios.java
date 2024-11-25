@@ -50,8 +50,6 @@ public class Usuarios extends javax.swing.JFrame {
         txtDireccion = new javax.swing.JTextField();
         lblImagen = new javax.swing.JLabel();
         btnGuardar = new javax.swing.JButton();
-        lblRol = new javax.swing.JLabel();
-        cmbRol = new javax.swing.JComboBox<>();
         lblLogo = new javax.swing.JLabel();
         lblBiblioteca = new javax.swing.JLabel();
         pwdContraseña = new javax.swing.JPasswordField();
@@ -80,10 +78,6 @@ public class Usuarios extends javax.swing.JFrame {
 
         btnGuardar.setText("Guardar");
 
-        lblRol.setText("Rol");
-
-        cmbRol.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "Empleado", "Usuario" }));
-
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/konrad2.png"))); // NOI18N
 
         lblBiblioteca.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
@@ -111,15 +105,12 @@ public class Usuarios extends javax.swing.JFrame {
                                 .addGap(158, 158, 158)
                                 .addComponent(lblApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(cmbRol, javax.swing.GroupLayout.Alignment.LEADING, 0, 164, Short.MAX_VALUE)
-                                        .addComponent(lblDireccion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lblCedula, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtCedula, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(txtDireccion, javax.swing.GroupLayout.Alignment.LEADING))
-                                    .addComponent(lblRol, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(lblDireccion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE)
+                                    .addComponent(lblCedula, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCedula, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtDireccion, javax.swing.GroupLayout.Alignment.LEADING))
                                 .addGap(65, 65, 65)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -182,13 +173,9 @@ public class Usuarios extends javax.swing.JFrame {
                             .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblRol)
-                            .addComponent(lblContraseña))
+                        .addComponent(lblContraseña)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbRol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(pwdContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(pwdContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                         .addComponent(btnGuardar)
                         .addGap(15, 15, 15))))
@@ -247,7 +234,6 @@ public class Usuarios extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
-    private javax.swing.JComboBox<String> cmbRol;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblApellido;
     private javax.swing.JLabel lblBiblioteca;
@@ -259,7 +245,6 @@ public class Usuarios extends javax.swing.JFrame {
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblRegistro;
-    private javax.swing.JLabel lblRol;
     private javax.swing.JLabel lblTelefono;
     private javax.swing.JPasswordField pwdContraseña;
     private javax.swing.JTextField txtApellido;
@@ -278,13 +263,8 @@ public class Usuarios extends javax.swing.JFrame {
         this.btnGuardar = btnGuardar;
     }
 
-    public JComboBox<String> getCmbRol() {
-        return cmbRol;
-    }
-
-    public void setCmbRol(JComboBox<String> cmbRol) {
-        this.cmbRol = cmbRol;
-    }
+  
+    
 
     public JPanel getjPanel1() {
         return jPanel1;
@@ -366,13 +346,7 @@ public class Usuarios extends javax.swing.JFrame {
         this.lblRegistro = lblRegistro;
     }
 
-    public JLabel getLblRol() {
-        return lblRol;
-    }
-
-    public void setLblRol(JLabel lblRol) {
-        this.lblRol = lblRol;
-    }
+  
 
     public JLabel getLblTelefono() {
         return lblTelefono;
@@ -448,7 +422,7 @@ public class Usuarios extends javax.swing.JFrame {
 
     public Usuarios(JButton btnGuardar, JComboBox<String> cmbRol, JPanel jPanel1, JLabel lblApellido, JLabel lblBiblioteca, JLabel lblCedula, JLabel lblContraseña, JLabel lblCorreo, JLabel lblDireccion, JLabel lblImagen, JLabel lblLogo, JLabel lblNombre, JLabel lblRegistro, JLabel lblRol, JLabel lblTelefono, JPasswordField pwdContraseña, JTextField txtApellido, JTextField txtCedula, JTextField txtCorreo, JTextField txtDireccion, JTextField txtNombre, JTextField txtTelefono) {
         this.btnGuardar = btnGuardar;
-        this.cmbRol = cmbRol;
+        
         this.jPanel1 = jPanel1;
         this.lblApellido = lblApellido;
         this.lblBiblioteca = lblBiblioteca;
@@ -460,7 +434,6 @@ public class Usuarios extends javax.swing.JFrame {
         this.lblLogo = lblLogo;
         this.lblNombre = lblNombre;
         this.lblRegistro = lblRegistro;
-        this.lblRol = lblRol;
         this.lblTelefono = lblTelefono;
         this.pwdContraseña = pwdContraseña;
         this.txtApellido = txtApellido;

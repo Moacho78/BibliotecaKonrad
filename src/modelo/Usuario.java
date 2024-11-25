@@ -8,12 +8,13 @@ package modelo;
  *
  * @author migue
  */
-import java.util.Date;
+import java.sql.Date;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.ResultSet;
+import java.time.LocalDate;
 
 public class Usuario {
 
@@ -157,6 +158,36 @@ public class Usuario {
             e.printStackTrace();
             return null; // O lanzar una excepción
         }
-    }
+    }// cierra login
+    
+     public void insertarUsuario(String usuarioID, String nombre, String apellido, String email, String telefono, int rol,String clave,String direccion) {
+        
+         SQLServerConnection conexionSQL = new SQLServerConnection();
+         String sql = "{call sp_InsertarUsuario(?, ?, ?, ?, ?, ?,?,?,?)}";
+        
+        try (Connection conexion = conexionSQL.getConexion(); CallableStatement stmt = conexion.prepareCall(sql)) {
+            
+            // Obtener la fecha actual del sistema
+        LocalDate fechaActual = LocalDate.now();
+        Date sqlDate = Date.valueOf(fechaActual);
+            // Establecer los parámetros
+            stmt.setString(1, usuarioID);
+            stmt.setString(2, nombre);
+            stmt.setString(3, apellido);
+            stmt.setDate(4, sqlDate);
+            stmt.setString(5, email);
+            stmt.setString(6, telefono);
+            stmt.setInt(7, rol);
+            stmt.setString(8, clave);
+            stmt.setString(9, direccion);
+
+            // Ejecutar el procedimiento almacenado
+            stmt.execute();
+            System.out.println("Usuario insertado correctamente.");
+        } catch (SQLException e) {
+            System.err.println("Error al insertar el usuario: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }// cierra insertar usuario 
 
 }// cierra class

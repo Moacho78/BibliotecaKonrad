@@ -55,16 +55,12 @@
                                   <Component id="lblApellido" min="-2" pref="71" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                          <Component id="cmbRol" alignment="0" pref="164" max="32767" attributes="0"/>
-                                          <Component id="lblDireccion" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
-                                          <Component id="txtNombre" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="lblCedula" alignment="0" min="-2" pref="142" max="-2" attributes="0"/>
-                                          <Component id="txtCedula" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="txtDireccion" alignment="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <Component id="lblRol" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="lblDireccion" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
+                                      <Component id="txtNombre" alignment="0" pref="164" max="32767" attributes="0"/>
+                                      <Component id="lblCedula" alignment="0" min="-2" pref="142" max="-2" attributes="0"/>
+                                      <Component id="txtCedula" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtDireccion" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -148,15 +144,9 @@
                               <Component id="txtDireccion" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblRol" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblContraseña" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="lblContraseña" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="cmbRol" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="pwdContraseña" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="pwdContraseña" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="41" max="32767" attributes="0"/>
                           <Component id="btnGuardar" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
@@ -230,25 +220,6 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Guardar"/>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lblRol">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Rol"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JComboBox" name="cmbRol">
-          <Properties>
-            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="3">
-                <StringItem index="0" value="..."/>
-                <StringItem index="1" value="Empleado"/>
-                <StringItem index="2" value="Usuario"/>
-              </StringArray>
-            </Property>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-          </AuxValues>
         </Component>
         <Component class="javax.swing.JLabel" name="lblLogo">
           <Properties>

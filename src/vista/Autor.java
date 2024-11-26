@@ -4,6 +4,8 @@
  */
 package vista;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -19,11 +21,118 @@ public class Autor extends javax.swing.JFrame {
      * Creates new form Autor
      */
     public Autor() {
-       java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Autor().setVisible(false);
+       
+        initComponents();
+        
+        btnInicio.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                InicioEmpleado inicioEmpleado = new InicioEmpleado();
+                inicioEmpleado.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
             }
         });
+
+        /*btnEvento.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Sucursal sucursal = new Sucursal();
+                sucursal.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });*/ // A QUE VISTA DEBE DIRIGIRSE
+        btnDevoluciones.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                DevolucionE devolocionE = new DevolucionE();
+                devolocionE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnReservas.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ReservaE reservaE = new ReservaE();
+                reservaE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnBuscar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BuscarLibroE buscarLibroE = new BuscarLibroE();
+                buscarLibroE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnEjemplar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Ejemplar ejemplar = new Ejemplar();
+                ejemplar.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnNotificacion.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                NotificacionE notificacionE = new NotificacionE();
+                notificacionE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnIcono.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MiPerfilE perfirE = new MiPerfilE();
+                perfirE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnPerfil.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MiPerfilE perfirE = new MiPerfilE();
+                perfirE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+        
+        btnVolver.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                InicioEmpleado inicioEmpleado = new InicioEmpleado();
+                inicioEmpleado.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+        
+        /*btnAgregar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MiPerfilE perfirE = new MiPerfilE();
+                perfirE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });*/ // PENDIENTE
+        
     }
 
     /**

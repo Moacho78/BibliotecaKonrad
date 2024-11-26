@@ -4,6 +4,8 @@
  */
 package vista;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -19,10 +21,93 @@ public class InicioEmpleado extends javax.swing.JFrame {
      */
     public InicioEmpleado() {
         initComponents();
-        
-         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new InicioEmpleado().setVisible(false);
+
+        btnCrear.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Crear crear = new Crear();
+                crear.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        /*btnEvento.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Sucursal sucursal = new Sucursal();
+                sucursal.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });*/ // A QUE VISTA DEBE DIRIGIRSE
+        btnDevoluciones.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                DevolucionE devolocionE = new DevolucionE();
+                devolocionE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnReservas.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ReservaE reservaE = new ReservaE();
+                reservaE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnBuscar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BuscarLibroE buscarLibroE = new BuscarLibroE();
+                buscarLibroE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnEjemplar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Ejemplar ejemplar = new Ejemplar();
+                ejemplar.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnNotificacion.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                NotificacionE notificacionE = new NotificacionE();
+                notificacionE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnIcono.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MiPerfilE perfirE = new MiPerfilE();
+                perfirE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnPerfil.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MiPerfilE perfirE = new MiPerfilE();
+                perfirE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
             }
         });
     }
@@ -183,7 +268,6 @@ public class InicioEmpleado extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
@@ -330,7 +414,5 @@ public class InicioEmpleado extends javax.swing.JFrame {
         this.lblLogo = lblLogo;
         this.lblkonrad = lblkonrad;
     }
-
- 
 
 }

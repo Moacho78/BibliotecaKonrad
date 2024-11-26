@@ -4,6 +4,8 @@
  */
 package vista;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -19,10 +21,103 @@ public class InicioUsuario extends javax.swing.JFrame {
      */
     public InicioUsuario() {
         initComponents();
+
+        btnComprar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Comprar comprar = new Comprar();
+                comprar.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnReservas.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ReservaU reservaU = new ReservaU();
+                reservaU.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnDevoluciones.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                DevoluciónU devolocionU = new DevoluciónU();
+                devolocionU.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+        /*btnEvento.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Sucursal sucursal = new Sucursal();
+                sucursal.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });*/ // A QUE VISTA DEBE DIRIGIRSE
+
+        btnBuscar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BuscarLibroU buscarLibroU = new BuscarLibroU();
+                buscarLibroU.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnMulta.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Multas multas = new Multas();
+                multas.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
         
-          java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new InicioUsuario().setVisible(false);
+        btnPrestamo1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Multas multas = new Multas();
+                multas.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnNotificacion.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                NotificacionesU notificacionU = new NotificacionesU();
+                notificacionU.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnIcono.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MiPerfilU perfirU = new MiPerfilU();
+                perfirU.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnPerfil.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MiPerfilU perfirU = new MiPerfilU();
+                perfirU.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
             }
         });
     }
@@ -235,7 +330,6 @@ public class InicioUsuario extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
@@ -413,6 +507,5 @@ public class InicioUsuario extends javax.swing.JFrame {
         this.lblLogo = lblLogo;
         this.lblkonrad = lblkonrad;
     }
-
 
 }

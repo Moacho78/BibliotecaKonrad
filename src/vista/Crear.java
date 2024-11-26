@@ -4,6 +4,8 @@
  */
 package vista;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -18,11 +20,157 @@ public class Crear extends javax.swing.JFrame {
      * Creates new form Crear
      */
     public Crear() {
-         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Crear().setVisible(false);
+
+        initComponents();
+        
+        btnInicio.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                InicioEmpleado inicioEmpleado = new InicioEmpleado();
+                inicioEmpleado.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
             }
         });
+
+        /*btnEvento.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Sucursal sucursal = new Sucursal();
+                sucursal.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });*/ // A QUE VISTA DEBE DIRIGIRSE
+        btnDevoluciones.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                DevolucionE devolocionE = new DevolucionE();
+                devolocionE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnReservas.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ReservaE reservaE = new ReservaE();
+                reservaE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnBuscar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BuscarLibroE buscarLibroE = new BuscarLibroE();
+                buscarLibroE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnEjemplar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Ejemplar ejemplar = new Ejemplar();
+                ejemplar.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnNotificacion.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                NotificacionE notificacionE = new NotificacionE();
+                notificacionE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnIcono.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MiPerfilE perfirE = new MiPerfilE();
+                perfirE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnPerfil.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MiPerfilE perfirE = new MiPerfilE();
+                perfirE.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnEditorial.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Editorial editorial = new Editorial();
+                editorial.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+        btnSucursal.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Sucursal sucursal = new Sucursal();
+                sucursal.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnProveedor.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Proveedor proveedor = new Proveedor();
+                proveedor.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnLibro.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Libro libro = new Libro();
+                libro.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnAutor.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Autor autor = new Autor();
+                autor.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
+        btnEjemplar2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Ejemplar ejemplar = new Ejemplar();
+                ejemplar.setVisible(true);
+                dispose(); // Cierra la ventana actual
+
+            }
+        });
+
     }
 
     /**
@@ -269,7 +417,6 @@ public class Crear extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIconoActionPerformed
 
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAutor;
@@ -507,9 +654,4 @@ public class Crear extends javax.swing.JFrame {
         this.lblkonrad = lblkonrad;
     }
 
-   
-
-   
-
 }
-

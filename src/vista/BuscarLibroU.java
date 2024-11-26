@@ -4,6 +4,13 @@
  */
 package vista;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
  * @author USUARIO
@@ -14,7 +21,11 @@ public class BuscarLibroU extends javax.swing.JFrame {
      * Creates new form BuscarLibro2
      */
     public BuscarLibroU() {
-        initComponents();
+      java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new BuscarLibroU().setVisible(false);
+            }
+        });
     }
 
     /**
@@ -230,41 +241,7 @@ public class BuscarLibroU extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnPrestamo1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(BuscarLibroU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(BuscarLibroU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(BuscarLibroU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(BuscarLibroU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new BuscarLibroU().setVisible(true);
-            }
-        });
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
@@ -287,6 +264,180 @@ public class BuscarLibroU extends javax.swing.JFrame {
     private javax.swing.JTable tblBuscar;
     private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getBtnBuscar() {
+        return btnBuscar;
+    }
+
+    public void setBtnBuscar(JButton btnBuscar) {
+        this.btnBuscar = btnBuscar;
+    }
+
+    public JButton getBtnBuscarLibro() {
+        return btnBuscarLibro;
+    }
+
+    public void setBtnBuscarLibro(JButton btnBuscarLibro) {
+        this.btnBuscarLibro = btnBuscarLibro;
+    }
+
+    public JButton getBtnComprar() {
+        return btnComprar;
+    }
+
+    public void setBtnComprar(JButton btnComprar) {
+        this.btnComprar = btnComprar;
+    }
+
+    public JButton getBtnDevoluciones() {
+        return btnDevoluciones;
+    }
+
+    public void setBtnDevoluciones(JButton btnDevoluciones) {
+        this.btnDevoluciones = btnDevoluciones;
+    }
+
+    public JButton getBtnEventos() {
+        return btnEventos;
+    }
+
+    public void setBtnEventos(JButton btnEventos) {
+        this.btnEventos = btnEventos;
+    }
+
+    public JButton getBtnIcono() {
+        return btnIcono;
+    }
+
+    public void setBtnIcono(JButton btnIcono) {
+        this.btnIcono = btnIcono;
+    }
+
+    public JButton getBtnMulta() {
+        return btnMulta;
+    }
+
+    public void setBtnMulta(JButton btnMulta) {
+        this.btnMulta = btnMulta;
+    }
+
+    public JButton getBtnNotificacion() {
+        return btnNotificacion;
+    }
+
+    public void setBtnNotificacion(JButton btnNotificacion) {
+        this.btnNotificacion = btnNotificacion;
+    }
+
+    public JButton getBtnPerfil() {
+        return btnPerfil;
+    }
+
+    public void setBtnPerfil(JButton btnPerfil) {
+        this.btnPerfil = btnPerfil;
+    }
+
+    public JButton getBtnPrestamo1() {
+        return btnPrestamo1;
+    }
+
+    public void setBtnPrestamo1(JButton btnPrestamo1) {
+        this.btnPrestamo1 = btnPrestamo1;
+    }
+
+    public JButton getBtnReservas() {
+        return btnReservas;
+    }
+
+    public void setBtnReservas(JButton btnReservas) {
+        this.btnReservas = btnReservas;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public void setjPanel1(JPanel jPanel1) {
+        this.jPanel1 = jPanel1;
+    }
+
+    public JScrollPane getjScrollPane1() {
+        return jScrollPane1;
+    }
+
+    public void setjScrollPane1(JScrollPane jScrollPane1) {
+        this.jScrollPane1 = jScrollPane1;
+    }
+
+    public JLabel getLblBiblioteca() {
+        return lblBiblioteca;
+    }
+
+    public void setLblBiblioteca(JLabel lblBiblioteca) {
+        this.lblBiblioteca = lblBiblioteca;
+    }
+
+    public JLabel getLblInicio() {
+        return lblInicio;
+    }
+
+    public void setLblInicio(JLabel lblInicio) {
+        this.lblInicio = lblInicio;
+    }
+
+    public JLabel getLblLogo() {
+        return lblLogo;
+    }
+
+    public void setLblLogo(JLabel lblLogo) {
+        this.lblLogo = lblLogo;
+    }
+
+    public JLabel getLblkonrad() {
+        return lblkonrad;
+    }
+
+    public void setLblkonrad(JLabel lblkonrad) {
+        this.lblkonrad = lblkonrad;
+    }
+
+    public JTable getTblBuscar() {
+        return tblBuscar;
+    }
+
+    public void setTblBuscar(JTable tblBuscar) {
+        this.tblBuscar = tblBuscar;
+    }
+
+    public JTextField getTxtNombre() {
+        return txtNombre;
+    }
+
+    public void setTxtNombre(JTextField txtNombre) {
+        this.txtNombre = txtNombre;
+    }
+
+    public BuscarLibroU(JButton btnBuscar, JButton btnBuscarLibro, JButton btnComprar, JButton btnDevoluciones, JButton btnEventos, JButton btnIcono, JButton btnMulta, JButton btnNotificacion, JButton btnPerfil, JButton btnPrestamo1, JButton btnReservas, JPanel jPanel1, JScrollPane jScrollPane1, JLabel lblBiblioteca, JLabel lblInicio, JLabel lblLogo, JLabel lblkonrad, JTable tblBuscar, JTextField txtNombre) {
+        this.btnBuscar = btnBuscar;
+        this.btnBuscarLibro = btnBuscarLibro;
+        this.btnComprar = btnComprar;
+        this.btnDevoluciones = btnDevoluciones;
+        this.btnEventos = btnEventos;
+        this.btnIcono = btnIcono;
+        this.btnMulta = btnMulta;
+        this.btnNotificacion = btnNotificacion;
+        this.btnPerfil = btnPerfil;
+        this.btnPrestamo1 = btnPrestamo1;
+        this.btnReservas = btnReservas;
+        this.jPanel1 = jPanel1;
+        this.jScrollPane1 = jScrollPane1;
+        this.lblBiblioteca = lblBiblioteca;
+        this.lblInicio = lblInicio;
+        this.lblLogo = lblLogo;
+        this.lblkonrad = lblkonrad;
+        this.tblBuscar = tblBuscar;
+        this.txtNombre = txtNombre;
+    }
 
 
 

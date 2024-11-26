@@ -20,7 +20,11 @@ public class NotificacionE extends javax.swing.JFrame {
      * Creates new form Notificacion
      */
     public NotificacionE() {
-        initComponents();
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new NotificacionE().setVisible(false);
+            }
+        });
     }
 
     /**
@@ -33,11 +37,6 @@ public class NotificacionE extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtMensaje = new javax.swing.JTextArea();
-        lblCorreo = new javax.swing.JLabel();
-        txtCorreo = new javax.swing.JTextField();
-        lblMensaje = new javax.swing.JLabel();
         lblImagen = new javax.swing.JLabel();
         btnEnviar = new javax.swing.JButton();
         btnEjemplar = new javax.swing.JButton();
@@ -59,14 +58,6 @@ public class NotificacionE extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setText("Notificación");
-
-        txtMensaje.setColumns(20);
-        txtMensaje.setRows(5);
-        jScrollPane1.setViewportView(txtMensaje);
-
-        lblCorreo.setText("Correo");
-
-        lblMensaje.setText("Mensaje");
 
         lblImagen.setText("jLabel2");
 
@@ -133,18 +124,9 @@ public class NotificacionE extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(190, 190, 190)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(262, 262, 262)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(262, 262, 262)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(345, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(9, Short.MAX_VALUE)
                 .addComponent(lblLogo)
@@ -208,19 +190,10 @@ public class NotificacionE extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                        .addComponent(lblCorreo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(lblMensaje)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(49, 49, 49))
+                        .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46)))
+                        .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnVolver)
                     .addComponent(btnEnviar))
@@ -245,38 +218,7 @@ public class NotificacionE extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NotificacionE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NotificacionE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NotificacionE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NotificacionE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new NotificacionE().setVisible(true);
-            }
-        });
-    }
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
@@ -292,15 +234,10 @@ public class NotificacionE extends javax.swing.JFrame {
     private javax.swing.JButton btnReservas;
     private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblBiblioteca;
-    private javax.swing.JLabel lblCorreo;
     private javax.swing.JLabel lblImagen;
     private javax.swing.JLabel lblLogo;
-    private javax.swing.JLabel lblMensaje;
     private javax.swing.JLabel lblkonrad;
-    private javax.swing.JTextField txtCorreo;
-    private javax.swing.JTextArea txtMensaje;
     // End of variables declaration//GEN-END:variables
 
     public JButton getBtnEnviar() {
@@ -319,22 +256,7 @@ public class NotificacionE extends javax.swing.JFrame {
         this.jLabel1 = jLabel1;
     }
 
-    public JScrollPane getjScrollPane1() {
-        return jScrollPane1;
-    }
-
-    public void setjScrollPane1(JScrollPane jScrollPane1) {
-        this.jScrollPane1 = jScrollPane1;
-    }
-
-    public JLabel getLblCorreo() {
-        return lblCorreo;
-    }
-
-    public void setLblCorreo(JLabel lblCorreo) {
-        this.lblCorreo = lblCorreo;
-    }
-
+   
     public JLabel getLblImagen() {
         return lblImagen;
     }
@@ -343,42 +265,28 @@ public class NotificacionE extends javax.swing.JFrame {
         this.lblImagen = lblImagen;
     }
 
-    public JLabel getLblMensaje() {
-        return lblMensaje;
-    }
-
-    public void setLblMensaje(JLabel lblMensaje) {
-        this.lblMensaje = lblMensaje;
-    }
-
-    public JTextField getTxtCorreo() {
-        return txtCorreo;
-    }
-
-    public void setTxtCorreo(JTextField txtCorreo) {
-        this.txtCorreo = txtCorreo;
-    }
-
-    public JTextArea getTxtMensaje() {
-        return txtMensaje;
-    }
-
-    public void setTxtMensaje(JTextArea txtMensaje) {
-        this.txtMensaje = txtMensaje;
-    }
-
-    public NotificacionE(JButton btnEnviar, JLabel jLabel1, JScrollPane jScrollPane1, JLabel lblCorreo, JLabel lblImagen, JLabel lblMensaje, JTextField txtCorreo, JTextArea txtMensaje) {
+    public NotificacionE(JButton btnBuscar, JButton btnCrear, JButton btnDevoluciones, JButton btnEjemplar, JButton btnEnviar, JButton btnEvento, JButton btnIcono, JButton btnInicio, JButton btnNotificacion, JButton btnPerfil, JButton btnReservas, JButton btnVolver, JLabel jLabel1, JLabel lblBiblioteca, JLabel lblImagen, JLabel lblLogo, JLabel lblkonrad) {
+        this.btnBuscar = btnBuscar;
+        this.btnCrear = btnCrear;
+        this.btnDevoluciones = btnDevoluciones;
+        this.btnEjemplar = btnEjemplar;
         this.btnEnviar = btnEnviar;
+        this.btnEvento = btnEvento;
+        this.btnIcono = btnIcono;
+        this.btnInicio = btnInicio;
+        this.btnNotificacion = btnNotificacion;
+        this.btnPerfil = btnPerfil;
+        this.btnReservas = btnReservas;
+        this.btnVolver = btnVolver;
         this.jLabel1 = jLabel1;
-        this.jScrollPane1 = jScrollPane1;
-        this.lblCorreo = lblCorreo;
+        this.lblBiblioteca = lblBiblioteca;
         this.lblImagen = lblImagen;
-        this.lblMensaje = lblMensaje;
-        this.txtCorreo = txtCorreo;
-        this.txtMensaje = txtMensaje;
+        this.lblLogo = lblLogo;
+        this.lblkonrad = lblkonrad;
     }
 
-
+ 
+    
 
 
 }

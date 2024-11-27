@@ -84,6 +84,7 @@ public class MiPerfilE extends javax.swing.JFrame {
         lblContraseña = new javax.swing.JLabel();
         lblContraseña1 = new javax.swing.JLabel();
         btnHistorial = new javax.swing.JButton();
+        btnPrestamo = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
 
@@ -182,6 +183,9 @@ public class MiPerfilE extends javax.swing.JFrame {
         btnHistorial.setText("Historial de Préstamo");
         btnHistorial.setContentAreaFilled(false);
 
+        btnPrestamo.setText("Prestamo");
+        btnPrestamo.setContentAreaFilled(false);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -200,6 +204,9 @@ public class MiPerfilE extends javax.swing.JFrame {
                         .addContainerGap())))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(btnHistorial, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -213,11 +220,11 @@ public class MiPerfilE extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(btnSanciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(btnMultas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnNotificaciones, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE))))
-                        .addGap(56, 56, 56))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnHistorial, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38)))
+                                    .addComponent(btnNotificaciones, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(btnPrestamo)))
+                        .addGap(56, 56, 56)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -297,8 +304,10 @@ public class MiPerfilE extends javax.swing.JFrame {
                     .addComponent(lblContraseña)
                     .addComponent(btnHistorial))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblContraseña1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblContraseña1)
+                    .addComponent(btnPrestamo))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnVolver)
                     .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -340,6 +349,7 @@ public class MiPerfilE extends javax.swing.JFrame {
     private javax.swing.JButton btnInventario;
     private javax.swing.JButton btnMultas;
     private javax.swing.JButton btnNotificaciones;
+    private javax.swing.JButton btnPrestamo;
     private javax.swing.JButton btnSanciones;
     private javax.swing.JButton btnVolver;
     private javax.swing.JComboBox<String> cmbRol;
@@ -637,17 +647,135 @@ public class MiPerfilE extends javax.swing.JFrame {
         this.lblTelefono1 = lblTelefono1;
     }
 
-    public MiPerfilE(JButton btnCerrarSesion, JButton btnGuardar, JButton btnHistorial, JButton btnInventario, JButton btnMultas, JButton btnNotificaciones, JButton btnSanciones, JButton btnVolver, JLabel jLabel1, JLabel jLabel2, JPanel jPanel1, JLabel lblApellido, JLabel lblApellido1, JLabel lblCedula, JLabel lblCedula1, JLabel lblContraseña, JLabel lblContraseña1, JLabel lblCorreo, JLabel lblCorreo1, JLabel lblDireccion, JLabel lblDireccion1, JLabel lblIcono, JLabel lblImagen, JLabel lblMostrar, JLabel lblMostrarApellido, JLabel lblMostrarCedula, JLabel lblMostrarCorreo, JLabel lblMostrarDireccion, JLabel lblMostrarNombre, JLabel lblMostrarTelefono, JLabel lblNombre, JLabel lblNombre1, JLabel lblRol, JLabel lblTelefono, JLabel lblTelefono1) {
+   
+    public JLabel getLblContraseña() {
+        return lblContraseña;
+    }
+
+    public void setLblContraseña(JLabel lblContraseña) {
+        this.lblContraseña = lblContraseña;
+    }
+
+    public JLabel getLblContraseña1() {
+        return lblContraseña1;
+    }
+
+    public void setLblContraseña1(JLabel lblContraseña1) {
+        this.lblContraseña1 = lblContraseña1;
+    }
+
+    public JLabel getLblRol() {
+        return lblRol;
+    }
+
+    public void setLblRol(JLabel lblRol) {
+        this.lblRol = lblRol;
+    }
+
+    public JButton getBtnPrestamo() {
+        return btnPrestamo;
+    }
+
+    public void setBtnPrestamo(JButton btnPrestamo) {
+        this.btnPrestamo = btnPrestamo;
+    }
+
+    public JComboBox<String> getCmbRol() {
+        return cmbRol;
+    }
+
+    public void setCmbRol(JComboBox<String> cmbRol) {
+        this.cmbRol = cmbRol;
+    }
+
+    public JMenuItem getjMenuItem1() {
+        return jMenuItem1;
+    }
+
+    public void setjMenuItem1(JMenuItem jMenuItem1) {
+        this.jMenuItem1 = jMenuItem1;
+    }
+
+    public JMenuItem getjMenuItem2() {
+        return jMenuItem2;
+    }
+
+    public void setjMenuItem2(JMenuItem jMenuItem2) {
+        this.jMenuItem2 = jMenuItem2;
+    }
+
+    public JMenuItem getjMenuItem3() {
+        return jMenuItem3;
+    }
+
+    public void setjMenuItem3(JMenuItem jMenuItem3) {
+        this.jMenuItem3 = jMenuItem3;
+    }
+
+    public JTextField getTxtApellido() {
+        return txtApellido;
+    }
+
+    public void setTxtApellido(JTextField txtApellido) {
+        this.txtApellido = txtApellido;
+    }
+
+    public JTextField getTxtCedula() {
+        return txtCedula;
+    }
+
+    public void setTxtCedula(JTextField txtCedula) {
+        this.txtCedula = txtCedula;
+    }
+
+    public JTextField getTxtCorreo() {
+        return txtCorreo;
+    }
+
+    public void setTxtCorreo(JTextField txtCorreo) {
+        this.txtCorreo = txtCorreo;
+    }
+
+    public JTextField getTxtDireccion() {
+        return txtDireccion;
+    }
+
+    public void setTxtDireccion(JTextField txtDireccion) {
+        this.txtDireccion = txtDireccion;
+    }
+
+    public JTextField getTxtNombre() {
+        return txtNombre;
+    }
+
+    public void setTxtNombre(JTextField txtNombre) {
+        this.txtNombre = txtNombre;
+    }
+
+    public JTextField getTxtTelefono() {
+        return txtTelefono;
+    }
+
+    public void setTxtTelefono(JTextField txtTelefono) {
+        this.txtTelefono = txtTelefono;
+    }
+
+    public MiPerfilE(JButton btnCerrarSesion, JButton btnGuardar, JButton btnHistorial, JButton btnInventario, JButton btnMultas, JButton btnNotificaciones, JButton btnPrestamo, JButton btnSanciones, JButton btnVolver, JComboBox<String> cmbRol, JLabel jLabel1, JLabel jLabel2, JMenuItem jMenuItem1, JMenuItem jMenuItem2, JMenuItem jMenuItem3, JPanel jPanel1, JLabel lblApellido, JLabel lblApellido1, JLabel lblCedula, JLabel lblCedula1, JLabel lblContraseña, JLabel lblContraseña1, JLabel lblCorreo, JLabel lblCorreo1, JLabel lblDireccion, JLabel lblDireccion1, JLabel lblIcono, JLabel lblImagen, JLabel lblMostrar, JLabel lblMostrarApellido, JLabel lblMostrarCedula, JLabel lblMostrarCorreo, JLabel lblMostrarDireccion, JLabel lblMostrarNombre, JLabel lblMostrarTelefono, JLabel lblNombre, JLabel lblNombre1, JLabel lblRol, JLabel lblTelefono, JLabel lblTelefono1, JTextField txtApellido, JTextField txtCedula, JTextField txtCorreo, JTextField txtDireccion, JTextField txtNombre, JTextField txtTelefono) {
         this.btnCerrarSesion = btnCerrarSesion;
         this.btnGuardar = btnGuardar;
         this.btnHistorial = btnHistorial;
         this.btnInventario = btnInventario;
         this.btnMultas = btnMultas;
         this.btnNotificaciones = btnNotificaciones;
+        this.btnPrestamo = btnPrestamo;
         this.btnSanciones = btnSanciones;
         this.btnVolver = btnVolver;
+        this.cmbRol = cmbRol;
         this.jLabel1 = jLabel1;
         this.jLabel2 = jLabel2;
+        this.jMenuItem1 = jMenuItem1;
+        this.jMenuItem2 = jMenuItem2;
+        this.jMenuItem3 = jMenuItem3;
         this.jPanel1 = jPanel1;
         this.lblApellido = lblApellido;
         this.lblApellido1 = lblApellido1;
@@ -673,33 +801,11 @@ public class MiPerfilE extends javax.swing.JFrame {
         this.lblRol = lblRol;
         this.lblTelefono = lblTelefono;
         this.lblTelefono1 = lblTelefono1;
+        this.txtApellido = txtApellido;
+        this.txtCedula = txtCedula;
+        this.txtCorreo = txtCorreo;
+        this.txtDireccion = txtDireccion;
+        this.txtNombre = txtNombre;
+        this.txtTelefono = txtTelefono;
     }
-
-    public JLabel getLblContraseña() {
-        return lblContraseña;
-    }
-
-    public void setLblContraseña(JLabel lblContraseña) {
-        this.lblContraseña = lblContraseña;
-    }
-
-    public JLabel getLblContraseña1() {
-        return lblContraseña1;
-    }
-
-    public void setLblContraseña1(JLabel lblContraseña1) {
-        this.lblContraseña1 = lblContraseña1;
-    }
-
-    public JLabel getLblRol() {
-        return lblRol;
-    }
-
-    public void setLblRol(JLabel lblRol) {
-        this.lblRol = lblRol;
-    }
-
-    
-   
-
 }

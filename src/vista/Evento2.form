@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JButton" name="btnSancion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sanci&#xf3;n"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -46,6 +54,7 @@
                           <Component id="btnPerfil" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -81,6 +90,8 @@
                                   <Component id="btnMulta" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnPrestamo1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btnSancion1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnNotificacion" min="-2" pref="39" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -122,6 +133,7 @@
                               <Component id="btnPrestamo1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnInicio" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="lblEventos" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnSancion1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Component id="lblLogo" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -225,6 +237,9 @@
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel2">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="99" type="rgb"/>
+            </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
@@ -324,6 +339,9 @@
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel3">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="99" type="rgb"/>
+            </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
@@ -361,9 +379,9 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Component id="jLabel14" min="-2" pref="47" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Component id="lblNombre2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="lblSucursal2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="lblFecha2" min="-2" max="-2" attributes="0"/>
@@ -371,7 +389,7 @@
                       <Component id="lblDescripcion2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnIngresar2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="34" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -411,6 +429,9 @@
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel4">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="99" type="rgb"/>
+            </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
@@ -482,6 +503,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="lblFecha3">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="99" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="jLabel9"/>
               </Properties>
             </Component>
@@ -511,6 +535,12 @@
         <Component class="javax.swing.JLabel" name="lblEventos">
           <Properties>
             <Property name="text" type="java.lang.String" value="Eventos"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnSancion1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sanci&#xf3;n"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
         </Component>
       </SubComponents>

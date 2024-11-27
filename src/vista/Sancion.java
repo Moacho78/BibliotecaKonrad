@@ -4,6 +4,14 @@
  */
 package vista;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
 /**
  *
  * @author USUARIO
@@ -31,25 +39,99 @@ public class Sancion extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        lblCedula = new javax.swing.JLabel();
+        txtCedula = new javax.swing.JTextField();
+        lblFecha = new javax.swing.JLabel();
+        txtFecha = new javax.swing.JTextField();
+        lblEstado = new javax.swing.JLabel();
+        cmbEstado = new javax.swing.JComboBox<>();
+        lblMotivo = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txaMotivo = new javax.swing.JTextArea();
+        btnVolver = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        lblCedula.setText("Cedula Ciudadania");
+
+        lblFecha.setText("Fecha Sanción ");
+
+        lblEstado.setText("Estado");
+
+        cmbEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { ".....", "Actida", "Desactivada" }));
+
+        lblMotivo.setText("Motivo");
+
+        txaMotivo.setColumns(20);
+        txaMotivo.setRows(5);
+        jScrollPane1.setViewportView(txaMotivo);
+
+        btnVolver.setText("Volver");
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel5.setText("Sanciones");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 388, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(176, 176, 176)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblEstado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblFecha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblCedula, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
+                            .addComponent(lblMotivo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(txtCedula)
+                                .addComponent(txtFecha)
+                                .addComponent(cmbEstado, 0, 106, Short.MAX_VALUE))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addComponent(btnVolver)))
+                .addContainerGap(118, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(197, 197, 197))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 288, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(jLabel5)
+                .addGap(39, 39, 39)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCedula)
+                    .addComponent(txtCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblFecha)
+                    .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblEstado)
+                    .addComponent(cmbEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblMotivo)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addComponent(btnVolver)
+                .addGap(31, 31, 31))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -58,8 +140,7 @@ public class Sancion extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -71,6 +152,129 @@ public class Sancion extends javax.swing.JFrame {
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnVolver;
+    private javax.swing.JComboBox<String> cmbEstado;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblCedula;
+    private javax.swing.JLabel lblEstado;
+    private javax.swing.JLabel lblFecha;
+    private javax.swing.JLabel lblMotivo;
+    private javax.swing.JTextArea txaMotivo;
+    private javax.swing.JTextField txtCedula;
+    private javax.swing.JTextField txtFecha;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getBtnVolver() {
+        return btnVolver;
+    }
+
+    public void setBtnVolver(JButton btnVolver) {
+        this.btnVolver = btnVolver;
+    }
+
+    public JComboBox<String> getCmbEstado() {
+        return cmbEstado;
+    }
+
+    public void setCmbEstado(JComboBox<String> cmbEstado) {
+        this.cmbEstado = cmbEstado;
+    }
+
+    public JLabel getjLabel5() {
+        return jLabel5;
+    }
+
+    public void setjLabel5(JLabel jLabel5) {
+        this.jLabel5 = jLabel5;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public void setjPanel1(JPanel jPanel1) {
+        this.jPanel1 = jPanel1;
+    }
+
+    public JScrollPane getjScrollPane1() {
+        return jScrollPane1;
+    }
+
+    public void setjScrollPane1(JScrollPane jScrollPane1) {
+        this.jScrollPane1 = jScrollPane1;
+    }
+
+    public JLabel getLblCedula() {
+        return lblCedula;
+    }
+
+    public void setLblCedula(JLabel lblCedula) {
+        this.lblCedula = lblCedula;
+    }
+
+    public JLabel getLblEstado() {
+        return lblEstado;
+    }
+
+    public void setLblEstado(JLabel lblEstado) {
+        this.lblEstado = lblEstado;
+    }
+
+    public JLabel getLblFecha() {
+        return lblFecha;
+    }
+
+    public void setLblFecha(JLabel lblFecha) {
+        this.lblFecha = lblFecha;
+    }
+
+    public JLabel getLblMotivo() {
+        return lblMotivo;
+    }
+
+    public void setLblMotivo(JLabel lblMotivo) {
+        this.lblMotivo = lblMotivo;
+    }
+
+    public JTextArea getTxaMotivo() {
+        return txaMotivo;
+    }
+
+    public void setTxaMotivo(JTextArea txaMotivo) {
+        this.txaMotivo = txaMotivo;
+    }
+
+    public JTextField getTxtCedula() {
+        return txtCedula;
+    }
+
+    public void setTxtCedula(JTextField txtCedula) {
+        this.txtCedula = txtCedula;
+    }
+
+    public JTextField getTxtFecha() {
+        return txtFecha;
+    }
+
+    public void setTxtFecha(JTextField txtFecha) {
+        this.txtFecha = txtFecha;
+    }
+
+    public Sancion(JButton btnVolver, JComboBox<String> cmbEstado, JLabel jLabel5, JPanel jPanel1, JScrollPane jScrollPane1, JLabel lblCedula, JLabel lblEstado, JLabel lblFecha, JLabel lblMotivo, JTextArea txaMotivo, JTextField txtCedula, JTextField txtFecha) {
+        this.btnVolver = btnVolver;
+        this.cmbEstado = cmbEstado;
+        this.jLabel5 = jLabel5;
+        this.jPanel1 = jPanel1;
+        this.jScrollPane1 = jScrollPane1;
+        this.lblCedula = lblCedula;
+        this.lblEstado = lblEstado;
+        this.lblFecha = lblFecha;
+        this.lblMotivo = lblMotivo;
+        this.txaMotivo = txaMotivo;
+        this.txtCedula = txtCedula;
+        this.txtFecha = txtFecha;
+    }
+
 }

@@ -63,10 +63,6 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="lblImagen" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
                           <Component id="lblLogo" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -92,16 +88,22 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnPrestamo1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btnSancion" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnNotificacion" min="-2" pref="39" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnIcono" min="-2" pref="52" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="8" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   <Component id="btnPerfil" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="lblImagen" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -135,15 +137,16 @@
                                       <Component id="btnBuscar" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="btnMulta" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="btnPrestamo1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnSancion" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Component id="lblLogo" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="lblImagen" min="-2" pref="319" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lblImagen" pref="343" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -250,6 +253,12 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/vista/imagenes/imagen.png"/>
             </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnSancion">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sanci&#xf3;n"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
         </Component>
       </SubComponents>

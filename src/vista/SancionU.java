@@ -14,17 +14,13 @@ import javax.swing.JTable;
  *
  * @author USUARIO
  */
-public class ReservaU extends javax.swing.JFrame {
+public class SancionU extends javax.swing.JFrame {
 
     /**
-     * Creates new form ReservaU
+     * Creates new form SancionU
      */
-    public ReservaU() {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ReservaU().setVisible(false);
-            }
-        });
+    public SancionU() {
+        initComponents();
     }
 
     /**
@@ -37,7 +33,6 @@ public class ReservaU extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        lblInicio = new javax.swing.JLabel();
         btnDevoluciones = new javax.swing.JButton();
         btnComprar = new javax.swing.JButton();
         btnReservas = new javax.swing.JButton();
@@ -51,13 +46,12 @@ public class ReservaU extends javax.swing.JFrame {
         lblLogo = new javax.swing.JLabel();
         lblBiblioteca = new javax.swing.JLabel();
         lblkonrad = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        btnInicio = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblBuscar = new javax.swing.JTable();
-        btnSancion = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        lblInicio.setText("Inicio");
 
         btnDevoluciones.setText("Devolución");
         btnDevoluciones.setContentAreaFilled(false);
@@ -111,79 +105,81 @@ public class ReservaU extends javax.swing.JFrame {
 
         lblkonrad.setText("Konrad");
 
+        jLabel1.setText("Sanción");
+
+        btnInicio.setText("Inicio");
+        btnInicio.setContentAreaFilled(false);
+
         tblBuscar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Reserva", "Ejemplar", "Fecha Reserva"
+                "Sanción", "Motivo", "Fecha Aplicación", "Estado"
             }
         ));
         jScrollPane1.setViewportView(tblBuscar);
-
-        btnSancion.setText("Sanción");
-        btnSancion.setContentAreaFilled(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(lblLogo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(lblInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnComprar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnReservas)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnDevoluciones)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnEventos)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnBuscar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnMulta))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnInicio)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnComprar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnReservas)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnDevoluciones)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnEventos)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBuscar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnMulta)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnPrestamo1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnPrestamo1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnSancion)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnPerfil, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(btnPerfil)
+                    .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(217, 217, 217)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnPerfil))
-                    .addComponent(lblLogo)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(lblBiblioteca)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblkonrad)
-                            .addComponent(lblInicio)
                             .addComponent(btnComprar)
                             .addComponent(btnReservas)
                             .addComponent(btnDevoluciones)
@@ -191,17 +187,19 @@ public class ReservaU extends javax.swing.JFrame {
                             .addComponent(btnBuscar)
                             .addComponent(btnMulta)
                             .addComponent(btnPrestamo1)
-                            .addComponent(btnSancion))
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                            .addComponent(jLabel1)
+                            .addComponent(btnInicio)))
+                    .addComponent(lblLogo))
+                .addGap(26, 26, 26)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(121, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -226,7 +224,37 @@ public class ReservaU extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-   
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(SancionU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(SancionU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(SancionU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(SancionU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new SancionU().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
@@ -234,16 +262,16 @@ public class ReservaU extends javax.swing.JFrame {
     private javax.swing.JButton btnDevoluciones;
     private javax.swing.JButton btnEventos;
     private javax.swing.JButton btnIcono;
+    private javax.swing.JButton btnInicio;
     private javax.swing.JButton btnMulta;
     private javax.swing.JButton btnNotificacion;
     private javax.swing.JButton btnPerfil;
     private javax.swing.JButton btnPrestamo1;
     private javax.swing.JButton btnReservas;
-    private javax.swing.JButton btnSancion;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblBiblioteca;
-    private javax.swing.JLabel lblInicio;
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblkonrad;
     private javax.swing.JTable tblBuscar;
@@ -289,6 +317,14 @@ public class ReservaU extends javax.swing.JFrame {
         this.btnIcono = btnIcono;
     }
 
+    public JButton getBtnInicio() {
+        return btnInicio;
+    }
+
+    public void setBtnInicio(JButton btnInicio) {
+        this.btnInicio = btnInicio;
+    }
+
     public JButton getBtnMulta() {
         return btnMulta;
     }
@@ -329,6 +365,14 @@ public class ReservaU extends javax.swing.JFrame {
         this.btnReservas = btnReservas;
     }
 
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public void setjLabel1(JLabel jLabel1) {
+        this.jLabel1 = jLabel1;
+    }
+
     public JPanel getjPanel1() {
         return jPanel1;
     }
@@ -351,14 +395,6 @@ public class ReservaU extends javax.swing.JFrame {
 
     public void setLblBiblioteca(JLabel lblBiblioteca) {
         this.lblBiblioteca = lblBiblioteca;
-    }
-
-    public JLabel getLblInicio() {
-        return lblInicio;
-    }
-
-    public void setLblInicio(JLabel lblInicio) {
-        this.lblInicio = lblInicio;
     }
 
     public JLabel getLblLogo() {
@@ -385,35 +421,25 @@ public class ReservaU extends javax.swing.JFrame {
         this.tblBuscar = tblBuscar;
     }
 
-    public JButton getBtnSancion() {
-        return btnSancion;
-    }
-
-    public void setBtnSancion(JButton btnSancion) {
-        this.btnSancion = btnSancion;
-    }
-
-    public ReservaU(JButton btnBuscar, JButton btnComprar, JButton btnDevoluciones, JButton btnEventos, JButton btnIcono, JButton btnMulta, JButton btnNotificacion, JButton btnPerfil, JButton btnPrestamo1, JButton btnReservas, JButton btnSancion, JPanel jPanel1, JScrollPane jScrollPane1, JLabel lblBiblioteca, JLabel lblInicio, JLabel lblLogo, JLabel lblkonrad, JTable tblBuscar) {
+    public SancionU(JButton btnBuscar, JButton btnComprar, JButton btnDevoluciones, JButton btnEventos, JButton btnIcono, JButton btnInicio, JButton btnMulta, JButton btnNotificacion, JButton btnPerfil, JButton btnPrestamo1, JButton btnReservas, JLabel jLabel1, JPanel jPanel1, JScrollPane jScrollPane1, JLabel lblBiblioteca, JLabel lblLogo, JLabel lblkonrad, JTable tblBuscar) {
         this.btnBuscar = btnBuscar;
         this.btnComprar = btnComprar;
         this.btnDevoluciones = btnDevoluciones;
         this.btnEventos = btnEventos;
         this.btnIcono = btnIcono;
+        this.btnInicio = btnInicio;
         this.btnMulta = btnMulta;
         this.btnNotificacion = btnNotificacion;
         this.btnPerfil = btnPerfil;
         this.btnPrestamo1 = btnPrestamo1;
         this.btnReservas = btnReservas;
-        this.btnSancion = btnSancion;
+        this.jLabel1 = jLabel1;
         this.jPanel1 = jPanel1;
         this.jScrollPane1 = jScrollPane1;
         this.lblBiblioteca = lblBiblioteca;
-        this.lblInicio = lblInicio;
         this.lblLogo = lblLogo;
         this.lblkonrad = lblkonrad;
         this.tblBuscar = tblBuscar;
     }
-
-    
 
 }

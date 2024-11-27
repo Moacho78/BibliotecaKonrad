@@ -47,14 +47,14 @@ public class BuscarLibroE extends javax.swing.JFrame {
         lblBiblioteca = new javax.swing.JLabel();
         btnIcono = new javax.swing.JButton();
         lblkonrad = new javax.swing.JLabel();
-        btnBuscar = new javax.swing.JButton();
-        lblInicio = new javax.swing.JLabel();
         btnEjemplar = new javax.swing.JButton();
         lblLogo = new javax.swing.JLabel();
         btnBuscarLibro = new javax.swing.JButton();
         txtNombre = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblBuscar = new javax.swing.JTable();
+        lblBuscar = new javax.swing.JLabel();
+        btnInicio = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -94,30 +94,41 @@ public class BuscarLibroE extends javax.swing.JFrame {
 
         lblkonrad.setText("Konrad");
 
-        btnBuscar.setText("Buscar Libro");
-        btnBuscar.setContentAreaFilled(false);
-
-        lblInicio.setText("Inicio");
-
         btnEjemplar.setText("Ejemplar");
         btnEjemplar.setContentAreaFilled(false);
 
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/konrad2.png"))); // NOI18N
 
         btnBuscarLibro.setText("Buscar");
+        btnBuscarLibro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarLibroActionPerformed(evt);
+            }
+        });
+
+        txtNombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombreActionPerformed(evt);
+            }
+        });
 
         tblBuscar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Titulo", "Categoria", "Autor", "Editorial", "Precio", "Estado"
+                "Titulo", "Categoria", "Autor", "Editorial", "Precio", "Estado", "Ubicación"
             }
         ));
         jScrollPane1.setViewportView(tblBuscar);
+
+        lblBuscar.setText("Buscar Libro");
+
+        btnInicio.setText("Inicio");
+        btnInicio.setContentAreaFilled(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -126,26 +137,19 @@ public class BuscarLibroE extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(16, 16, 16)
                         .addComponent(lblLogo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnPerfil))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnPerfil, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(40, 40, 40)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnBuscarLibro)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(lblInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblkonrad, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(5, 5, 5)
+                                        .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnInicio)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -154,14 +158,22 @@ public class BuscarLibroE extends javax.swing.JFrame {
                                 .addComponent(btnDevoluciones)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnReservas)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnBuscar)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(btnEjemplar)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(28, 28, 28)
+                                .addComponent(btnBuscarLibro))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -171,40 +183,38 @@ public class BuscarLibroE extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(lblBiblioteca)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblkonrad))
+                        .addGap(18, 18, 18)
+                        .addComponent(lblkonrad, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(lblLogo)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(lblInicio)
-                                .addComponent(btnCrear)
-                                .addComponent(btnEvento)
-                                .addComponent(btnDevoluciones)
-                                .addComponent(btnReservas)
-                                .addComponent(btnBuscar)
-                                .addComponent(btnEjemplar)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(btnCrear)
+                                    .addComponent(btnEvento)
+                                    .addComponent(btnDevoluciones)
+                                    .addComponent(btnReservas)
+                                    .addComponent(btnEjemplar)
+                                    .addComponent(lblBuscar)
+                                    .addComponent(btnInicio))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnPerfil))
-                    .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnBuscarLibro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                        .addComponent(btnPerfil)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnBuscarLibro, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17))
+                .addGap(62, 62, 62))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,36 +235,36 @@ public class BuscarLibroE extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIconoActionPerformed
 
+    private void btnBuscarLibroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarLibroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarLibroActionPerformed
+
+    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNombreActionPerformed
+
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnBuscarLibro;
     private javax.swing.JButton btnCrear;
     private javax.swing.JButton btnDevoluciones;
     private javax.swing.JButton btnEjemplar;
     private javax.swing.JButton btnEvento;
     private javax.swing.JButton btnIcono;
+    private javax.swing.JButton btnInicio;
     private javax.swing.JButton btnNotificacion;
     private javax.swing.JButton btnPerfil;
     private javax.swing.JButton btnReservas;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblBiblioteca;
-    private javax.swing.JLabel lblInicio;
+    private javax.swing.JLabel lblBuscar;
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblkonrad;
     private javax.swing.JTable tblBuscar;
     private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
-
-    public JButton getBtnBuscar() {
-        return btnBuscar;
-    }
-
-    public void setBtnBuscar(JButton btnBuscar) {
-        this.btnBuscar = btnBuscar;
-    }
 
     public JButton getBtnBuscarLibro() {
         return btnBuscarLibro;
@@ -302,6 +312,14 @@ public class BuscarLibroE extends javax.swing.JFrame {
 
     public void setBtnIcono(JButton btnIcono) {
         this.btnIcono = btnIcono;
+    }
+
+    public JButton getBtnInicio() {
+        return btnInicio;
+    }
+
+    public void setBtnInicio(JButton btnInicio) {
+        this.btnInicio = btnInicio;
     }
 
     public JButton getBtnNotificacion() {
@@ -352,12 +370,12 @@ public class BuscarLibroE extends javax.swing.JFrame {
         this.lblBiblioteca = lblBiblioteca;
     }
 
-    public JLabel getLblInicio() {
-        return lblInicio;
+    public JLabel getLblBuscar() {
+        return lblBuscar;
     }
 
-    public void setLblInicio(JLabel lblInicio) {
-        this.lblInicio = lblInicio;
+    public void setLblBuscar(JLabel lblBuscar) {
+        this.lblBuscar = lblBuscar;
     }
 
     public JLabel getLblLogo() {
@@ -392,21 +410,21 @@ public class BuscarLibroE extends javax.swing.JFrame {
         this.txtNombre = txtNombre;
     }
 
-    public BuscarLibroE(JButton btnBuscar, JButton btnBuscarLibro, JButton btnCrear, JButton btnDevoluciones, JButton btnEjemplar, JButton btnEvento, JButton btnIcono, JButton btnNotificacion, JButton btnPerfil, JButton btnReservas, JPanel jPanel1, JScrollPane jScrollPane1, JLabel lblBiblioteca, JLabel lblInicio, JLabel lblLogo, JLabel lblkonrad, JTable tblBuscar, JTextField txtNombre) {
-        this.btnBuscar = btnBuscar;
+    public BuscarLibroE(JButton btnBuscarLibro, JButton btnCrear, JButton btnDevoluciones, JButton btnEjemplar, JButton btnEvento, JButton btnIcono, JButton btnInicio, JButton btnNotificacion, JButton btnPerfil, JButton btnReservas, JPanel jPanel1, JScrollPane jScrollPane1, JLabel lblBiblioteca, JLabel lblBuscar, JLabel lblLogo, JLabel lblkonrad, JTable tblBuscar, JTextField txtNombre) {
         this.btnBuscarLibro = btnBuscarLibro;
         this.btnCrear = btnCrear;
         this.btnDevoluciones = btnDevoluciones;
         this.btnEjemplar = btnEjemplar;
         this.btnEvento = btnEvento;
         this.btnIcono = btnIcono;
+        this.btnInicio = btnInicio;
         this.btnNotificacion = btnNotificacion;
         this.btnPerfil = btnPerfil;
         this.btnReservas = btnReservas;
         this.jPanel1 = jPanel1;
         this.jScrollPane1 = jScrollPane1;
         this.lblBiblioteca = lblBiblioteca;
-        this.lblInicio = lblInicio;
+        this.lblBuscar = lblBuscar;
         this.lblLogo = lblLogo;
         this.lblkonrad = lblkonrad;
         this.tblBuscar = tblBuscar;

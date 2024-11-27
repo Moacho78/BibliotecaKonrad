@@ -4,6 +4,12 @@
  */
 package vista;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+
 /**
  *
  * @author USUARIO
@@ -46,19 +52,20 @@ public class Inventario extends javax.swing.JFrame {
         btnBuscar = new javax.swing.JButton();
         lblInicio = new javax.swing.JLabel();
         btnEvento = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         tblBuscar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Titulo", "Categoria", "Autor", "Editorial", "Precio", "Estado"
+                "Inventario", "Libro", "Cantidad"
             }
         ));
         jScrollPane1.setViewportView(tblBuscar);
@@ -109,7 +116,9 @@ public class Inventario extends javax.swing.JFrame {
         btnEvento.setText("Eventos");
         btnEvento.setContentAreaFilled(false);
 
-        jButton1.setText("Volver");
+        btnVolver.setText("Volver");
+
+        jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -147,44 +156,52 @@ public class Inventario extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(56, 56, 56)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(59, 59, 59)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(250, 250, 250)
-                        .addComponent(jButton1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(btnVolver)))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(lblBiblioteca)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblkonrad))
+                                .addGap(17, 17, 17)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(lblBiblioteca)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(lblkonrad))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(lblInicio)
+                                                .addComponent(btnCrear)
+                                                .addComponent(btnEvento)
+                                                .addComponent(btnDevoluciones)
+                                                .addComponent(btnReservas)
+                                                .addComponent(btnBuscar)
+                                                .addComponent(btnEjemplar)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btnPerfil))
+                                    .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(lblInicio)
-                                        .addComponent(btnCrear)
-                                        .addComponent(btnEvento)
-                                        .addComponent(btnDevoluciones)
-                                        .addComponent(btnReservas)
-                                        .addComponent(btnBuscar)
-                                        .addComponent(btnEjemplar)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnPerfil))
-                            .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblLogo)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(jButton1)
+                                .addContainerGap()
+                                .addComponent(lblLogo)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(41, 41, 41)))
+                .addComponent(btnVolver)
                 .addGap(18, 18, 18))
         );
 
@@ -231,7 +248,8 @@ public class Inventario extends javax.swing.JFrame {
     private javax.swing.JButton btnNotificacion;
     private javax.swing.JButton btnPerfil;
     private javax.swing.JButton btnReservas;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnVolver;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblBiblioteca;
@@ -240,4 +258,170 @@ public class Inventario extends javax.swing.JFrame {
     private javax.swing.JLabel lblkonrad;
     private javax.swing.JTable tblBuscar;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getBtnBuscar() {
+        return btnBuscar;
+    }
+
+    public void setBtnBuscar(JButton btnBuscar) {
+        this.btnBuscar = btnBuscar;
+    }
+
+    public JButton getBtnCrear() {
+        return btnCrear;
+    }
+
+    public void setBtnCrear(JButton btnCrear) {
+        this.btnCrear = btnCrear;
+    }
+
+    public JButton getBtnDevoluciones() {
+        return btnDevoluciones;
+    }
+
+    public void setBtnDevoluciones(JButton btnDevoluciones) {
+        this.btnDevoluciones = btnDevoluciones;
+    }
+
+    public JButton getBtnEjemplar() {
+        return btnEjemplar;
+    }
+
+    public void setBtnEjemplar(JButton btnEjemplar) {
+        this.btnEjemplar = btnEjemplar;
+    }
+
+    public JButton getBtnEvento() {
+        return btnEvento;
+    }
+
+    public void setBtnEvento(JButton btnEvento) {
+        this.btnEvento = btnEvento;
+    }
+
+    public JButton getBtnIcono() {
+        return btnIcono;
+    }
+
+    public void setBtnIcono(JButton btnIcono) {
+        this.btnIcono = btnIcono;
+    }
+
+    public JButton getBtnNotificacion() {
+        return btnNotificacion;
+    }
+
+    public void setBtnNotificacion(JButton btnNotificacion) {
+        this.btnNotificacion = btnNotificacion;
+    }
+
+    public JButton getBtnPerfil() {
+        return btnPerfil;
+    }
+
+    public void setBtnPerfil(JButton btnPerfil) {
+        this.btnPerfil = btnPerfil;
+    }
+
+    public JButton getBtnReservas() {
+        return btnReservas;
+    }
+
+    public void setBtnReservas(JButton btnReservas) {
+        this.btnReservas = btnReservas;
+    }
+
+    public JButton getBtnVolver() {
+        return btnVolver;
+    }
+
+    public void setBtnVolver(JButton btnVolver) {
+        this.btnVolver = btnVolver;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public void setjLabel1(JLabel jLabel1) {
+        this.jLabel1 = jLabel1;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public void setjPanel1(JPanel jPanel1) {
+        this.jPanel1 = jPanel1;
+    }
+
+    public JScrollPane getjScrollPane1() {
+        return jScrollPane1;
+    }
+
+    public void setjScrollPane1(JScrollPane jScrollPane1) {
+        this.jScrollPane1 = jScrollPane1;
+    }
+
+    public JLabel getLblBiblioteca() {
+        return lblBiblioteca;
+    }
+
+    public void setLblBiblioteca(JLabel lblBiblioteca) {
+        this.lblBiblioteca = lblBiblioteca;
+    }
+
+    public JLabel getLblInicio() {
+        return lblInicio;
+    }
+
+    public void setLblInicio(JLabel lblInicio) {
+        this.lblInicio = lblInicio;
+    }
+
+    public JLabel getLblLogo() {
+        return lblLogo;
+    }
+
+    public void setLblLogo(JLabel lblLogo) {
+        this.lblLogo = lblLogo;
+    }
+
+    public JLabel getLblkonrad() {
+        return lblkonrad;
+    }
+
+    public void setLblkonrad(JLabel lblkonrad) {
+        this.lblkonrad = lblkonrad;
+    }
+
+    public JTable getTblBuscar() {
+        return tblBuscar;
+    }
+
+    public void setTblBuscar(JTable tblBuscar) {
+        this.tblBuscar = tblBuscar;
+    }
+
+    public Inventario(JButton btnBuscar, JButton btnCrear, JButton btnDevoluciones, JButton btnEjemplar, JButton btnEvento, JButton btnIcono, JButton btnNotificacion, JButton btnPerfil, JButton btnReservas, JButton btnVolver, JLabel jLabel1, JPanel jPanel1, JScrollPane jScrollPane1, JLabel lblBiblioteca, JLabel lblInicio, JLabel lblLogo, JLabel lblkonrad, JTable tblBuscar) {
+        this.btnBuscar = btnBuscar;
+        this.btnCrear = btnCrear;
+        this.btnDevoluciones = btnDevoluciones;
+        this.btnEjemplar = btnEjemplar;
+        this.btnEvento = btnEvento;
+        this.btnIcono = btnIcono;
+        this.btnNotificacion = btnNotificacion;
+        this.btnPerfil = btnPerfil;
+        this.btnReservas = btnReservas;
+        this.btnVolver = btnVolver;
+        this.jLabel1 = jLabel1;
+        this.jPanel1 = jPanel1;
+        this.jScrollPane1 = jScrollPane1;
+        this.lblBiblioteca = lblBiblioteca;
+        this.lblInicio = lblInicio;
+        this.lblLogo = lblLogo;
+        this.lblkonrad = lblkonrad;
+        this.tblBuscar = tblBuscar;
+    }
+
 }

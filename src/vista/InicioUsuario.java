@@ -54,6 +54,7 @@ public class InicioUsuario extends javax.swing.JFrame {
         btnMulta = new javax.swing.JButton();
         btnPrestamo1 = new javax.swing.JButton();
         lblImagen = new javax.swing.JLabel();
+        btnSancion = new javax.swing.JButton();
 
         btnPrestamo.setText("Prestamo");
         btnPrestamo.setContentAreaFilled(false);
@@ -121,6 +122,9 @@ public class InicioUsuario extends javax.swing.JFrame {
 
         lblImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/imagen.png"))); // NOI18N
 
+        btnSancion.setText("Sanción");
+        btnSancion.setContentAreaFilled(false);
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -128,9 +132,6 @@ public class InicioUsuario extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(lblImagen)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(lblLogo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -156,13 +157,18 @@ public class InicioUsuario extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnPrestamo1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnSancion)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 8, Short.MAX_VALUE))
+                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(btnPerfil))))))
+                                .addComponent(btnPerfil))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(lblImagen))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -189,11 +195,12 @@ public class InicioUsuario extends javax.swing.JFrame {
                                     .addComponent(btnEventos)
                                     .addComponent(btnBuscar)
                                     .addComponent(btnMulta)
-                                    .addComponent(btnPrestamo1)))
+                                    .addComponent(btnPrestamo1)
+                                    .addComponent(btnSancion)))
                             .addComponent(lblLogo))))
-                .addGap(30, 30, 30)
-                .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 343, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -249,6 +256,7 @@ public class InicioUsuario extends javax.swing.JFrame {
     private javax.swing.JButton btnPrestamo;
     private javax.swing.JButton btnPrestamo1;
     private javax.swing.JButton btnReservas;
+    private javax.swing.JButton btnSancion;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSlider jSlider1;
     private javax.swing.JLabel lblBiblioteca;
@@ -394,7 +402,15 @@ public class InicioUsuario extends javax.swing.JFrame {
         this.lblkonrad = lblkonrad;
     }
 
-    public InicioUsuario(JButton btnBuscar, JButton btnComprar, JButton btnDevoluciones, JButton btnEventos, JButton btnIcono, JButton btnMulta, JButton btnNotificacion, JButton btnPerfil, JButton btnPrestamo, JButton btnPrestamo1, JButton btnReservas, JPanel jPanel2, JLabel lblBiblioteca, JLabel lblImagen, JLabel lblInicio, JLabel lblLogo, JLabel lblkonrad) {
+    public JButton getBtnSancion() {
+        return btnSancion;
+    }
+
+    public void setBtnSancion(JButton btnSancion) {
+        this.btnSancion = btnSancion;
+    }
+
+    public InicioUsuario(JButton btnBuscar, JButton btnComprar, JButton btnDevoluciones, JButton btnEventos, JButton btnIcono, JButton btnMulta, JButton btnNotificacion, JButton btnPerfil, JButton btnPrestamo, JButton btnPrestamo1, JButton btnReservas, JButton btnSancion, JPanel jPanel2, JLabel lblBiblioteca, JLabel lblImagen, JLabel lblInicio, JLabel lblLogo, JLabel lblkonrad) {
         this.btnBuscar = btnBuscar;
         this.btnComprar = btnComprar;
         this.btnDevoluciones = btnDevoluciones;
@@ -406,6 +422,7 @@ public class InicioUsuario extends javax.swing.JFrame {
         this.btnPrestamo = btnPrestamo;
         this.btnPrestamo1 = btnPrestamo1;
         this.btnReservas = btnReservas;
+        this.btnSancion = btnSancion;
         this.jPanel2 = jPanel2;
         this.lblBiblioteca = lblBiblioteca;
         this.lblImagen = lblImagen;
@@ -413,6 +430,8 @@ public class InicioUsuario extends javax.swing.JFrame {
         this.lblLogo = lblLogo;
         this.lblkonrad = lblkonrad;
     }
+
+   
 
 
 }

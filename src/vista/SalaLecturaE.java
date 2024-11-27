@@ -4,6 +4,12 @@
  */
 package vista;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSpinner;
+import javax.swing.JTextField;
+
 /**
  *
  * @author USUARIO
@@ -30,21 +36,210 @@ public class SalaLecturaE extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        lblLogo = new javax.swing.JLabel();
+        btnDevoluciones = new javax.swing.JButton();
+        lblBiblioteca = new javax.swing.JLabel();
+        btnComprar = new javax.swing.JButton();
+        lblkonrad = new javax.swing.JLabel();
+        btnReservas = new javax.swing.JButton();
+        lblSala = new javax.swing.JLabel();
+        btnEventos = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        btnMulta = new javax.swing.JButton();
+        btnPrestamo1 = new javax.swing.JButton();
+        btnBuscar = new javax.swing.JButton();
+        btnPerfil = new javax.swing.JButton();
+        btnNotificacion = new javax.swing.JButton();
+        btnIcono = new javax.swing.JButton();
+        lblSala2 = new javax.swing.JLabel();
+        txtSala = new javax.swing.JTextField();
+        lblSucursal = new javax.swing.JLabel();
+        txtSucursal = new javax.swing.JTextField();
+        lblNombre = new javax.swing.JLabel();
+        txtNombre = new javax.swing.JTextField();
+        lblCapacidad = new javax.swing.JLabel();
+        spnCapacidad = new javax.swing.JSpinner();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/konrad2.png"))); // NOI18N
+
+        btnDevoluciones.setText("Devolución");
+        btnDevoluciones.setContentAreaFilled(false);
+
+        lblBiblioteca.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblBiblioteca.setText("Biblioteca");
+
+        btnComprar.setText("Comprar");
+        btnComprar.setContentAreaFilled(false);
+
+        lblkonrad.setText("Konrad");
+
+        btnReservas.setText("Reservas");
+        btnReservas.setContentAreaFilled(false);
+
+        lblSala.setText("Sala de Lectura");
+
+        btnEventos.setText("Eventos");
+        btnEventos.setContentAreaFilled(false);
+
+        jButton1.setText("Inicio");
+        jButton1.setContentAreaFilled(false);
+
+        btnMulta.setText("Multas");
+        btnMulta.setContentAreaFilled(false);
+
+        btnPrestamo1.setText("Prestamo");
+        btnPrestamo1.setContentAreaFilled(false);
+        btnPrestamo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPrestamo1ActionPerformed(evt);
+            }
+        });
+
+        btnBuscar.setText("Buscar Libro");
+        btnBuscar.setContentAreaFilled(false);
+
+        btnPerfil.setText("Mi perfil");
+        btnPerfil.setContentAreaFilled(false);
+
+        btnNotificacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/Notifiacion.png"))); // NOI18N
+        btnNotificacion.setContentAreaFilled(false);
+
+        btnIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/Usuario.png"))); // NOI18N
+        btnIcono.setContentAreaFilled(false);
+
+        lblSala2.setText("Sala");
+
+        lblSucursal.setText("Sucursal");
+
+        lblNombre.setText("Nombre");
+
+        lblCapacidad.setText("Capacidad");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(lblLogo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnComprar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnReservas)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnDevoluciones)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnEventos)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBuscar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblSala, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnMulta)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnPrestamo1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnNotificacion)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnIcono))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnPerfil)))
+                .addGap(14, 14, 14))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(152, 152, 152)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblSucursal, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE)
+                            .addComponent(lblSala2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtSala, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblCapacidad, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(spnCapacidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblBiblioteca)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblkonrad)
+                            .addComponent(btnComprar)
+                            .addComponent(btnReservas)
+                            .addComponent(btnDevoluciones)
+                            .addComponent(btnEventos)
+                            .addComponent(btnBuscar)
+                            .addComponent(btnMulta)
+                            .addComponent(btnPrestamo1)
+                            .addComponent(lblSala)
+                            .addComponent(jButton1)))
+                    .addComponent(lblLogo))
+                .addGap(100, 100, 100)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSala2)
+                    .addComponent(txtSala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSucursal)
+                    .addComponent(txtSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNombre)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(9, 9, 9)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCapacidad)
+                    .addComponent(spnCapacidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 144, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnIcono)
+                    .addComponent(btnNotificacion))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnPerfil)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnPrestamo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrestamo1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPrestamo1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -52,5 +247,249 @@ public class SalaLecturaE extends javax.swing.JFrame {
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBuscar;
+    private javax.swing.JButton btnComprar;
+    private javax.swing.JButton btnDevoluciones;
+    private javax.swing.JButton btnEventos;
+    private javax.swing.JButton btnIcono;
+    private javax.swing.JButton btnMulta;
+    private javax.swing.JButton btnNotificacion;
+    private javax.swing.JButton btnPerfil;
+    private javax.swing.JButton btnPrestamo1;
+    private javax.swing.JButton btnReservas;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblBiblioteca;
+    private javax.swing.JLabel lblCapacidad;
+    private javax.swing.JLabel lblLogo;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblSala;
+    private javax.swing.JLabel lblSala2;
+    private javax.swing.JLabel lblSucursal;
+    private javax.swing.JLabel lblkonrad;
+    private javax.swing.JSpinner spnCapacidad;
+    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtSala;
+    private javax.swing.JTextField txtSucursal;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getBtnBuscar() {
+        return btnBuscar;
+    }
+
+    public void setBtnBuscar(JButton btnBuscar) {
+        this.btnBuscar = btnBuscar;
+    }
+
+    public JButton getBtnComprar() {
+        return btnComprar;
+    }
+
+    public void setBtnComprar(JButton btnComprar) {
+        this.btnComprar = btnComprar;
+    }
+
+    public JButton getBtnDevoluciones() {
+        return btnDevoluciones;
+    }
+
+    public void setBtnDevoluciones(JButton btnDevoluciones) {
+        this.btnDevoluciones = btnDevoluciones;
+    }
+
+    public JButton getBtnEventos() {
+        return btnEventos;
+    }
+
+    public void setBtnEventos(JButton btnEventos) {
+        this.btnEventos = btnEventos;
+    }
+
+    public JButton getBtnIcono() {
+        return btnIcono;
+    }
+
+    public void setBtnIcono(JButton btnIcono) {
+        this.btnIcono = btnIcono;
+    }
+
+    public JButton getBtnMulta() {
+        return btnMulta;
+    }
+
+    public void setBtnMulta(JButton btnMulta) {
+        this.btnMulta = btnMulta;
+    }
+
+    public JButton getBtnNotificacion() {
+        return btnNotificacion;
+    }
+
+    public void setBtnNotificacion(JButton btnNotificacion) {
+        this.btnNotificacion = btnNotificacion;
+    }
+
+    public JButton getBtnPerfil() {
+        return btnPerfil;
+    }
+
+    public void setBtnPerfil(JButton btnPerfil) {
+        this.btnPerfil = btnPerfil;
+    }
+
+    public JButton getBtnPrestamo1() {
+        return btnPrestamo1;
+    }
+
+    public void setBtnPrestamo1(JButton btnPrestamo1) {
+        this.btnPrestamo1 = btnPrestamo1;
+    }
+
+    public JButton getBtnReservas() {
+        return btnReservas;
+    }
+
+    public void setBtnReservas(JButton btnReservas) {
+        this.btnReservas = btnReservas;
+    }
+
+    public JButton getjButton1() {
+        return jButton1;
+    }
+
+    public void setjButton1(JButton jButton1) {
+        this.jButton1 = jButton1;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public void setjPanel1(JPanel jPanel1) {
+        this.jPanel1 = jPanel1;
+    }
+
+    public JLabel getLblBiblioteca() {
+        return lblBiblioteca;
+    }
+
+    public void setLblBiblioteca(JLabel lblBiblioteca) {
+        this.lblBiblioteca = lblBiblioteca;
+    }
+
+    public JLabel getLblCapacidad() {
+        return lblCapacidad;
+    }
+
+    public void setLblCapacidad(JLabel lblCapacidad) {
+        this.lblCapacidad = lblCapacidad;
+    }
+
+    public JLabel getLblLogo() {
+        return lblLogo;
+    }
+
+    public void setLblLogo(JLabel lblLogo) {
+        this.lblLogo = lblLogo;
+    }
+
+    public JLabel getLblNombre() {
+        return lblNombre;
+    }
+
+    public void setLblNombre(JLabel lblNombre) {
+        this.lblNombre = lblNombre;
+    }
+
+    public JLabel getLblSala() {
+        return lblSala;
+    }
+
+    public void setLblSala(JLabel lblSala) {
+        this.lblSala = lblSala;
+    }
+
+    public JLabel getLblSala2() {
+        return lblSala2;
+    }
+
+    public void setLblSala2(JLabel lblSala2) {
+        this.lblSala2 = lblSala2;
+    }
+
+    public JLabel getLblSucursal() {
+        return lblSucursal;
+    }
+
+    public void setLblSucursal(JLabel lblSucursal) {
+        this.lblSucursal = lblSucursal;
+    }
+
+    public JLabel getLblkonrad() {
+        return lblkonrad;
+    }
+
+    public void setLblkonrad(JLabel lblkonrad) {
+        this.lblkonrad = lblkonrad;
+    }
+
+    public JSpinner getSpnCapacidad() {
+        return spnCapacidad;
+    }
+
+    public void setSpnCapacidad(JSpinner spnCapacidad) {
+        this.spnCapacidad = spnCapacidad;
+    }
+
+    public JTextField getTxtNombre() {
+        return txtNombre;
+    }
+
+    public void setTxtNombre(JTextField txtNombre) {
+        this.txtNombre = txtNombre;
+    }
+
+    public JTextField getTxtSala() {
+        return txtSala;
+    }
+
+    public void setTxtSala(JTextField txtSala) {
+        this.txtSala = txtSala;
+    }
+
+    public JTextField getTxtSucursal() {
+        return txtSucursal;
+    }
+
+    public void setTxtSucursal(JTextField txtSucursal) {
+        this.txtSucursal = txtSucursal;
+    }
+
+    public SalaLecturaE(JButton btnBuscar, JButton btnComprar, JButton btnDevoluciones, JButton btnEventos, JButton btnIcono, JButton btnMulta, JButton btnNotificacion, JButton btnPerfil, JButton btnPrestamo1, JButton btnReservas, JButton jButton1, JPanel jPanel1, JLabel lblBiblioteca, JLabel lblCapacidad, JLabel lblLogo, JLabel lblNombre, JLabel lblSala, JLabel lblSala2, JLabel lblSucursal, JLabel lblkonrad, JSpinner spnCapacidad, JTextField txtNombre, JTextField txtSala, JTextField txtSucursal) {
+        this.btnBuscar = btnBuscar;
+        this.btnComprar = btnComprar;
+        this.btnDevoluciones = btnDevoluciones;
+        this.btnEventos = btnEventos;
+        this.btnIcono = btnIcono;
+        this.btnMulta = btnMulta;
+        this.btnNotificacion = btnNotificacion;
+        this.btnPerfil = btnPerfil;
+        this.btnPrestamo1 = btnPrestamo1;
+        this.btnReservas = btnReservas;
+        this.jButton1 = jButton1;
+        this.jPanel1 = jPanel1;
+        this.lblBiblioteca = lblBiblioteca;
+        this.lblCapacidad = lblCapacidad;
+        this.lblLogo = lblLogo;
+        this.lblNombre = lblNombre;
+        this.lblSala = lblSala;
+        this.lblSala2 = lblSala2;
+        this.lblSucursal = lblSucursal;
+        this.lblkonrad = lblkonrad;
+        this.spnCapacidad = spnCapacidad;
+        this.txtNombre = txtNombre;
+        this.txtSala = txtSala;
+        this.txtSucursal = txtSucursal;
+    }
+
 }

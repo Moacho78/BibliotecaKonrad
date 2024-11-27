@@ -23,11 +23,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" alignment="1" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -49,31 +45,21 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                           <Component id="lblLogo" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnPerfil" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" min="-2" pref="420" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="lblkonrad" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="lblBiblioteca" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtNombre" min="-2" pref="141" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="btnBuscarLibro" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnPerfil" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <Component id="lblInicio" min="-2" pref="39" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="lblkonrad" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                                          <Component id="lblBiblioteca" min="-2" pref="88" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btnInicio" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnCrear" min="-2" pref="66" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -82,15 +68,26 @@
                                   <Component id="btnDevoluciones" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnReservas" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnBuscar" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="lblBuscar" min="-2" pref="85" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="btnEjemplar" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="btnNotificacion" min="-2" pref="39" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnIcono" min="-2" pref="52" max="-2" attributes="0"/>
                               </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="txtNombre" min="-2" pref="141" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="btnBuscarLibro" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane1" min="-2" pref="420" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -105,36 +102,38 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="lblBiblioteca" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblkonrad" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="lblkonrad" min="-2" pref="22" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="lblLogo" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblLogo" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="btnNotificacion" alignment="1" min="-2" pref="35" max="-2" attributes="0"/>
-                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                  <Component id="lblInicio" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnCrear" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnEvento" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnDevoluciones" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnReservas" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnBuscar" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnEjemplar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnIcono" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                  <Component id="btnNotificacion" alignment="1" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                      <Component id="btnCrear" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnEvento" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnDevoluciones" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnReservas" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnEjemplar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblBuscar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnInicio" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="btnPerfil" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="btnIcono" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="131" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnBuscarLibro" alignment="1" min="-2" pref="23" max="-2" attributes="0"/>
-                      <Component id="txtNombre" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="110" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnBuscarLibro" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                      <Component id="txtNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" pref="282" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -203,17 +202,6 @@
             <Property name="text" type="java.lang.String" value="Konrad"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnBuscar">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Buscar Libro"/>
-            <Property name="contentAreaFilled" type="boolean" value="false"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lblInicio">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Inicio"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JButton" name="btnEjemplar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Ejemplar"/>
@@ -231,8 +219,14 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarLibroActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtNombre">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombreActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
@@ -244,14 +238,54 @@
             <Component class="javax.swing.JTable" name="tblBuscar">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="6" rowCount="4">
+                  <Table columnCount="7" rowCount="4">
                     <Column editable="true" title="Titulo" type="java.lang.Object"/>
                     <Column editable="true" title="Categoria" type="java.lang.Object"/>
                     <Column editable="true" title="Autor" type="java.lang.Object"/>
                     <Column editable="true" title="Editorial" type="java.lang.Object"/>
                     <Column editable="true" title="Precio" type="java.lang.Object"/>
                     <Column editable="true" title="Estado" type="java.lang.Object"/>
+                    <Column editable="true" title="Ubicaci&#xf3;n" type="java.lang.Object"/>
                   </Table>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
                 </Property>
                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
@@ -260,6 +294,17 @@
             </Component>
           </SubComponents>
         </Container>
+        <Component class="javax.swing.JLabel" name="lblBuscar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Buscar Libro"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnInicio">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Inicio"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
       </SubComponents>
     </Container>
   </SubComponents>

@@ -3,10 +3,38 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/BibliotecaKonrad/src/modelo/Usuario.java</file>
-            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/BibliotecaKonrad/src/vista/Login.java</file>
-            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/BibliotecaKonrad/src/controlador/BibliotecaKonrad.java</file>
-            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/BibliotecaKonrad/src/controlador/Controlador.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Sucursal.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/SalaLecturaE.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Proveedor.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/MiPerfilE.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Ejemplar.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/PrestamoE.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/DevoluciónU.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/ReservaU.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/BuscarLibroU.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Editorial.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Crear.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/BuscarLibroE.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/DevolucionE.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/HistoralPrestamo.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Inventario.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Libro.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Usuarios.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Login.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/MiPerfilU.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Multas.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/InicioUsuario.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/PrestamoU.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/ReservaE.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/SalaLecturaU.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Sancion.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Autor.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/InicioEmpleado.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Evento2.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/NotificacionesU.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/NotificacionE.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Evento.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/BibliotecaKonrad/src/vista/Comprar.java</file>
         </group>
     </open-files>
 </project-private>

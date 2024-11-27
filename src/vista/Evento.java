@@ -61,8 +61,8 @@ public class Evento extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         txaDescripcion = new javax.swing.JTextArea();
         btnGuardar = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        lblEvento = new javax.swing.JLabel();
+        btnInicio = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         btnIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/Usuario.png"))); // NOI18N
@@ -149,10 +149,10 @@ public class Evento extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("Eventos");
+        lblEvento.setText("Eventos");
 
-        jButton1.setText("Inicio");
-        jButton1.setContentAreaFilled(false);
+        btnInicio.setText("Inicio");
+        btnInicio.setContentAreaFilled(false);
 
         jLabel6.setText("jLabel6");
 
@@ -173,12 +173,12 @@ public class Evento extends javax.swing.JFrame {
                                     .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton1)
+                                .addComponent(btnInicio)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnCrear)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lblEvento, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
                                 .addComponent(btnDevoluciones)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnReservas)
@@ -235,8 +235,8 @@ public class Evento extends javax.swing.JFrame {
                                     .addComponent(btnReservas)
                                     .addComponent(btnBuscar)
                                     .addComponent(btnEjemplar)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jButton1))))
+                                    .addComponent(lblEvento)
+                                    .addComponent(btnInicio))))
                         .addGap(2, 2, 2)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
@@ -314,20 +314,20 @@ public class Evento extends javax.swing.JFrame {
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnIcono;
     private javax.swing.JButton btnIcono1;
+    private javax.swing.JButton btnInicio;
     private javax.swing.JButton btnNotificacion;
     private javax.swing.JButton btnPerfil;
     private javax.swing.JButton btnPerfil1;
     private javax.swing.JButton btnReservas;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblBiblioteca;
+    private javax.swing.JLabel lblEvento;
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblkonrad;
     private javax.swing.JTextArea txaDescripcion;
@@ -392,6 +392,14 @@ public class Evento extends javax.swing.JFrame {
         this.btnIcono1 = btnIcono1;
     }
 
+    public JButton getBtnInicio() {
+        return btnInicio;
+    }
+
+    public void setBtnInicio(JButton btnInicio) {
+        this.btnInicio = btnInicio;
+    }
+
     public JButton getBtnNotificacion() {
         return btnNotificacion;
     }
@@ -422,14 +430,6 @@ public class Evento extends javax.swing.JFrame {
 
     public void setBtnReservas(JButton btnReservas) {
         this.btnReservas = btnReservas;
-    }
-
-    public JButton getjButton1() {
-        return jButton1;
-    }
-
-    public void setjButton1(JButton jButton1) {
-        this.jButton1 = jButton1;
     }
 
     public JLabel getjLabel1() {
@@ -464,14 +464,6 @@ public class Evento extends javax.swing.JFrame {
         this.jLabel4 = jLabel4;
     }
 
-    public JLabel getjLabel5() {
-        return jLabel5;
-    }
-
-    public void setjLabel5(JLabel jLabel5) {
-        this.jLabel5 = jLabel5;
-    }
-
     public JLabel getjLabel6() {
         return jLabel6;
     }
@@ -502,6 +494,14 @@ public class Evento extends javax.swing.JFrame {
 
     public void setLblBiblioteca(JLabel lblBiblioteca) {
         this.lblBiblioteca = lblBiblioteca;
+    }
+
+    public JLabel getLblEvento() {
+        return lblEvento;
+    }
+
+    public void setLblEvento(JLabel lblEvento) {
+        this.lblEvento = lblEvento;
     }
 
     public JLabel getLblLogo() {
@@ -552,7 +552,7 @@ public class Evento extends javax.swing.JFrame {
         this.txtSucursal = txtSucursal;
     }
 
-    public Evento(JButton btnBuscar, JButton btnCrear, JButton btnDevoluciones, JButton btnEjemplar, JButton btnGuardar, JButton btnIcono, JButton btnIcono1, JButton btnNotificacion, JButton btnPerfil, JButton btnPerfil1, JButton btnReservas, JButton jButton1, JLabel jLabel1, JLabel jLabel2, JLabel jLabel3, JLabel jLabel4, JLabel jLabel5, JLabel jLabel6, JPanel jPanel1, JScrollPane jScrollPane1, JLabel lblBiblioteca, JLabel lblLogo, JLabel lblkonrad, JTextArea txaDescripcion, JTextField txtFecha, JTextField txtNombre, JTextField txtSucursal) {
+    public Evento(JButton btnBuscar, JButton btnCrear, JButton btnDevoluciones, JButton btnEjemplar, JButton btnGuardar, JButton btnIcono, JButton btnIcono1, JButton btnInicio, JButton btnNotificacion, JButton btnPerfil, JButton btnPerfil1, JButton btnReservas, JLabel jLabel1, JLabel jLabel2, JLabel jLabel3, JLabel jLabel4, JLabel jLabel6, JPanel jPanel1, JScrollPane jScrollPane1, JLabel lblBiblioteca, JLabel lblEvento, JLabel lblLogo, JLabel lblkonrad, JTextArea txaDescripcion, JTextField txtFecha, JTextField txtNombre, JTextField txtSucursal) {
         this.btnBuscar = btnBuscar;
         this.btnCrear = btnCrear;
         this.btnDevoluciones = btnDevoluciones;
@@ -560,20 +560,20 @@ public class Evento extends javax.swing.JFrame {
         this.btnGuardar = btnGuardar;
         this.btnIcono = btnIcono;
         this.btnIcono1 = btnIcono1;
+        this.btnInicio = btnInicio;
         this.btnNotificacion = btnNotificacion;
         this.btnPerfil = btnPerfil;
         this.btnPerfil1 = btnPerfil1;
         this.btnReservas = btnReservas;
-        this.jButton1 = jButton1;
         this.jLabel1 = jLabel1;
         this.jLabel2 = jLabel2;
         this.jLabel3 = jLabel3;
         this.jLabel4 = jLabel4;
-        this.jLabel5 = jLabel5;
         this.jLabel6 = jLabel6;
         this.jPanel1 = jPanel1;
         this.jScrollPane1 = jScrollPane1;
         this.lblBiblioteca = lblBiblioteca;
+        this.lblEvento = lblEvento;
         this.lblLogo = lblLogo;
         this.lblkonrad = lblkonrad;
         this.txaDescripcion = txaDescripcion;
@@ -582,6 +582,7 @@ public class Evento extends javax.swing.JFrame {
         this.txtSucursal = txtSucursal;
     }
 
+    
 
 
 }

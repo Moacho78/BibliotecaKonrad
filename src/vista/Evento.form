@@ -82,12 +82,12 @@
                                       <Component id="lblBiblioteca" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnInicio" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnCrear" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel5" min="-2" pref="66" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="lblEvento" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                                   <Component id="btnDevoluciones" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnReservas" min="-2" max="-2" attributes="0"/>
@@ -157,8 +157,8 @@
                                       <Component id="btnReservas" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="btnBuscar" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="btnEjemplar" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblEvento" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnInicio" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -324,12 +324,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel5">
+        <Component class="javax.swing.JLabel" name="lblEvento">
           <Properties>
             <Property name="text" type="java.lang.String" value="Eventos"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="btnInicio">
           <Properties>
             <Property name="text" type="java.lang.String" value="Inicio"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>

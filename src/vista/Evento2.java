@@ -34,6 +34,7 @@ public class Evento2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnSancion = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         btnBuscar = new javax.swing.JButton();
         lblLogo = new javax.swing.JLabel();
@@ -70,6 +71,10 @@ public class Evento2 extends javax.swing.JFrame {
         btnIngresar3 = new javax.swing.JButton();
         btnInicio = new javax.swing.JButton();
         lblEventos = new javax.swing.JLabel();
+        btnSancion1 = new javax.swing.JButton();
+
+        btnSancion.setText("Sanción");
+        btnSancion.setContentAreaFilled(false);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -122,6 +127,7 @@ public class Evento2 extends javax.swing.JFrame {
             }
         });
 
+        jPanel2.setBackground(new java.awt.Color(153, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         lblNombre.setText("jLabel1");
@@ -181,6 +187,7 @@ public class Evento2 extends javax.swing.JFrame {
                 .addContainerGap(28, Short.MAX_VALUE))
         );
 
+        jPanel3.setBackground(new java.awt.Color(153, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         lblNombre2.setText("jLabel4");
@@ -220,9 +227,9 @@ public class Evento2 extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(12, 12, 12)
                 .addComponent(lblNombre2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(lblSucursal2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblFecha2)
@@ -230,15 +237,17 @@ public class Evento2 extends javax.swing.JFrame {
                 .addComponent(lblDescripcion2)
                 .addGap(18, 18, 18)
                 .addComponent(btnIngresar2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
+        jPanel4.setBackground(new java.awt.Color(153, 255, 255));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         lblNombre3.setText("jLabel7");
 
         lblSucursal3.setText("jLabel8");
 
+        lblFecha3.setBackground(new java.awt.Color(153, 255, 255));
         lblFecha3.setText("jLabel9");
 
         lblDescripcion3.setText("jLabel12");
@@ -293,6 +302,9 @@ public class Evento2 extends javax.swing.JFrame {
 
         lblEventos.setText("Eventos");
 
+        btnSancion1.setText("Sanción");
+        btnSancion1.setContentAreaFilled(false);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -304,6 +316,7 @@ public class Evento2 extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(btnPerfil))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -333,6 +346,8 @@ public class Evento2 extends javax.swing.JFrame {
                                 .addComponent(btnMulta)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnPrestamo1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnSancion1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -364,7 +379,8 @@ public class Evento2 extends javax.swing.JFrame {
                             .addComponent(btnMulta)
                             .addComponent(btnPrestamo1)
                             .addComponent(btnInicio)
-                            .addComponent(lblEventos)))
+                            .addComponent(lblEventos)
+                            .addComponent(btnSancion1)))
                     .addComponent(lblLogo))
                 .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -416,6 +432,8 @@ public class Evento2 extends javax.swing.JFrame {
     private javax.swing.JButton btnPerfil;
     private javax.swing.JButton btnPrestamo1;
     private javax.swing.JButton btnReservas;
+    private javax.swing.JButton btnSancion;
+    private javax.swing.JButton btnSancion1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -729,7 +747,23 @@ public class Evento2 extends javax.swing.JFrame {
         this.lblkonrad = lblkonrad;
     }
 
-    public Evento2(JButton btnBuscar, JButton btnComprar, JButton btnDevoluciones, JButton btnIcono, JButton btnIngresar, JButton btnIngresar2, JButton btnIngresar3, JButton btnInicio, JButton btnMulta, JButton btnNotificacion, JButton btnPerfil, JButton btnPrestamo1, JButton btnReservas, JLabel jLabel13, JLabel jLabel14, JLabel jLabel15, JPanel jPanel1, JPanel jPanel2, JPanel jPanel3, JPanel jPanel4, JLabel lblBiblioteca, JLabel lblDescripcion, JLabel lblDescripcion2, JLabel lblDescripcion3, JLabel lblEventos, JLabel lblFecha, JLabel lblFecha2, JLabel lblFecha3, JLabel lblLogo, JLabel lblNombre, JLabel lblNombre2, JLabel lblNombre3, JLabel lblSucursal, JLabel lblSucursal2, JLabel lblSucursal3, JLabel lblkonrad) {
+    public JButton getBtnSancion() {
+        return btnSancion;
+    }
+
+    public void setBtnSancion(JButton btnSancion) {
+        this.btnSancion = btnSancion;
+    }
+
+    public JButton getBtnSancion1() {
+        return btnSancion1;
+    }
+
+    public void setBtnSancion1(JButton btnSancion1) {
+        this.btnSancion1 = btnSancion1;
+    }
+
+    public Evento2(JButton btnBuscar, JButton btnComprar, JButton btnDevoluciones, JButton btnIcono, JButton btnIngresar, JButton btnIngresar2, JButton btnIngresar3, JButton btnInicio, JButton btnMulta, JButton btnNotificacion, JButton btnPerfil, JButton btnPrestamo1, JButton btnReservas, JButton btnSancion, JButton btnSancion1, JLabel jLabel13, JLabel jLabel14, JLabel jLabel15, JPanel jPanel1, JPanel jPanel2, JPanel jPanel3, JPanel jPanel4, JLabel lblBiblioteca, JLabel lblDescripcion, JLabel lblDescripcion2, JLabel lblDescripcion3, JLabel lblEventos, JLabel lblFecha, JLabel lblFecha2, JLabel lblFecha3, JLabel lblLogo, JLabel lblNombre, JLabel lblNombre2, JLabel lblNombre3, JLabel lblSucursal, JLabel lblSucursal2, JLabel lblSucursal3, JLabel lblkonrad) {
         this.btnBuscar = btnBuscar;
         this.btnComprar = btnComprar;
         this.btnDevoluciones = btnDevoluciones;
@@ -743,6 +777,8 @@ public class Evento2 extends javax.swing.JFrame {
         this.btnPerfil = btnPerfil;
         this.btnPrestamo1 = btnPrestamo1;
         this.btnReservas = btnReservas;
+        this.btnSancion = btnSancion;
+        this.btnSancion1 = btnSancion1;
         this.jLabel13 = jLabel13;
         this.jLabel14 = jLabel14;
         this.jLabel15 = jLabel15;
@@ -768,5 +804,6 @@ public class Evento2 extends javax.swing.JFrame {
         this.lblkonrad = lblkonrad;
     }
 
+  
 
 }

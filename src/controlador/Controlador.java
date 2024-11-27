@@ -30,6 +30,7 @@ public class Controlador implements ActionListener {
     MiPerfilU objMiPerfilU;
     Proveedor objProveedor;
     Usuarios objRegistrar;
+    Crear objCrear;
 
     public Controlador() {
         objLogin = new Login();
@@ -83,6 +84,9 @@ public class Controlador implements ActionListener {
         objProveedor.getBtnNotificacion().addActionListener(this);
         objProveedor.getBtnPerfil().addActionListener(this);
         objProveedor.getBtnReservas().addActionListener(this);
+        
+        objCrear=new Crear();
+        objCrear.getBtnProveedor().addActionListener(this);
 
     }// cierra constructor
 
@@ -90,6 +94,7 @@ public class Controlador implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (objLogin.getBtnAcceder() == e.getSource()) {
             login();
+            
 
         }
 
@@ -129,6 +134,19 @@ public class Controlador implements ActionListener {
             objProveedor.setVisible(false);
             objInicioE.setVisible(true);
         }
+        if (objInicioE.getBtnIcono()==e.getSource()) {
+            miPerfilE();
+            objInicioE.dispose();
+        }
+        if (objCrear.getBtnProveedor()==e.getSource()) {
+            objProveedor.setVisible(true);
+            objInicioE.dispose();
+        }
+        
+        if (objInicioE.getBtnCrear()==e.getSource()) {
+            objCrear.setVisible(true);
+            objInicioE.dispose();
+        }
 
     }// cierra action 
 
@@ -144,10 +162,8 @@ public class Controlador implements ActionListener {
         if (usuarioLogueado.getRol() == 1) {
             objInicioE.setVisible(true);
         }
-        objLogin.setVisible(false);
-
-        System.out.println("Se logueo desde la clase controlador");
-        System.out.print("El usuario  loguead desde el controlador es " + usuarioLogueado);
+        objLogin.dispose();
+       
     }// cierra login 
 
     public void miPerfilE() {

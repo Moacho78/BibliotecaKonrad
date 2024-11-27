@@ -526,10 +526,10 @@ public class InicioUsuario extends javax.swing.JFrame {
         this.lblkonrad = lblkonrad;
     }
 
-<<<<<<< HEAD
-=======
+
+
    
 
 
->>>>>>> origin/master
+
 }

@@ -22,97 +22,11 @@ public class InicioEmpleado extends javax.swing.JFrame {
     public InicioEmpleado() {
         
         initComponents();
-
-        btnCrear.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Crear crear = new Crear();
-                crear.setVisible(true);
-                dispose(); // Cierra la ventana actual
-
-            }
-        });
-
-        btnEvento.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Evento evento = new Evento();
-                evento.setVisible(true);
-                dispose(); // Cierra la ventana actual
-
-            }
-        });
         
-        btnDevoluciones.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                DevolucionE devolocionE = new DevolucionE();
-                devolocionE.setVisible(true);
-                dispose(); // Cierra la ventana actual
+        
 
-            }
-        });
-
-        btnReservas.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ReservaE reservaE = new ReservaE();
-                reservaE.setVisible(true);
-                dispose(); // Cierra la ventana actual
-
-            }
-        });
-
-        btnBuscar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                BuscarLibroE buscarLibroE = new BuscarLibroE();
-                buscarLibroE.setVisible(true);
-                dispose(); // Cierra la ventana actual
-
-            }
-        });
-
-        btnEjemplar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Ejemplar ejemplar = new Ejemplar();
-                ejemplar.setVisible(true);
-                dispose(); // Cierra la ventana actual
-
-            }
-        });
-
-        btnNotificacion.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                NotificacionE notificacionE = new NotificacionE();
-                notificacionE.setVisible(true);
-                dispose(); // Cierra la ventana actual
-
-            }
-        });
-
-        btnIcono.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                MiPerfilE perfirE = new MiPerfilE();
-                perfirE.setVisible(true);
-                dispose(); // Cierra la ventana actual
-
-            }
-        });
-
-        btnPerfil.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                MiPerfilE perfirE = new MiPerfilE();
-                perfirE.setVisible(true);
-                dispose(); // Cierra la ventana actual
-
-            }
-        });
-    }
+         
+    }// cierra constructor 
 
     /**
      * This method is called from within the constructor to initialize the form.

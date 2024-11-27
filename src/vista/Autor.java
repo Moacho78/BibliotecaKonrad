@@ -10,6 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import modelo.AutorModelo;
 
 /**
  *
@@ -20,10 +21,13 @@ public class Autor extends javax.swing.JFrame {
     /**
      * Creates new form Autor
      */
+    
+    private AutorModelo autor = new AutorModelo();
+    
     public Autor() {
-       
+
         initComponents();
-        
+
         btnInicio.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -34,15 +38,16 @@ public class Autor extends javax.swing.JFrame {
             }
         });
 
-        /*btnEvento.addActionListener(new ActionListener() {
+        btnEvento.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Sucursal sucursal = new Sucursal();
-                sucursal.setVisible(true);
+                Evento evento = new Evento();
+                evento.setVisible(true);
                 dispose(); // Cierra la ventana actual
 
             }
-        });*/ // A QUE VISTA DEBE DIRIGIRSE
+        });
+
         btnDevoluciones.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -112,7 +117,7 @@ public class Autor extends javax.swing.JFrame {
 
             }
         });
-        
+
         btnVolver.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -123,15 +128,24 @@ public class Autor extends javax.swing.JFrame {
             }
         });
         
-        /*btnAgregar.addActionListener(new ActionListener() {
+         btnAgregar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MiPerfilE perfirE = new MiPerfilE();
-                perfirE.setVisible(true);
-                dispose(); // Cierra la ventana actual
+                // Obtener los valores desde los campos de texto
+                String nombre = txtNombre.getText();      // Asume que tienes un campo txtNombre
+                String apellido = txtApellido.getText();  // Asume que tienes un campo txtApellido
+                String nacionalidad = txtNacionalidad.getText();  // Asume que tienes un campo txtNacionalidad
 
+
+                // Llamar al método insertarAutor de la instancia de AutorModelo
+                autor.insertarAutor(nombre, apellido, nacionalidad);
+
+                // Redirigir a la ventana de inicio
+                InicioEmpleado inicioEmpleado = new InicioEmpleado();
+                inicioEmpleado.setVisible(true);
+                dispose(); // Cierra la ventana actual
             }
-        });*/ // PENDIENTE
+        });
         
     }
 
@@ -368,7 +382,6 @@ public class Autor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIconoActionPerformed
 
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregar;
@@ -626,5 +639,4 @@ public class Autor extends javax.swing.JFrame {
         this.txtNombre = txtNombre;
     }
 
-  
 }

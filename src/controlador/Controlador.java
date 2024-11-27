@@ -93,15 +93,6 @@ public class Controlador implements ActionListener {
 
         }
 
-        if (objInicioE.getBtnPerfil() == e.getSource()) {
-            objInicioE.setVisible(false);
-            miPerfilE();
-        }
-        if (objInicioE.getBtnIcono() == e.getSource()) {
-            objInicioE.setVisible(false);
-            miPerfilE();
-        }
-
         if (objMiPerfilE.getBtnVolver() == e.getSource()) {
             objInicioE.setVisible(true);
             objMiPerfilE.setVisible(false);
@@ -123,15 +114,6 @@ public class Controlador implements ActionListener {
         if (objMiPerfilU.getBtnVolver() == e.getSource()) {
             objMiPerfilU.setVisible(false);
             objInicioU.setVisible(true);
-        }
-
-        if (objInicioU.getBtnPerfil() == e.getSource()) {
-            objInicioU.setVisible(false);
-            miPerfilU();
-        }
-        if (objInicioU.getBtnIcono() == e.getSource()) {
-            objInicioU.setVisible(false);
-            miPerfilU();
         }
 
         if (objProveedor.getBtnPerfil() == e.getSource()) {

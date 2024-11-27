@@ -33,15 +33,15 @@ public class Crear extends javax.swing.JFrame {
             }
         });
 
-        /*btnEvento.addActionListener(new ActionListener() {
+        btnEvento.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Sucursal sucursal = new Sucursal();
-                sucursal.setVisible(true);
+                Evento evento = new Evento();
+                evento.setVisible(true);
                 dispose(); // Cierra la ventana actual
 
             }
-        });*/ // A QUE VISTA DEBE DIRIGIRSE
+        });
         btnDevoluciones.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

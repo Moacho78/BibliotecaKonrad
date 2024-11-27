@@ -51,15 +51,16 @@ public class InicioUsuario extends javax.swing.JFrame {
 
             }
         });
-        /*btnEvento.addActionListener(new ActionListener() {
+        
+        btnEventos.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Sucursal sucursal = new Sucursal();
-                sucursal.setVisible(true);
+                Evento2 evento2 = new Evento2();
+                evento2.setVisible(true);
                 dispose(); // Cierra la ventana actual
 
             }
-        });*/ // A QUE VISTA DEBE DIRIGIRSE
+        });
 
         btnBuscar.addActionListener(new ActionListener() {
             @Override

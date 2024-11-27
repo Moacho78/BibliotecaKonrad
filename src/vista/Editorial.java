@@ -23,9 +23,9 @@ public class Editorial extends javax.swing.JFrame {
      * Creates new form Editorial
      */
     public Editorial() {
-        
+
         initComponents();
-        
+
         btnInicio.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -36,15 +36,16 @@ public class Editorial extends javax.swing.JFrame {
             }
         });
 
-        /*btnEvento.addActionListener(new ActionListener() {
+        btnEvento.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Sucursal sucursal = new Sucursal();
-                sucursal.setVisible(true);
+                Evento evento = new Evento();
+                evento.setVisible(true);
                 dispose(); // Cierra la ventana actual
 
             }
-        });*/ // A QUE VISTA DEBE DIRIGIRSE
+        });
+        
         btnDevoluciones.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -114,7 +115,7 @@ public class Editorial extends javax.swing.JFrame {
 
             }
         });
-        
+
         /*btnAgregar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -344,7 +345,6 @@ public class Editorial extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIconoActionPerformed
 
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregar;
@@ -561,8 +561,5 @@ public class Editorial extends javax.swing.JFrame {
         this.txtNombre = txtNombre;
         this.txtPais = txtPais;
     }
-
-  
-
 
 }

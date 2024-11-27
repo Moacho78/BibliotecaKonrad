@@ -4,11 +4,18 @@
  */
 package modelo;
 
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.SQLException;
+import java.time.LocalDate;
+
 /**
  *
  * @author migue
  */
 public class Editorial {
+
     private int editorialID;
     private String nombre;
     private String pais;
@@ -52,10 +59,30 @@ public class Editorial {
     // Método toString
     @Override
     public String toString() {
-        return "Editorial{" +
-                "editorialID=" + editorialID +
-                ", nombre='" + nombre + '\'' +
-                ", pais='" + pais + '\'' +
-                '}';
+        return "Editorial{"
+                + "editorialID=" + editorialID
+                + ", nombre='" + nombre + '\''
+                + ", pais='" + pais + '\''
+                + '}';
     }
+
+    public void insertarEditorial(String nombre, String pais) {
+
+        SQLServerConnection conexionSQL = new SQLServerConnection();
+        String sql = "{call sp_InsertarAutor(?, ?, ?, ?)}";
+
+        try (Connection conexion = conexionSQL.getConexion(); CallableStatement stmt = conexion.prepareCall(sql)) {
+
+            stmt.setString(1, nombre);
+            stmt.setString(2, pais);
+
+            // Ejecutar el procedimiento almacenado
+            stmt.execute();
+            System.out.println("Editorial insertada correctamente.");
+        } catch (SQLException e) {
+            System.err.println("Error al insertar la editorial: " + e.getMessage());
+            e.printStackTrace();
+        }
+    } // cierra insertar editorial
+
 }

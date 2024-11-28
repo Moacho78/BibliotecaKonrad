@@ -21,11 +21,7 @@ public class Sucursal extends javax.swing.JFrame {
      * Creates new form Sucursal
      */
     public Sucursal() {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Sucursal().setVisible(false);
-            }
-        });
+        initComponents();
     }
 
     /**

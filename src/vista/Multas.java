@@ -22,11 +22,7 @@ public class Multas extends javax.swing.JFrame {
      */
     public Multas() {
         initComponents();
-         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Multas().setVisible(false);
-            }
-        });
+         
     }
 
     /**

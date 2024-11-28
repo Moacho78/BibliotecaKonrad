@@ -20,11 +20,7 @@ public class PrestamoE extends javax.swing.JFrame {
      * Creates new form prestamo
      */
     public PrestamoE() {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new PrestamoE().setVisible(false);
-            }
-        }); 
+        initComponents();
     }
 
     /**

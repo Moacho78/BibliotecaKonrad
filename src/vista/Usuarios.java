@@ -22,11 +22,7 @@ public class Usuarios extends javax.swing.JFrame {
      * Creates new form Usuarios
      */
     public Usuarios() {
-       java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Usuarios().setVisible(false);
-            }
-        });
+       initComponents();
     }
 
     /**

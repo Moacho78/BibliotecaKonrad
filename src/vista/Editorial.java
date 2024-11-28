@@ -23,17 +23,9 @@ public class Editorial extends javax.swing.JFrame {
      * Creates new form Editorial
      */
     public Editorial() {
-<<<<<<< HEAD
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Editorial().setVisible(false);
-            }
-        });
-=======
 
         initComponents();
 
->>>>>>> origin/master
     }
 
     /**

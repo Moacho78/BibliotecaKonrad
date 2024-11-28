@@ -20,11 +20,7 @@ public class Ejemplar extends javax.swing.JFrame {
      * Creates new form Ejemplar
      */
     public Ejemplar() {
-       java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Ejemplar().setVisible(false);
-            }
-        });
+       initComponents();
     }
 
     /**

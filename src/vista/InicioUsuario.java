@@ -63,6 +63,8 @@ public class InicioUsuario extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
         btnReservas.setText("Reservas");
         btnReservas.setContentAreaFilled(false);
 

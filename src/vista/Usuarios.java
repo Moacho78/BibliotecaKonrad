@@ -61,6 +61,8 @@ public class Usuarios extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
         lblRegistro.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblRegistro.setForeground(new java.awt.Color(51, 51, 255));
         lblRegistro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

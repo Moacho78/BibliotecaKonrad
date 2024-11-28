@@ -57,6 +57,8 @@ public class SancionU extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
         btnDevoluciones.setText("Devolución");
         btnDevoluciones.setContentAreaFilled(false);
 
@@ -228,10 +230,7 @@ public class SancionU extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-<<<<<<< HEAD
-  
-=======
->>>>>>> origin/master
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;

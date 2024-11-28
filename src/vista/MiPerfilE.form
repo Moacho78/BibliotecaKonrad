@@ -119,21 +119,22 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <Component id="jPanel1" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -197,7 +198,7 @@
                               <Component id="lblContraseña1" alignment="0" max="32767" attributes="0"/>
                               <Component id="lblMostrarCedula" alignment="0" max="32767" attributes="0"/>
                               <Component id="lblMostrarNombre" alignment="1" max="32767" attributes="0"/>
-                              <Component id="lblCedula1" alignment="1" pref="142" max="32767" attributes="0"/>
+                              <Component id="lblCedula1" alignment="1" pref="130" max="32767" attributes="0"/>
                               <Component id="lblMostrarDireccion" alignment="1" max="32767" attributes="0"/>
                               <Component id="lblContraseña" alignment="0" max="32767" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
@@ -300,7 +301,7 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="btnSala" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="61" max="32767" attributes="0"/>
+                  <EmptySpace pref="52" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnVolver" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblImagen" alignment="3" min="-2" pref="18" max="-2" attributes="0"/>

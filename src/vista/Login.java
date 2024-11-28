@@ -64,6 +64,8 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
         lblBiblioteca1.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         lblBiblioteca1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblBiblioteca1.setText("Biblioteca  Konrad");

@@ -48,7 +48,7 @@ public class Controlador implements ActionListener {
     Usuarios objRegistrar;
     Crear objCrear;
     Autor objAutor;
-    ReservaE objReserva;
+    ReservaE objReservaE;
     Sucursal objSucursal;
     BuscarLibroE objBuscarLibroE;
     DevolucionE objDevolucionE;
@@ -153,6 +153,68 @@ public class Controlador implements ActionListener {
         objLibro.getBtnNotificacion().addActionListener(this);
         objLibro.getBtnPerfil().addActionListener(this);
         objLibro.getBtnReservas().addActionListener(this);
+        
+        objEvento = new Evento();
+        objEvento.getBtnBuscar().addActionListener(this);
+        objEvento.getBtnCrear().addActionListener(this);
+        objEvento.getBtnDevoluciones().addActionListener(this);
+        objEvento.getBtnEjemplar().addActionListener(this);
+        objEvento.getBtnGuardar().addActionListener(this);
+        objEvento.getBtnIcono1().addActionListener(this);
+        objEvento.getBtnInicio().addActionListener(this);
+        objEvento.getBtnNotificacion().addActionListener(this);
+        objEvento.getBtnPerfil1().addActionListener(this);
+        objEvento.getBtnReservas().addActionListener(this);
+        
+        objDevolucionE = new DevolucionE();
+        objDevolucionE.getBtnBuscar().addActionListener(this);
+        objDevolucionE.getBtnCrear().addActionListener(this);
+        objDevolucionE.getBtnEjemplar().addActionListener(this);
+        objDevolucionE.getBtnEnviar().addActionListener(this);
+        objDevolucionE.getBtnEvento().addActionListener(this);
+        objDevolucionE.getBtnIcono().addActionListener(this);
+        objDevolucionE.getBtnInicio().addActionListener(this);
+        objDevolucionE.getBtnNotificacion().addActionListener(this);
+        objDevolucionE.getBtnPerfil().addActionListener(this);
+        objDevolucionE.getBtnReservas().addActionListener(this);
+        
+        objReservaE = new ReservaE();
+        objReservaE.getBtnBuscar().addActionListener(this);
+        objReservaE.getBtnCrear().addActionListener(this);
+        objReservaE.getBtnDevoluciones().addActionListener(this);
+        objReservaE.getBtnEjemplar().addActionListener(this);
+        objReservaE.getBtnEvento().addActionListener(this);
+        objReservaE.getBtnIcono().addActionListener(this);
+        objReservaE.getBtnNotificacion().addActionListener(this);
+        objReservaE.getBtnPerfil().addActionListener(this);
+        objReservaE.getBtnReserva().addActionListener(this);
+        objReservaE.getBtnReservas().addActionListener(this);
+        
+        objBuscarLibroE = new BuscarLibroE();
+        objBuscarLibroE.getBtnBuscarLibro().addActionListener(this);
+        objBuscarLibroE.getBtnCrear().addActionListener(this);
+        objBuscarLibroE.getBtnDevoluciones().addActionListener(this);
+        objBuscarLibroE.getBtnEjemplar().addActionListener(this);
+        objBuscarLibroE.getBtnEvento().addActionListener(this);
+        objBuscarLibroE.getBtnIcono().addActionListener(this);
+        objBuscarLibroE.getBtnInicio().addActionListener(this);
+        objBuscarLibroE.getBtnNotificacion().addActionListener(this);
+        objBuscarLibroE.getBtnPerfil().addActionListener(this);
+        objBuscarLibroE.getBtnReservas().addActionListener(this);
+        
+        objEjemplar = new Ejemplar();
+        objEjemplar.getBtnBuscar().addActionListener(this);
+        objEjemplar.getBtnCrear().addActionListener(this);
+        objEjemplar.getBtnDevoluciones().addActionListener(this);
+        objEjemplar.getBtnEjemplar().addActionListener(this);
+        objEjemplar.getBtnEvento().addActionListener(this);
+        objEjemplar.getBtnGuardar().addActionListener(this);
+        objEjemplar.getBtnIcono().addActionListener(this);
+        objEjemplar.getBtnInicio().addActionListener(this);
+        objEjemplar.getBtnNotificacion().addActionListener(this);
+        objEjemplar.getBtnPerfil().addActionListener(this);
+        objEjemplar.getBtnReservas().addActionListener(this);
+        objEjemplar.getBtnVolver().addActionListener(this);
 
     }// cierra constructor
 
@@ -257,20 +319,52 @@ public class Controlador implements ActionListener {
             objCrear.dispose();
         }
         if (objCrear.getBtnReservas() == e.getSource()) {
-            objReserva.setVisible(true);
+            objReservaE.setVisible(true);
             objCrear.dispose();
         }
         if (objCrear.getBtnSucursal() == e.getSource()) {
             objSucursal.setVisible(true);
             objCrear.dispose();
         }
-
+        
+        if (objAutor.getBtnAgregar() == e.getSource()) {
+            insertarAutor();
+            objCrear.setVisible(true);
+            objAutor.dispose();
+        }
+        if (objAutor.getBtnDevoluciones() == e.getSource()) {
+            objDevolucionE.setVisible(true);
+            objAutor.disable();
+        }
+        if (objAutor.getBtnEjemplar() == e.getSource()) {
+            objEjemplar.setVisible(true);
+            objAutor.dispose();
+        }
+        if (objAutor.getBtnEvento() == e.getSource()) {
+            objEvento.setVisible(true);
+            objAutor.dispose();
+        }
+        if (objAutor.getBtnIcono() == e.getSource()) {
+            miPerfilE();
+            objAutor.dispose();
+        }
         if (objAutor.getBtnInicio() == e.getSource()) {
             objInicioE.setVisible(true);
             objAutor.dispose();
         }
-        if (objAutor.getBtnAgregar() == e.getSource()) {
-            insertarAutor();
+        if (objAutor.getBtnNotificacion() == e.getSource()) {
+            objNotificacionE.setVisible(true);
+            objAutor.dispose();
+        }
+        if (objAutor.getBtnPerfil() == e.getSource()) {
+            miPerfilE();
+            objAutor.dispose();
+        }
+        if (objAutor.getBtnReservas() == e.getSource()) {
+            objReservaE.setVisible(true);
+            objAutor.dispose();
+        }
+        if (objAutor.getBtnVolver() == e.getSource()) {
             objCrear.setVisible(true);
             objAutor.dispose();
         }

@@ -22,11 +22,7 @@ public class Proveedor extends javax.swing.JFrame {
      */
     public Proveedor() {
         initComponents();
-          java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Proveedor().setVisible(false);
-            }
-        });
+          
     }
 
     /**

@@ -22,11 +22,7 @@ public class Sancion extends javax.swing.JFrame {
      * Creates new form Sancion
      */
     public Sancion() {
-         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Sancion().setVisible(false);
-            }
-        });
+         initComponents();
     }
 
     /**

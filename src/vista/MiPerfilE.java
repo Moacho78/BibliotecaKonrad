@@ -23,11 +23,7 @@ public class MiPerfilE extends javax.swing.JFrame {
     public MiPerfilE() {
         initComponents();
         
-          java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MiPerfilE().setVisible(false);
-            }
-        });
+          
     }
 
     /**

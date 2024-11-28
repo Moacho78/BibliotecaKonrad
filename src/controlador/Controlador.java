@@ -215,6 +215,9 @@ public class Controlador implements ActionListener {
         objEjemplar.getBtnPerfil().addActionListener(this);
         objEjemplar.getBtnReservas().addActionListener(this);
         objEjemplar.getBtnVolver().addActionListener(this);
+        
+        objNotificacionE = new NotificacionE();
+        objNotificacionE.getBtnVolver().addActionListener(this);
 
     }// cierra constructor
 

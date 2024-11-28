@@ -20,11 +20,8 @@ public class SancionU extends javax.swing.JFrame {
      * Creates new form SancionU
      */
     public SancionU() {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new SancionU().setVisible(false);
-            }
-        });
+        initComponents();
+        
     }
 
     /**
@@ -228,10 +225,6 @@ public class SancionU extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-<<<<<<< HEAD
-  
-=======
->>>>>>> origin/master
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;

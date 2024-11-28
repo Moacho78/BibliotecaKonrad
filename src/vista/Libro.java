@@ -25,18 +25,9 @@ public class Libro extends javax.swing.JFrame {
      * Creates new form Libro
      */
     public Libro() {
-<<<<<<< HEAD
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Libro().setVisible(false);
-            }
-        });
-=======
-        
+
         initComponents();
-        
-        
->>>>>>> origin/master
+
     }
 
     /**
@@ -346,7 +337,7 @@ public class Libro extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregar;
     private javax.swing.JButton btnBuscar;
@@ -693,7 +684,4 @@ public class Libro extends javax.swing.JFrame {
         this.txtPrecio = txtPrecio;
     }
 
-   
-   
- 
 }

@@ -6,19 +6,7 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-/*import modelo.AutorModelo;
-import modelo.Libros;
-import modelo.ProveedorLibro;
-import modelo.Usuario;
-import modelo.Reserva;
-import modelo.SucursalModelo;
-import modelo.Devolucion;
-import modelo.EditorialModelo;*/
 import modelo.*;
-/*import vista.InicioEmpleado;
-import vista.InicioUsuario;
-import vista.Login;
-import vista.MiPerfilE;*/
 import vista.*;
 
 /**
@@ -218,6 +206,8 @@ public class Controlador implements ActionListener {
         
         objNotificacionE = new NotificacionE();
         objNotificacionE.getBtnVolver().addActionListener(this);
+        
+        
 
     }// cierra constructor
 
@@ -435,7 +425,7 @@ public class Controlador implements ActionListener {
         String nacionalidad = objAutor.getTxtNacionalidad().getText();
         
         AutorModelo.insertarAutor(nombre, apellido, nacionalidad);
-    }
+    }// Cierra insertar autor
             
             
 }// cierra class

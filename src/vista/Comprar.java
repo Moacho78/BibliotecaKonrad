@@ -19,6 +19,9 @@ public class Comprar extends javax.swing.JFrame {
      * Creates new form Comprar
      */
     public Comprar() {
+        
+        initComponents();
+        
       java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Comprar().setVisible(false);

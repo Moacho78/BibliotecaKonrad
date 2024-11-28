@@ -43,9 +43,18 @@ public class Controlador implements ActionListener {
     Editorial objEditorial;
     Ejemplar objEjemplar;
     Evento objEvento;
-    Evento2 objEvento2;
     Libro objLibro;
     NotificacionE objNotificacionE;
+    Comprar objComprar;
+    ReservaU objReservaU;
+    DevoluciónU objDevolucionU;
+    Evento2 objEvento2;
+    BuscarLibroU objBuscarLibroU;
+    Multas objMultas;
+    PrestamoU objPrestamoU;
+    SancionU objSancionU;
+    NotificacionesU objNotificacionesU;
+    
 
     public Controlador() {
         objLogin = new Login();
@@ -62,7 +71,8 @@ public class Controlador implements ActionListener {
         objInicioU.getBtnMulta().addActionListener(this);
         objInicioU.getBtnNotificacion().addActionListener(this);
         objInicioU.getBtnPerfil().addActionListener(this);
-        objInicioU.getBtnPrestamo().addActionListener(this);
+        objInicioU.getBtnPrestamo1().addActionListener(this);
+        objInicioU.getBtnSancion().addActionListener(this);
 
         objInicioE = new InicioEmpleado();
         objInicioE.getBtnBuscar().addActionListener(this);
@@ -219,6 +229,109 @@ public class Controlador implements ActionListener {
         objEditorial.getBtnPerfil().addActionListener(this);
         objEditorial.getBtnReservas().addActionListener(this);
         
+        objComprar = new Comprar();
+        objComprar.getBtnBuscar().addActionListener(this);
+        objComprar.getBtnComprar().addActionListener(this);
+        objComprar.getBtnComprar2().addActionListener(this);
+        objComprar.getBtnComprar3().addActionListener(this);
+        objComprar.getBtnDevoluciones().addActionListener(this);
+        objComprar.getBtnEventos().addActionListener(this);
+        objComprar.getBtnIcono().addActionListener(this);
+        objComprar.getBtnInicio().addActionListener(this);
+        objComprar.getBtnMulta().addActionListener(this);
+        objComprar.getBtnNotificacion().addActionListener(this);
+        objComprar.getBtnPerfil().addActionListener(this);
+        objComprar.getBtnPrestamo1().addActionListener(this);
+        objComprar.getBtnReservas().addActionListener(this);
+        
+        objReservaU = new ReservaU();
+        objReservaU.getBtnBuscar().addActionListener(this);
+        objReservaU.getBtnComprar().addActionListener(this);
+        objReservaU.getBtnDevoluciones().addActionListener(this);
+        objReservaU.getBtnEventos().addActionListener(this);
+        objReservaU.getBtnIcono().addActionListener(this);
+        objReservaU.getBtnMulta().addActionListener(this);
+        objReservaU.getBtnNotificacion().addActionListener(this);
+        objReservaU.getBtnPerfil().addActionListener(this);
+        objReservaU.getBtnPrestamo1().addActionListener(this);
+        objReservaU.getBtnReservas().addActionListener(this);
+        objReservaU.getBtnSancion().addActionListener(this);
+        
+        objDevolucionU = new DevoluciónU();
+        objDevolucionU.getBtnBuscar().addActionListener(this);
+        objDevolucionU.getBtnComprar().addActionListener(this);
+        objDevolucionU.getBtnDevoluciones().addActionListener(this);
+        objDevolucionU.getBtnEventos().addActionListener(this);
+        objDevolucionU.getBtnIcono().addActionListener(this);
+        objDevolucionU.getBtnMulta().addActionListener(this);
+        objDevolucionU.getBtnNotificacion().addActionListener(this);
+        objDevolucionU.getBtnPerfil().addActionListener(this);
+        objDevolucionU.getBtnPrestamo1().addActionListener(this);
+        objDevolucionU.getBtnReservas().addActionListener(this);
+        objDevolucionU.getBtnSancion().addActionListener(this);
+        
+        objEvento2 = new Evento2();
+        objEvento2.getBtnBuscar().addActionListener(this);
+        objEvento2.getBtnComprar().addActionListener(this);
+        objEvento2.getBtnDevoluciones().addActionListener(this);
+        objEvento2.getBtnIcono().addActionListener(this);
+        objEvento2.getBtnIngresar().addActionListener(this);
+        objEvento2.getBtnIngresar2().addActionListener(this);
+        objEvento2.getBtnIngresar3().addActionListener(this);
+        objEvento2.getBtnInicio().addActionListener(this);
+        objEvento2.getBtnMulta().addActionListener(this);
+        objEvento2.getBtnNotificacion().addActionListener(this);
+        objEvento2.getBtnPerfil().addActionListener(this);
+        objEvento2.getBtnPrestamo1().addActionListener(this);
+        objEvento2.getBtnReservas().addActionListener(this);
+        objEvento2.getBtnSancion().addActionListener(this);
+        objEvento2.getBtnSancion1().addActionListener(this);
+        
+        objBuscarLibroU = new BuscarLibroU();
+        objBuscarLibroU.getBtnBuscarLibro().addActionListener(this);
+        objBuscarLibroU.getBtnComprar().addActionListener(this);
+        objBuscarLibroU.getBtnComprar2().addActionListener(this);
+        objBuscarLibroU.getBtnDevoluciones().addActionListener(this);
+        objBuscarLibroU.getBtnEventos().addActionListener(this);
+        objBuscarLibroU.getBtnIcono().addActionListener(this);
+        objBuscarLibroU.getBtnInicio().addActionListener(this);
+        objBuscarLibroU.getBtnMulta().addActionListener(this);
+        objBuscarLibroU.getBtnPerfil().addActionListener(this);
+        objBuscarLibroU.getBtnPrestamo1().addActionListener(this);
+        objBuscarLibroU.getBtnReservas().addActionListener(this);
+        objBuscarLibroU.getBtnSancion().addActionListener(this);
+        
+        objMultas = new Multas();
+        objMultas.getBtnVolver().addActionListener(this);
+        
+        objPrestamoU = new PrestamoU();
+        objPrestamoU.getBtnBuscar().addActionListener(this);
+        objPrestamoU.getBtnComprar().addActionListener(this);
+        objPrestamoU.getBtnDevoluciones().addActionListener(this);
+        objPrestamoU.getBtnEventos().addActionListener(this);
+        objPrestamoU.getBtnIcono().addActionListener(this);
+        objPrestamoU.getBtnInicio().addActionListener(this);
+        objPrestamoU.getBtnMulta().addActionListener(this);
+        objPrestamoU.getBtnNotificacion().addActionListener(this);
+        objPrestamoU.getBtnPerfil().addActionListener(this);
+        objPrestamoU.getBtnReservas().addActionListener(this);
+        objPrestamoU.getBtnSancion().addActionListener(this);
+        
+        objSancionU = new SancionU();
+        objSancionU.getBtnBuscar().addActionListener(this);
+        objSancionU.getBtnComprar().addActionListener(this);
+        objSancionU.getBtnDevoluciones().addActionListener(this);
+        objSancionU.getBtnEventos().addActionListener(this);
+        objSancionU.getBtnIcono().addActionListener(this);
+        objSancionU.getBtnInicio().addActionListener(this);
+        objSancionU.getBtnMulta().addActionListener(this);
+        objSancionU.getBtnNotificacion().addActionListener(this);
+        objSancionU.getBtnPerfil().addActionListener(this);
+        objSancionU.getBtnPrestamo1().addActionListener(this);
+        objSancionU.getBtnReservas().addActionListener(this);
+        
+        objNotificacionesU = new NotificacionesU();
+        objNotificacionesU.getBtnVolver().addActionListener(this);
         
 
     }// cierra constructor
@@ -443,7 +556,50 @@ public class Controlador implements ActionListener {
             objReservaE.setVisible(true);
             objInicioE.dispose();
         }
-        
+        if (objInicioU.getBtnBuscar() == e.getSource()) {
+            objBuscarLibroU.setVisible(true);
+            objInicioU.dispose();
+        }
+        if (objInicioU.getBtnComprar() == e.getSource()) {
+            objComprar.setVisible(true);
+            objInicioU.dispose();
+        }
+        if (objInicioU.getBtnDevoluciones() == e.getSource()) {
+            objDevolucionU.setVisible(true);
+            objInicioU.dispose();
+        }
+        if (objInicioU.getBtnEventos() == e.getSource()) {
+            objEvento2.setVisible(true);
+            objInicioU.dispose();
+        }
+        if (objInicioU.getBtnIcono() == e.getSource()) {
+            miPerfilU();
+            objInicioU.dispose();
+        }
+        if (objInicioU.getBtnMulta() == e.getSource()) {
+            objMultas.setVisible(true);
+            objInicioU.dispose();
+        }
+        if (objInicioU.getBtnNotificacion() == e.getSource()) {
+            objNotificacionesU.setVisible(true);
+            objInicioU.dispose();
+        }
+        if (objInicioU.getBtnPerfil() == e.getSource()) {
+            miPerfilU();
+            objInicioU.dispose();
+        }
+        if (objInicioU.getBtnPrestamo1() == e.getSource()) {
+            objPrestamoU.setVisible(true);
+            objInicioU.dispose();
+        }
+        if (objInicioU.getBtnReservas() == e.getSource()) {
+            objReservaU.setVisible(true);
+            objInicioU.dispose();
+        }
+        if (objInicioU.getBtnSancion() == e.getSource()) {
+            objSancionU.setVisible(true);
+            objInicioU.dispose();
+        }
 
     }// cierra action 
 

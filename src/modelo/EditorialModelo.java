@@ -14,18 +14,18 @@ import java.time.LocalDate;
  *
  * @author migue
  */
-public class Editorial {
+public class EditorialModelo {
 
     private int editorialID;
     private String nombre;
     private String pais;
 
     // Constructor vacío
-    public Editorial() {
+    public EditorialModelo() {
     }
 
     // Constructor con parámetros
-    public Editorial(int editorialID, String nombre, String pais) {
+    public EditorialModelo(int editorialID, String nombre, String pais) {
         this.editorialID = editorialID;
         this.nombre = nombre;
         this.pais = pais;

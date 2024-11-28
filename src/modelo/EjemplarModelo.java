@@ -8,18 +8,18 @@ package modelo;
  *
  * @author migue
  */
-public class Ejemplar {
+public class EjemplarModelo {
     private int ejemplarID;
     private int libroID;
     private String ubicacion;
     private String estado; // (e.g., Disponible, Prestado)
 
     // Constructor vacío
-    public Ejemplar() {
+    public EjemplarModelo() {
     }
 
     // Constructor con parámetros
-    public Ejemplar(int ejemplarID, int libroID, String ubicacion, String estado) {
+    public EjemplarModelo(int ejemplarID, int libroID, String ubicacion, String estado) {
         this.ejemplarID = ejemplarID;
         this.libroID = libroID;
         this.ubicacion = ubicacion;

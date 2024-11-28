@@ -8,17 +8,17 @@ package modelo;
  *
  * @author migue
  */
-public class Sucursal {
+public class SucursalModelo {
     private int sucursalID;
     private String nombre;
     private String ubicacion;
 
     // Constructor vacío
-    public Sucursal() {
+    public SucursalModelo() {
     }
 
     // Constructor con parámetros
-    public Sucursal(int sucursalID, String nombre, String ubicacion) {
+    public SucursalModelo(int sucursalID, String nombre, String ubicacion) {
         this.sucursalID = sucursalID;
         this.nombre = nombre;
         this.ubicacion = ubicacion;

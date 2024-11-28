@@ -58,6 +58,8 @@ public class Controlador implements ActionListener {
     Evento2 objEvento2;
     Libro objLibro;
     NotificacionE objNotificacionE;
+    Inventario objInventario;
+    Multas objMultas;
 
     public Controlador() {
         objLogin = new Login();
@@ -153,6 +155,18 @@ public class Controlador implements ActionListener {
         objLibro.getBtnNotificacion().addActionListener(this);
         objLibro.getBtnPerfil().addActionListener(this);
         objLibro.getBtnReservas().addActionListener(this);
+        
+        objInventario=new Inventario();
+        objInventario.getBtnBuscar().addActionListener(this);
+        objInventario.getBtnCrear().addActionListener(this);
+        objInventario.getBtnDevoluciones().addActionListener(this);
+        objInventario.getBtnEjemplar().addActionListener(this);
+        objInventario.getBtnEvento().addActionListener(this);
+        objInventario.getBtnIcono().addActionListener(this);
+        objInventario.getBtnNotificacion().addActionListener(this);
+        objInventario.getBtnPerfil().addActionListener(this);
+        objInventario.getBtnReservas().addActionListener(this);
+        objInventario.getBtnVolver().addActionListener(this);
 
     }// cierra constructor
 
@@ -165,14 +179,22 @@ public class Controlador implements ActionListener {
 
         if (objMiPerfilE.getBtnVolver() == e.getSource()) {
             objInicioE.setVisible(true);
-            objMiPerfilE.setVisible(false);
+            objMiPerfilE.dispose();
         }
 
         if (objMiPerfilE.getBtnCerrarSesion() == e.getSource()) {
 
             usuarioLogueado = null;
             objLogin.setVisible(true);
-            objMiPerfilE.setVisible(false);
+            objMiPerfilE.dispose();
+        }
+        if (objMiPerfilE.getBtnInventario()==e.getSource()) {
+            objInventario.setVisible(true);
+            objMiPerfilE.dispose();
+        }
+        if (objMiPerfilE.getBtnMultas()==e.getSource()) {
+            objMultas.setVisible(true);
+            objMiPerfilE.dispose();
         }
 
         if (objMiPerfilU.getBtnCerrarSesion() == e.getSource()) {
@@ -274,6 +296,8 @@ public class Controlador implements ActionListener {
             objCrear.setVisible(true);
             objAutor.dispose();
         }
+        
+       
         
 
     }// cierra action 

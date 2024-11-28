@@ -6,19 +6,7 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-/*import modelo.AutorModelo;
-import modelo.Libros;
-import modelo.ProveedorLibro;
-import modelo.Usuario;
-import modelo.Reserva;
-import modelo.SucursalModelo;
-import modelo.Devolucion;
-import modelo.EditorialModelo;*/
 import modelo.*;
-/*import vista.InicioEmpleado;
-import vista.InicioUsuario;
-import vista.Login;
-import vista.MiPerfilE;*/
 import vista.*;
 
 /**
@@ -264,6 +252,20 @@ public class Controlador implements ActionListener {
         
         objNotificacionE = new NotificacionE();
         objNotificacionE.getBtnVolver().addActionListener(this);
+        
+        objEditorial = new Editorial();
+        objEditorial.getBtnAgregar().addActionListener(this);
+        objEditorial.getBtnBuscar().addActionListener(this);
+        objEditorial.getBtnDevoluciones().addActionListener(this);
+        objEditorial.getBtnEjemplar().addActionListener(this);
+        objEditorial.getBtnEvento().addActionListener(this);
+        objEditorial.getBtnIcono().addActionListener(this);
+        objEditorial.getBtnInicio().addActionListener(this);
+        objEditorial.getBtnNotificacion().addActionListener(this);
+        objEditorial.getBtnPerfil().addActionListener(this);
+        objEditorial.getBtnReservas().addActionListener(this);
+        
+        
 
 
     }// cierra constructor
@@ -352,6 +354,7 @@ public class Controlador implements ActionListener {
             objProveedor.setVisible(false);
             objInicioE.setVisible(true);
         }
+<<<<<<< HEAD
         if (objProveedor.getBtnEvento()==e.getSource()) {
             objEvento.setVisible(true);
             objProveedor.dispose();
@@ -385,6 +388,9 @@ public class Controlador implements ActionListener {
             objCrear.setVisible(true);
             objInicioE.dispose();
         }
+=======
+        
+>>>>>>> origin/master
         if (objCrear.getBtnAutor() == e.getSource()) {
             objAutor.setVisible(true);
             objCrear.dispose();
@@ -483,6 +489,83 @@ public class Controlador implements ActionListener {
         if (objAutor.getBtnVolver() == e.getSource()) {
             objCrear.setVisible(true);
             objAutor.dispose();
+        }
+        if (objEditorial.getBtnAgregar() == e.getSource()) {
+            insertarEditorial();
+            objCrear.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnBuscar() == e.getSource()) {
+            objBuscarLibroE.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnDevoluciones() == e.getSource()) {
+            objDevolucionE.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnEjemplar() == e.getSource()) {
+            objEjemplar.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnEvento() == e.getSource()) {
+            objEvento.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnIcono() == e.getSource()) {
+            miPerfilE();
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnInicio() == e.getSource()) {
+            objInicioE.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnNotificacion() == e.getSource()) {
+            objNotificacionE.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnPerfil() == e.getSource()) {
+            miPerfilE();
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnReservas() == e.getSource()) {
+            objReservaE.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objInicioE.getBtnBuscar() == e.getSource()) {
+            objBuscarLibroE.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnCrear() == e.getSource()) {
+            objCrear.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnDevoluciones() == e.getSource()) {
+            objDevolucionE.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnEjemplar() == e.getSource()) {
+            objEjemplar.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnEvento() == e.getSource()) {
+            objEvento.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnIcono() == e.getSource()) {
+            miPerfilE();
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnNotificacion() == e.getSource()) {
+            objNotificacionE.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnPerfil() == e.getSource()) {
+            miPerfilE();
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnReservas() == e.getSource()) {
+            objReservaE.setVisible(true);
+            objInicioE.dispose();
         }
         
         if (objSucursal.getBtnBuscar()==e.getSource()) {
@@ -605,6 +688,13 @@ public class Controlador implements ActionListener {
         String nacionalidad = objAutor.getTxtNacionalidad().getText();
         
         AutorModelo.insertarAutor(nombre, apellido, nacionalidad);
+    }// Cierra insertar autor
+    
+    public void insertarEditorial(){
+        String nombre = objEditorial.getTxtNombre().getText();
+        String pais = objEditorial.getTxtPais().getText();
+        
+        EditorialModelo.insertarEditorial(nombre, pais);
     }
     
     public void insertarSucursal(){

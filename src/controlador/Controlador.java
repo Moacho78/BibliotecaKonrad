@@ -266,14 +266,7 @@ public class Controlador implements ActionListener {
             objProveedor.setVisible(false);
             objInicioE.setVisible(true);
         }
-        if (objInicioE.getBtnIcono() == e.getSource()) {
-            miPerfilE();
-            objInicioE.dispose();
-        }
-        if (objInicioE.getBtnCrear() == e.getSource()) {
-            objCrear.setVisible(true);
-            objInicioE.dispose();
-        }
+        
         if (objCrear.getBtnAutor() == e.getSource()) {
             objAutor.setVisible(true);
             objCrear.dispose();
@@ -413,6 +406,42 @@ public class Controlador implements ActionListener {
         if (objEditorial.getBtnReservas() == e.getSource()) {
             objReservaE.setVisible(true);
             objEditorial.dispose();
+        }
+        if (objInicioE.getBtnBuscar() == e.getSource()) {
+            objBuscarLibroE.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnCrear() == e.getSource()) {
+            objCrear.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnDevoluciones() == e.getSource()) {
+            objDevolucionE.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnEjemplar() == e.getSource()) {
+            objEjemplar.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnEvento() == e.getSource()) {
+            objEvento.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnIcono() == e.getSource()) {
+            miPerfilE();
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnNotificacion() == e.getSource()) {
+            objNotificacionE.setVisible(true);
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnPerfil() == e.getSource()) {
+            miPerfilE();
+            objInicioE.dispose();
+        }
+        if (objInicioE.getBtnReservas() == e.getSource()) {
+            objReservaE.setVisible(true);
+            objInicioE.dispose();
         }
         
 

@@ -25,7 +25,7 @@ public class Libro extends javax.swing.JFrame {
     public Libro() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Libro().setVisible(true);
+                new Libro().setVisible(false);
             }
         });
     }

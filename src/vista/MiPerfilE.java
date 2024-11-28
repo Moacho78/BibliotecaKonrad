@@ -85,6 +85,7 @@ public class MiPerfilE extends javax.swing.JFrame {
         lblContraseña1 = new javax.swing.JLabel();
         btnHistorial = new javax.swing.JButton();
         btnPrestamo = new javax.swing.JButton();
+        btnSala = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
 
@@ -186,6 +187,9 @@ public class MiPerfilE extends javax.swing.JFrame {
         btnPrestamo.setText("Prestamo");
         btnPrestamo.setContentAreaFilled(false);
 
+        btnSala.setText("Sala de lecutra");
+        btnSala.setContentAreaFilled(false);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -253,6 +257,10 @@ public class MiPerfilE extends javax.swing.JFrame {
                                 .addComponent(lblMostrarCorreo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(lblMostrarApellido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(95, 95, 95))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnSala)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -307,7 +315,9 @@ public class MiPerfilE extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblContraseña1)
                     .addComponent(btnPrestamo))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnSala)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnVolver)
                     .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -350,6 +360,7 @@ public class MiPerfilE extends javax.swing.JFrame {
     private javax.swing.JButton btnMultas;
     private javax.swing.JButton btnNotificaciones;
     private javax.swing.JButton btnPrestamo;
+    private javax.swing.JButton btnSala;
     private javax.swing.JButton btnSanciones;
     private javax.swing.JButton btnVolver;
     private javax.swing.JComboBox<String> cmbRol;
@@ -760,7 +771,15 @@ public class MiPerfilE extends javax.swing.JFrame {
         this.txtTelefono = txtTelefono;
     }
 
-    public MiPerfilE(JButton btnCerrarSesion, JButton btnGuardar, JButton btnHistorial, JButton btnInventario, JButton btnMultas, JButton btnNotificaciones, JButton btnPrestamo, JButton btnSanciones, JButton btnVolver, JComboBox<String> cmbRol, JLabel jLabel1, JLabel jLabel2, JMenuItem jMenuItem1, JMenuItem jMenuItem2, JMenuItem jMenuItem3, JPanel jPanel1, JLabel lblApellido, JLabel lblApellido1, JLabel lblCedula, JLabel lblCedula1, JLabel lblContraseña, JLabel lblContraseña1, JLabel lblCorreo, JLabel lblCorreo1, JLabel lblDireccion, JLabel lblDireccion1, JLabel lblIcono, JLabel lblImagen, JLabel lblMostrar, JLabel lblMostrarApellido, JLabel lblMostrarCedula, JLabel lblMostrarCorreo, JLabel lblMostrarDireccion, JLabel lblMostrarNombre, JLabel lblMostrarTelefono, JLabel lblNombre, JLabel lblNombre1, JLabel lblRol, JLabel lblTelefono, JLabel lblTelefono1, JTextField txtApellido, JTextField txtCedula, JTextField txtCorreo, JTextField txtDireccion, JTextField txtNombre, JTextField txtTelefono) {
+    public JButton getBtnSala() {
+        return btnSala;
+    }
+
+    public void setBtnSala(JButton btnSala) {
+        this.btnSala = btnSala;
+    }
+
+    public MiPerfilE(JButton btnCerrarSesion, JButton btnGuardar, JButton btnHistorial, JButton btnInventario, JButton btnMultas, JButton btnNotificaciones, JButton btnPrestamo, JButton btnSala, JButton btnSanciones, JButton btnVolver, JComboBox<String> cmbRol, JLabel jLabel1, JLabel jLabel2, JMenuItem jMenuItem1, JMenuItem jMenuItem2, JMenuItem jMenuItem3, JPanel jPanel1, JLabel lblApellido, JLabel lblApellido1, JLabel lblCedula, JLabel lblCedula1, JLabel lblContraseña, JLabel lblContraseña1, JLabel lblCorreo, JLabel lblCorreo1, JLabel lblDireccion, JLabel lblDireccion1, JLabel lblIcono, JLabel lblImagen, JLabel lblMostrar, JLabel lblMostrarApellido, JLabel lblMostrarCedula, JLabel lblMostrarCorreo, JLabel lblMostrarDireccion, JLabel lblMostrarNombre, JLabel lblMostrarTelefono, JLabel lblNombre, JLabel lblNombre1, JLabel lblRol, JLabel lblTelefono, JLabel lblTelefono1, JTextField txtApellido, JTextField txtCedula, JTextField txtCorreo, JTextField txtDireccion, JTextField txtNombre, JTextField txtTelefono) {
         this.btnCerrarSesion = btnCerrarSesion;
         this.btnGuardar = btnGuardar;
         this.btnHistorial = btnHistorial;
@@ -768,6 +787,7 @@ public class MiPerfilE extends javax.swing.JFrame {
         this.btnMultas = btnMultas;
         this.btnNotificaciones = btnNotificaciones;
         this.btnPrestamo = btnPrestamo;
+        this.btnSala = btnSala;
         this.btnSanciones = btnSanciones;
         this.btnVolver = btnVolver;
         this.cmbRol = cmbRol;
@@ -808,4 +828,6 @@ public class MiPerfilE extends javax.swing.JFrame {
         this.txtNombre = txtNombre;
         this.txtTelefono = txtTelefono;
     }
+
+   
 }

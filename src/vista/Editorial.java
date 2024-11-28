@@ -23,7 +23,7 @@ public class Editorial extends javax.swing.JFrame {
     public Editorial() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Editorial().setVisible(true);
+                new Editorial().setVisible(false);
             }
         });
     }

@@ -37,21 +37,6 @@ public class SalaLecturaE extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        lblLogo = new javax.swing.JLabel();
-        btnDevoluciones = new javax.swing.JButton();
-        lblBiblioteca = new javax.swing.JLabel();
-        btnComprar = new javax.swing.JButton();
-        lblkonrad = new javax.swing.JLabel();
-        btnReservas = new javax.swing.JButton();
-        lblSala = new javax.swing.JLabel();
-        btnEventos = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        btnMulta = new javax.swing.JButton();
-        btnPrestamo1 = new javax.swing.JButton();
-        btnBuscar = new javax.swing.JButton();
-        btnPerfil = new javax.swing.JButton();
-        btnNotificacion = new javax.swing.JButton();
-        btnIcono = new javax.swing.JButton();
         lblSala2 = new javax.swing.JLabel();
         txtSala = new javax.swing.JTextField();
         lblSucursal = new javax.swing.JLabel();
@@ -60,186 +45,117 @@ public class SalaLecturaE extends javax.swing.JFrame {
         txtNombre = new javax.swing.JTextField();
         lblCapacidad = new javax.swing.JLabel();
         spnCapacidad = new javax.swing.JSpinner();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        btnGuardar = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/konrad2.png"))); // NOI18N
-
-        btnDevoluciones.setText("Devolución");
-        btnDevoluciones.setContentAreaFilled(false);
-
-        lblBiblioteca.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lblBiblioteca.setText("Biblioteca");
-
-        btnComprar.setText("Comprar");
-        btnComprar.setContentAreaFilled(false);
-
-        lblkonrad.setText("Konrad");
-
-        btnReservas.setText("Reservas");
-        btnReservas.setContentAreaFilled(false);
-
-        lblSala.setText("Sala de Lectura");
-
-        btnEventos.setText("Eventos");
-        btnEventos.setContentAreaFilled(false);
-
-        jButton1.setText("Inicio");
-        jButton1.setContentAreaFilled(false);
-
-        btnMulta.setText("Multas");
-        btnMulta.setContentAreaFilled(false);
-
-        btnPrestamo1.setText("Prestamo");
-        btnPrestamo1.setContentAreaFilled(false);
-        btnPrestamo1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPrestamo1ActionPerformed(evt);
-            }
-        });
-
-        btnBuscar.setText("Buscar Libro");
-        btnBuscar.setContentAreaFilled(false);
-
-        btnPerfil.setText("Mi perfil");
-        btnPerfil.setContentAreaFilled(false);
-
-        btnNotificacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/Notifiacion.png"))); // NOI18N
-        btnNotificacion.setContentAreaFilled(false);
-
-        btnIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/Usuario.png"))); // NOI18N
-        btnIcono.setContentAreaFilled(false);
-
+        lblSala2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblSala2.setText("Sala");
 
+        lblSucursal.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblSucursal.setText("Sucursal");
 
+        lblNombre.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblNombre.setText("Nombre");
 
+        lblCapacidad.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblCapacidad.setText("Capacidad");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/SalaB.jpg"))); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 51, 255));
+        jLabel2.setText("Sala de Lectura");
+
+        btnGuardar.setText("Guardar");
+
+        btnVolver.setText("Volver");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(lblLogo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblkonrad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblBiblioteca, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnComprar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnReservas)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnDevoluciones)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnEventos)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnBuscar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblSala, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnMulta)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnPrestamo1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnNotificacion)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnIcono))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lblSala2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(49, 49, 49)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtSala, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblCapacidad)
+                                    .addComponent(btnVolver))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(spnCapacidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnGuardar))))
+                        .addGap(69, 69, 69))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnPerfil)))
-                .addGap(14, 14, 14))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(152, 152, 152)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblSucursal, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE)
-                            .addComponent(lblSala2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtSala, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblCapacidad, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(spnCapacidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(37, 37, 37)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(28, 28, 28)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblBiblioteca)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2)
+                        .addGap(35, 35, 35)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblkonrad)
-                            .addComponent(btnComprar)
-                            .addComponent(btnReservas)
-                            .addComponent(btnDevoluciones)
-                            .addComponent(btnEventos)
-                            .addComponent(btnBuscar)
-                            .addComponent(btnMulta)
-                            .addComponent(btnPrestamo1)
-                            .addComponent(lblSala)
-                            .addComponent(jButton1)))
-                    .addComponent(lblLogo))
-                .addGap(100, 100, 100)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblSala2)
-                    .addComponent(txtSala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblSucursal)
-                    .addComponent(txtSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNombre)
-                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(9, 9, 9)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCapacidad)
-                    .addComponent(spnCapacidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 144, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnIcono)
-                    .addComponent(btnNotificacion))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnPerfil)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(txtSala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblSala2))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblSucursal))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNombre))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(spnCapacidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCapacidad))
+                        .addGap(36, 36, 36)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnGuardar)
+                            .addComponent(btnVolver))))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnPrestamo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrestamo1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnPrestamo1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -247,118 +163,51 @@ public class SalaLecturaE extends javax.swing.JFrame {
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBuscar;
-    private javax.swing.JButton btnComprar;
-    private javax.swing.JButton btnDevoluciones;
-    private javax.swing.JButton btnEventos;
-    private javax.swing.JButton btnIcono;
-    private javax.swing.JButton btnMulta;
-    private javax.swing.JButton btnNotificacion;
-    private javax.swing.JButton btnPerfil;
-    private javax.swing.JButton btnPrestamo1;
-    private javax.swing.JButton btnReservas;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnVolver;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblBiblioteca;
     private javax.swing.JLabel lblCapacidad;
-    private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblNombre;
-    private javax.swing.JLabel lblSala;
     private javax.swing.JLabel lblSala2;
     private javax.swing.JLabel lblSucursal;
-    private javax.swing.JLabel lblkonrad;
     private javax.swing.JSpinner spnCapacidad;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtSala;
     private javax.swing.JTextField txtSucursal;
     // End of variables declaration//GEN-END:variables
 
-    public JButton getBtnBuscar() {
-        return btnBuscar;
+    public JButton getBtnGuardar() {
+        return btnGuardar;
     }
 
-    public void setBtnBuscar(JButton btnBuscar) {
-        this.btnBuscar = btnBuscar;
+    public void setBtnGuardar(JButton btnGuardar) {
+        this.btnGuardar = btnGuardar;
     }
 
-    public JButton getBtnComprar() {
-        return btnComprar;
+    public JButton getBtnVolver() {
+        return btnVolver;
     }
 
-    public void setBtnComprar(JButton btnComprar) {
-        this.btnComprar = btnComprar;
+    public void setBtnVolver(JButton btnVolver) {
+        this.btnVolver = btnVolver;
     }
 
-    public JButton getBtnDevoluciones() {
-        return btnDevoluciones;
+    public JLabel getjLabel1() {
+        return jLabel1;
     }
 
-    public void setBtnDevoluciones(JButton btnDevoluciones) {
-        this.btnDevoluciones = btnDevoluciones;
+    public void setjLabel1(JLabel jLabel1) {
+        this.jLabel1 = jLabel1;
     }
 
-    public JButton getBtnEventos() {
-        return btnEventos;
+    public JLabel getjLabel2() {
+        return jLabel2;
     }
 
-    public void setBtnEventos(JButton btnEventos) {
-        this.btnEventos = btnEventos;
-    }
-
-    public JButton getBtnIcono() {
-        return btnIcono;
-    }
-
-    public void setBtnIcono(JButton btnIcono) {
-        this.btnIcono = btnIcono;
-    }
-
-    public JButton getBtnMulta() {
-        return btnMulta;
-    }
-
-    public void setBtnMulta(JButton btnMulta) {
-        this.btnMulta = btnMulta;
-    }
-
-    public JButton getBtnNotificacion() {
-        return btnNotificacion;
-    }
-
-    public void setBtnNotificacion(JButton btnNotificacion) {
-        this.btnNotificacion = btnNotificacion;
-    }
-
-    public JButton getBtnPerfil() {
-        return btnPerfil;
-    }
-
-    public void setBtnPerfil(JButton btnPerfil) {
-        this.btnPerfil = btnPerfil;
-    }
-
-    public JButton getBtnPrestamo1() {
-        return btnPrestamo1;
-    }
-
-    public void setBtnPrestamo1(JButton btnPrestamo1) {
-        this.btnPrestamo1 = btnPrestamo1;
-    }
-
-    public JButton getBtnReservas() {
-        return btnReservas;
-    }
-
-    public void setBtnReservas(JButton btnReservas) {
-        this.btnReservas = btnReservas;
-    }
-
-    public JButton getjButton1() {
-        return jButton1;
-    }
-
-    public void setjButton1(JButton jButton1) {
-        this.jButton1 = jButton1;
+    public void setjLabel2(JLabel jLabel2) {
+        this.jLabel2 = jLabel2;
     }
 
     public JPanel getjPanel1() {
@@ -369,14 +218,6 @@ public class SalaLecturaE extends javax.swing.JFrame {
         this.jPanel1 = jPanel1;
     }
 
-    public JLabel getLblBiblioteca() {
-        return lblBiblioteca;
-    }
-
-    public void setLblBiblioteca(JLabel lblBiblioteca) {
-        this.lblBiblioteca = lblBiblioteca;
-    }
-
     public JLabel getLblCapacidad() {
         return lblCapacidad;
     }
@@ -385,28 +226,12 @@ public class SalaLecturaE extends javax.swing.JFrame {
         this.lblCapacidad = lblCapacidad;
     }
 
-    public JLabel getLblLogo() {
-        return lblLogo;
-    }
-
-    public void setLblLogo(JLabel lblLogo) {
-        this.lblLogo = lblLogo;
-    }
-
     public JLabel getLblNombre() {
         return lblNombre;
     }
 
     public void setLblNombre(JLabel lblNombre) {
         this.lblNombre = lblNombre;
-    }
-
-    public JLabel getLblSala() {
-        return lblSala;
-    }
-
-    public void setLblSala(JLabel lblSala) {
-        this.lblSala = lblSala;
     }
 
     public JLabel getLblSala2() {
@@ -423,14 +248,6 @@ public class SalaLecturaE extends javax.swing.JFrame {
 
     public void setLblSucursal(JLabel lblSucursal) {
         this.lblSucursal = lblSucursal;
-    }
-
-    public JLabel getLblkonrad() {
-        return lblkonrad;
-    }
-
-    public void setLblkonrad(JLabel lblkonrad) {
-        this.lblkonrad = lblkonrad;
     }
 
     public JSpinner getSpnCapacidad() {
@@ -465,31 +282,22 @@ public class SalaLecturaE extends javax.swing.JFrame {
         this.txtSucursal = txtSucursal;
     }
 
-    public SalaLecturaE(JButton btnBuscar, JButton btnComprar, JButton btnDevoluciones, JButton btnEventos, JButton btnIcono, JButton btnMulta, JButton btnNotificacion, JButton btnPerfil, JButton btnPrestamo1, JButton btnReservas, JButton jButton1, JPanel jPanel1, JLabel lblBiblioteca, JLabel lblCapacidad, JLabel lblLogo, JLabel lblNombre, JLabel lblSala, JLabel lblSala2, JLabel lblSucursal, JLabel lblkonrad, JSpinner spnCapacidad, JTextField txtNombre, JTextField txtSala, JTextField txtSucursal) {
-        this.btnBuscar = btnBuscar;
-        this.btnComprar = btnComprar;
-        this.btnDevoluciones = btnDevoluciones;
-        this.btnEventos = btnEventos;
-        this.btnIcono = btnIcono;
-        this.btnMulta = btnMulta;
-        this.btnNotificacion = btnNotificacion;
-        this.btnPerfil = btnPerfil;
-        this.btnPrestamo1 = btnPrestamo1;
-        this.btnReservas = btnReservas;
-        this.jButton1 = jButton1;
+    public SalaLecturaE(JButton btnGuardar, JButton btnVolver, JLabel jLabel1, JLabel jLabel2, JPanel jPanel1, JLabel lblCapacidad, JLabel lblNombre, JLabel lblSala2, JLabel lblSucursal, JSpinner spnCapacidad, JTextField txtNombre, JTextField txtSala, JTextField txtSucursal) {
+        this.btnGuardar = btnGuardar;
+        this.btnVolver = btnVolver;
+        this.jLabel1 = jLabel1;
+        this.jLabel2 = jLabel2;
         this.jPanel1 = jPanel1;
-        this.lblBiblioteca = lblBiblioteca;
         this.lblCapacidad = lblCapacidad;
-        this.lblLogo = lblLogo;
         this.lblNombre = lblNombre;
-        this.lblSala = lblSala;
         this.lblSala2 = lblSala2;
         this.lblSucursal = lblSucursal;
-        this.lblkonrad = lblkonrad;
         this.spnCapacidad = spnCapacidad;
         this.txtNombre = txtNombre;
         this.txtSala = txtSala;
         this.txtSucursal = txtSucursal;
     }
 
+    
+  
 }

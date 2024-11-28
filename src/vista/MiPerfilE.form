@@ -223,6 +223,11 @@
                       </Group>
                   </Group>
               </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnSala" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -293,7 +298,9 @@
                       <Component id="lblContraseña1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnPrestamo" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="40" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnSala" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="61" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnVolver" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblImagen" alignment="3" min="-2" pref="18" max="-2" attributes="0"/>
@@ -476,6 +483,12 @@
         <Component class="javax.swing.JButton" name="btnPrestamo">
           <Properties>
             <Property name="text" type="java.lang.String" value="Prestamo"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnSala">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sala de lecutra"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
         </Component>

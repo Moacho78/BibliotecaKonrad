@@ -51,6 +51,8 @@ public class Login extends javax.swing.JFrame {
         btnAcceder = new javax.swing.JButton();
         lblLogo1 = new javax.swing.JLabel();
         lblImagen = new javax.swing.JLabel();
+        btnRegistrarse = new javax.swing.JButton();
+        lblCuenta = new javax.swing.JLabel();
 
         lblBiblioteca.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         lblBiblioteca.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -84,6 +86,10 @@ public class Login extends javax.swing.JFrame {
 
         lblLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/konrad2.png"))); // NOI18N
 
+        btnRegistrarse.setText("Regístrate");
+
+        lblCuenta.setText("¿No tienes una cuenta?");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -93,29 +99,37 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblLogo1)
                     .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(38, 38, 38)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtCorreo, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
                             .addComponent(lblContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(pwdContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                            .addComponent(lblBiblioteca1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(124, 124, 124))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                            .addComponent(btnAcceder)
-                            .addGap(183, 183, 183)))))
+                            .addComponent(pwdContraseña, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
+                            .addComponent(lblCuenta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(72, 72, 72)
+                        .addComponent(btnAcceder))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(65, 65, 65)
+                        .addComponent(btnRegistrarse))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(lblBiblioteca1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(141, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblLogo1)
+                        .addGap(54, 54, 54)
+                        .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(25, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(lblBiblioteca1)
                         .addGap(29, 29, 29)
@@ -128,13 +142,13 @@ public class Login extends javax.swing.JFrame {
                         .addComponent(lblContraseña)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(pwdContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(btnAcceder))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblLogo1)
-                        .addGap(54, 54, 54)
-                        .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(25, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(btnAcceder)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblCuenta)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnRegistrarse)
+                        .addGap(28, 28, 28))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -168,12 +182,14 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAcceder;
+    private javax.swing.JButton btnRegistrarse;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblBiblioteca;
     private javax.swing.JLabel lblBiblioteca1;
     private javax.swing.JLabel lblContraseña;
     private javax.swing.JLabel lblCorreo;
+    private javax.swing.JLabel lblCuenta;
     private javax.swing.JLabel lblImagen;
     private javax.swing.JLabel lblIniciarSesion;
     private javax.swing.JLabel lblLogo;
@@ -278,13 +294,40 @@ public class Login extends javax.swing.JFrame {
         this.txtCorreo = txtCorreo;
     }
 
-    public Login(JButton btnAcceder, JPanel jPanel1, JLabel lblBiblioteca, JLabel lblBiblioteca1, JLabel lblContraseña, JLabel lblCorreo, JLabel lblImagen, JLabel lblIniciarSesion, JLabel lblLogo, JLabel lblLogo1, JPasswordField pwdContraseña, JTextField txtCorreo) {
+    public JButton getBtnRegistrarse() {
+        return btnRegistrarse;
+    }
+
+    public void setBtnRegistrarse(JButton btnRegistrarse) {
+        this.btnRegistrarse = btnRegistrarse;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public void setjLabel1(JLabel jLabel1) {
+        this.jLabel1 = jLabel1;
+    }
+
+    public JLabel getLblCuenta() {
+        return lblCuenta;
+    }
+
+    public void setLblCuenta(JLabel lblCuenta) {
+        this.lblCuenta = lblCuenta;
+    }
+
+    public Login(JButton btnAcceder, JButton btnRegistrarse, JLabel jLabel1, JPanel jPanel1, JLabel lblBiblioteca, JLabel lblBiblioteca1, JLabel lblContraseña, JLabel lblCorreo, JLabel lblCuenta, JLabel lblImagen, JLabel lblIniciarSesion, JLabel lblLogo, JLabel lblLogo1, JPasswordField pwdContraseña, JTextField txtCorreo) {
         this.btnAcceder = btnAcceder;
+        this.btnRegistrarse = btnRegistrarse;
+        this.jLabel1 = jLabel1;
         this.jPanel1 = jPanel1;
         this.lblBiblioteca = lblBiblioteca;
         this.lblBiblioteca1 = lblBiblioteca1;
         this.lblContraseña = lblContraseña;
         this.lblCorreo = lblCorreo;
+        this.lblCuenta = lblCuenta;
         this.lblImagen = lblImagen;
         this.lblIniciarSesion = lblIniciarSesion;
         this.lblLogo = lblLogo;
@@ -292,5 +335,6 @@ public class Login extends javax.swing.JFrame {
         this.pwdContraseña = pwdContraseña;
         this.txtCorreo = txtCorreo;
     }
+
 
 }

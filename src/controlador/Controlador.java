@@ -207,6 +207,18 @@ public class Controlador implements ActionListener {
         objNotificacionE = new NotificacionE();
         objNotificacionE.getBtnVolver().addActionListener(this);
         
+        objEditorial = new Editorial();
+        objEditorial.getBtnAgregar().addActionListener(this);
+        objEditorial.getBtnBuscar().addActionListener(this);
+        objEditorial.getBtnDevoluciones().addActionListener(this);
+        objEditorial.getBtnEjemplar().addActionListener(this);
+        objEditorial.getBtnEvento().addActionListener(this);
+        objEditorial.getBtnIcono().addActionListener(this);
+        objEditorial.getBtnInicio().addActionListener(this);
+        objEditorial.getBtnNotificacion().addActionListener(this);
+        objEditorial.getBtnPerfil().addActionListener(this);
+        objEditorial.getBtnReservas().addActionListener(this);
+        
         
 
     }// cierra constructor
@@ -361,6 +373,47 @@ public class Controlador implements ActionListener {
             objCrear.setVisible(true);
             objAutor.dispose();
         }
+        if (objEditorial.getBtnAgregar() == e.getSource()) {
+            insertarEditorial();
+            objCrear.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnBuscar() == e.getSource()) {
+            objBuscarLibroE.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnDevoluciones() == e.getSource()) {
+            objDevolucionE.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnEjemplar() == e.getSource()) {
+            objEjemplar.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnEvento() == e.getSource()) {
+            objEvento.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnIcono() == e.getSource()) {
+            miPerfilE();
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnInicio() == e.getSource()) {
+            objInicioE.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnNotificacion() == e.getSource()) {
+            objNotificacionE.setVisible(true);
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnPerfil() == e.getSource()) {
+            miPerfilE();
+            objEditorial.dispose();
+        }
+        if (objEditorial.getBtnReservas() == e.getSource()) {
+            objReservaE.setVisible(true);
+            objEditorial.dispose();
+        }
         
 
     }// cierra action 
@@ -426,6 +479,13 @@ public class Controlador implements ActionListener {
         
         AutorModelo.insertarAutor(nombre, apellido, nacionalidad);
     }// Cierra insertar autor
+    
+    public void insertarEditorial(){
+        String nombre = objEditorial.getTxtNombre().getText();
+        String pais = objEditorial.getTxtPais().getText();
+        
+        EditorialModelo.insertarEditorial(nombre, pais);
+    }
             
             
 }// cierra class

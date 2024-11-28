@@ -228,7 +228,10 @@ public class SancionU extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+<<<<<<< HEAD
   
+=======
+>>>>>>> origin/master
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;

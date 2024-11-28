@@ -4,6 +4,8 @@
  */
 package vista;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -19,12 +21,7 @@ public class InicioUsuario extends javax.swing.JFrame {
      */
     public InicioUsuario() {
         initComponents();
-        
-          java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new InicioUsuario().setVisible(false);
-            }
-        });
+
     }
 
     /**
@@ -242,7 +239,6 @@ public class InicioUsuario extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
@@ -431,7 +427,10 @@ public class InicioUsuario extends javax.swing.JFrame {
         this.lblkonrad = lblkonrad;
     }
 
+
+
    
+
 
 
 }

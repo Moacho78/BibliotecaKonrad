@@ -4,6 +4,8 @@
  */
 package vista;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -23,11 +25,18 @@ public class Libro extends javax.swing.JFrame {
      * Creates new form Libro
      */
     public Libro() {
+<<<<<<< HEAD
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Libro().setVisible(false);
             }
         });
+=======
+        
+        initComponents();
+        
+        
+>>>>>>> origin/master
     }
 
     /**

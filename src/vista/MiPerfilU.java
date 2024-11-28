@@ -19,11 +19,7 @@ public class MiPerfilU extends javax.swing.JFrame {
      */
     public MiPerfilU() {
         initComponents();
-         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MiPerfilU().setVisible(false);
-            }
-        });
+        
     }
 
     /**

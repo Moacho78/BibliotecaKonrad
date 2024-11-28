@@ -4,6 +4,8 @@
  */
 package vista;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -18,14 +20,13 @@ public class InicioEmpleado extends javax.swing.JFrame {
      * Creates new form Inicio
      */
     public InicioEmpleado() {
+        
         initComponents();
         
-         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new InicioEmpleado().setVisible(false);
-            }
-        });
-    }
+        
+
+         
+    }// cierra constructor 
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -183,7 +184,6 @@ public class InicioEmpleado extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
@@ -330,7 +330,5 @@ public class InicioEmpleado extends javax.swing.JFrame {
         this.lblLogo = lblLogo;
         this.lblkonrad = lblkonrad;
     }
-
- 
 
 }

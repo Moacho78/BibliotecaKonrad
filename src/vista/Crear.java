@@ -4,6 +4,8 @@
  */
 package vista;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -18,7 +20,11 @@ public class Crear extends javax.swing.JFrame {
      * Creates new form Crear
      */
     public Crear() {
-         java.awt.EventQueue.invokeLater(new Runnable() {
+
+        initComponents();
+        
+       
+java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Crear().setVisible(false);
             }
@@ -269,7 +275,6 @@ public class Crear extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIconoActionPerformed
 
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAutor;
@@ -507,9 +512,4 @@ public class Crear extends javax.swing.JFrame {
         this.lblkonrad = lblkonrad;
     }
 
-   
-
-   
-
 }
-

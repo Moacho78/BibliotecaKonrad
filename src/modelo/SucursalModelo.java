@@ -8,29 +8,29 @@ package modelo;
  *
  * @author migue
  */
-public class Editorial {
-    private int editorialID;
+public class SucursalModelo {
+    private int sucursalID;
     private String nombre;
-    private String pais;
+    private String ubicacion;
 
     // Constructor vacío
-    public Editorial() {
+    public SucursalModelo() {
     }
 
     // Constructor con parámetros
-    public Editorial(int editorialID, String nombre, String pais) {
-        this.editorialID = editorialID;
+    public SucursalModelo(int sucursalID, String nombre, String ubicacion) {
+        this.sucursalID = sucursalID;
         this.nombre = nombre;
-        this.pais = pais;
+        this.ubicacion = ubicacion;
     }
 
     // Getters y Setters
-    public int getEditorialID() {
-        return editorialID;
+    public int getSucursalID() {
+        return sucursalID;
     }
 
-    public void setEditorialID(int editorialID) {
-        this.editorialID = editorialID;
+    public void setSucursalID(int sucursalID) {
+        this.sucursalID = sucursalID;
     }
 
     public String getNombre() {
@@ -41,21 +41,21 @@ public class Editorial {
         this.nombre = nombre;
     }
 
-    public String getPais() {
-        return pais;
+    public String getUbicacion() {
+        return ubicacion;
     }
 
-    public void setPais(String pais) {
-        this.pais = pais;
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
     }
 
     // Método toString
     @Override
     public String toString() {
-        return "Editorial{" +
-                "editorialID=" + editorialID +
+        return "Sucursal{" +
+                "sucursalID=" + sucursalID +
                 ", nombre='" + nombre + '\'' +
-                ", pais='" + pais + '\'' +
+                ", ubicacion='" + ubicacion + '\'' +
                 '}';
     }
 }

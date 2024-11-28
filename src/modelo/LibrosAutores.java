@@ -16,7 +16,7 @@ public class LibrosAutores {
     private Libros libro;
 
     // Relación con la clase Autores
-    private Autor autor;
+    private AutorModelo autor;
 
     public LibrosAutores() {
     }
@@ -50,11 +50,11 @@ public class LibrosAutores {
         this.libro = libro;
     }
 
-    public Autor getAutor() {
+    public AutorModelo getAutor() {
         return autor;
     }
 
-    public void setAutor(Autor autor) {
+    public void setAutor(AutorModelo autor) {
         this.autor = autor;
     }
 

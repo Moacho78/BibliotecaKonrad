@@ -4,10 +4,13 @@
  */
 package vista;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import modelo.AutorModelo;
 
 /**
  *
@@ -18,12 +21,12 @@ public class Autor extends javax.swing.JFrame {
     /**
      * Creates new form Autor
      */
+    
+    private AutorModelo autor = new AutorModelo();
+    
     public Autor() {
-       java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Autor().setVisible(false);
-            }
-        });
+
+        initComponents();
     }
 
     /**
@@ -259,7 +262,6 @@ public class Autor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIconoActionPerformed
 
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregar;
@@ -517,5 +519,4 @@ public class Autor extends javax.swing.JFrame {
         this.txtNombre = txtNombre;
     }
 
-  
 }

@@ -20,11 +20,7 @@ public class PrestamoU extends javax.swing.JFrame {
      * Creates new form PrestamoU
      */
     public PrestamoU() {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new PrestamoU().setVisible(false);
-            }
-        });
+        initComponents();
     }
 
     /**

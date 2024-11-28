@@ -69,7 +69,7 @@ public class EditorialModelo {
     public void insertarEditorial(String nombre, String pais) {
 
         SQLServerConnection conexionSQL = new SQLServerConnection();
-        String sql = "{call sp_InsertarAutor(?, ?, ?, ?)}";
+        String sql = "{call sp_InsertarEditorial(?, ?)}";
 
         try (Connection conexion = conexionSQL.getConexion(); CallableStatement stmt = conexion.prepareCall(sql)) {
 

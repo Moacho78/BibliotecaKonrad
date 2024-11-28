@@ -20,11 +20,7 @@ public class SalaLecturaE extends javax.swing.JFrame {
      * Creates new form SalaLecturaE
      */
     public SalaLecturaE() {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new SalaLecturaE().setVisible(false);
-            }
-        });
+        initComponents();
     }
 
     /**

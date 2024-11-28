@@ -20,11 +20,7 @@ public class HistoralPrestamo extends javax.swing.JFrame {
      * Creates new form HistoralPrestamo
      */
     public HistoralPrestamo() {
-       java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new HistoralPrestamo().setVisible(false);
-            }
-        });
+      initComponents();
     }
 
     /**

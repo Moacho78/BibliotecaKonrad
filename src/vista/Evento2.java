@@ -18,11 +18,7 @@ public class Evento2 extends javax.swing.JFrame {
      * Creates new form Evento2
      */
     public Evento2() {
-      java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Evento2().setVisible(false);
-            }
-        });
+      initComponents();
     }
 
     /**

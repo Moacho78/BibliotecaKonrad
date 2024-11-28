@@ -20,6 +20,8 @@ public class Inventario extends javax.swing.JFrame {
      * Creates new form Inventario
      */
     public Inventario() {
+        
+         initComponents();
       java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Inventario().setVisible(false);

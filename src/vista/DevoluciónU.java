@@ -20,11 +20,7 @@ public class DevoluciónU extends javax.swing.JFrame {
      * Creates new form DevoluciónU
      */
     public DevoluciónU() {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new DevoluciónU().setVisible(false);
-            }
-        });
+        initComponents();
     }
 
     /**

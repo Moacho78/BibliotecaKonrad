@@ -48,10 +48,18 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
+                  <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
+<<<<<<< HEAD
                           <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
+=======
+                          <Component id="lblLogo" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnPerfil" alignment="1" min="-2" max="-2" attributes="0"/>
+>>>>>>> origin/master
                               <Group type="102" attributes="0">
                                   <Component id="lblLogo" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -104,10 +112,18 @@
                               </Group>
                           </Group>
                       </Group>
+<<<<<<< HEAD
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="252" max="-2" attributes="0"/>
                           <Component id="jLabel2" min="-2" pref="250" max="-2" attributes="0"/>
+=======
+                      <Group type="102" attributes="0">
+                          <Component id="txtNombre" min="-2" pref="141" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="btnBuscarLibro" min="-2" max="-2" attributes="0"/>
+>>>>>>> origin/master
                       </Group>
+                      <Component id="jScrollPane1" min="-2" pref="420" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>

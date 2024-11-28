@@ -22,13 +22,7 @@ public class Crear extends javax.swing.JFrame {
     public Crear() {
 
         initComponents();
-        
-       
-java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Crear().setVisible(false);
-            }
-        });
+
     }
 
     /**

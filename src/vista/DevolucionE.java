@@ -21,11 +21,7 @@ public class DevolucionE extends javax.swing.JFrame {
      * Creates new form Devolucion
      */
     public DevolucionE() {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new DevolucionE().setVisible(false);
-            }
-        });
+        initComponents();
 
     }
 

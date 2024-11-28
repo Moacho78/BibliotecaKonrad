@@ -21,11 +21,7 @@ public class BuscarLibroU extends javax.swing.JFrame {
      * Creates new form BuscarLibro2
      */
     public BuscarLibroU() {
-      java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new BuscarLibroU().setVisible(false);
-            }
-        });
+      initComponents();
     }
 
     /**

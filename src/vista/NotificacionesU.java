@@ -18,11 +18,7 @@ public class NotificacionesU extends javax.swing.JFrame {
      * Creates new form NotificacionesU
      */
     public NotificacionesU() {
-          java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new NotificacionesU().setVisible(false);
-            }
-        });
+          initComponents();
     }
 
     /**

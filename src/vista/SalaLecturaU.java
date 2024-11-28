@@ -18,11 +18,7 @@ public class SalaLecturaU extends javax.swing.JFrame {
      * Creates new form SalaLectura
      */
     public SalaLecturaU() {
-       java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new SalaLecturaU().setVisible(false);
-            }
-        });
+       initComponents();
     }
 
     /**

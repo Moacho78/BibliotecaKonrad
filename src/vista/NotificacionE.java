@@ -20,11 +20,7 @@ public class NotificacionE extends javax.swing.JFrame {
      * Creates new form Notificacion
      */
     public NotificacionE() {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new NotificacionE().setVisible(false);
-            }
-        });
+        initComponents();
     }
 
     /**

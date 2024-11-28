@@ -20,11 +20,7 @@ public class ReservaU extends javax.swing.JFrame {
      * Creates new form ReservaU
      */
     public ReservaU() {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ReservaU().setVisible(false);
-            }
-        });
+        initComponents();
     }
 
     /**

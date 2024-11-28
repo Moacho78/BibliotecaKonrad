@@ -21,11 +21,8 @@ public class Evento extends javax.swing.JFrame {
      * Creates new form Evento
      */
     public Evento() {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Evento().setVisible(false);
-            }
-        });
+
+        initComponents();
     }
 
     /**

@@ -23,8 +23,7 @@ public class Editorial extends javax.swing.JFrame {
      * Creates new form Editorial
      */
     public Editorial() {
-<<<<<<< HEAD
-
+        initComponents();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Editorial().setVisible(false);
@@ -32,14 +31,8 @@ public class Editorial extends javax.swing.JFrame {
         });
 
 
-        initComponents();
+        
 
-
-=======
-
-        initComponents();
-
->>>>>>> origin/master
     }
 
     /**

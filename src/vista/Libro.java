@@ -26,7 +26,6 @@ public class Libro extends javax.swing.JFrame {
      */
     public Libro() {
 
-<<<<<<< HEAD
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Libro().setVisible(false);
@@ -35,11 +34,6 @@ public class Libro extends javax.swing.JFrame {
 
         
         initComponents();
-        
-        
-=======
-        initComponents();
->>>>>>> origin/master
 
     }
 

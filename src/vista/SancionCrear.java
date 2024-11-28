@@ -46,11 +46,8 @@ public class SancionCrear extends javax.swing.JFrame {
         txaMotivo = new javax.swing.JTextArea();
         btnVolver = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-<<<<<<< HEAD:src/vista/Sancion.java
         lblLogo = new javax.swing.JLabel();
-=======
         btnGuardar = new javax.swing.JButton();
->>>>>>> origin/master:src/vista/SancionCrear.java
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,11 +72,8 @@ public class SancionCrear extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel5.setText("Sanciones");
 
-<<<<<<< HEAD:src/vista/Sancion.java
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/konrad2.png"))); // NOI18N
-=======
         btnGuardar.setText("Guardar");
->>>>>>> origin/master:src/vista/SancionCrear.java
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -119,20 +113,17 @@ public class SancionCrear extends javax.swing.JFrame {
                                 .addGap(47, 47, 47)
                                 .addComponent(txtCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(118, Short.MAX_VALUE))
-<<<<<<< HEAD:src/vista/Sancion.java
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblLogo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(197, 197, 197))
-=======
->>>>>>> origin/master:src/vista/SancionCrear.java
+
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-<<<<<<< HEAD:src/vista/Sancion.java
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(77, 77, 77)
@@ -141,11 +132,9 @@ public class SancionCrear extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(lblLogo)))
                 .addGap(39, 39, 39)
-=======
                 .addGap(24, 24, 24)
                 .addComponent(jLabel5)
                 .addGap(48, 48, 48)
->>>>>>> origin/master:src/vista/SancionCrear.java
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCedula)
                     .addComponent(txtCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))

@@ -14,7 +14,7 @@ import java.sql.SQLException;
  */
 public class SQLServerConnection {
      // Datos de conexión
-    private static final String URL = "jdbc:sqlserver://PC-DAZZ\\MYSQL:1433;databaseName=BibliotecaKonrad;encrypt=false;";
+    private static final String URL = "jdbc:sqlserver://MIGUEL\\SQLEXPRESS:1433;databaseName=BibliotecaKonrad;encrypt=false;";
     private static final String USER = "sa";
     private static final String PASSWORD = "G01fukl*";
 

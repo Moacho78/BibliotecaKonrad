@@ -63,7 +63,7 @@ public class Sucursal extends javax.swing.JFrame {
 
         lblNombre.setText("Nombre ");
 
-        lblUbicacion.setText("Ubicación");
+        lblUbicacion.setText("Direccion");
 
         lblImagen.setText("jLabel2");
 

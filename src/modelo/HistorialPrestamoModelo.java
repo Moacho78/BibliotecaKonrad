@@ -10,18 +10,18 @@ package modelo;
  */
 import java.util.Date;
 
-public class HistorialPrestamo {
+public class HistorialPrestamoModelo {
     private int historialID;
     private int usuarioID;
     private int prestamoID;
     private Date fecha;
 
     // Constructor vacío
-    public HistorialPrestamo() {
+    public HistorialPrestamoModelo() {
     }
 
     // Constructor con parámetros
-    public HistorialPrestamo(int historialID, int usuarioID, int prestamoID, Date fecha) {
+    public HistorialPrestamoModelo(int historialID, int usuarioID, int prestamoID, Date fecha) {
         this.historialID = historialID;
         this.usuarioID = usuarioID;
         this.prestamoID = prestamoID;

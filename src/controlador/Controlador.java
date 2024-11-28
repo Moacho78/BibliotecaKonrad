@@ -60,11 +60,50 @@ public class Controlador implements ActionListener {
     NotificacionE objNotificacionE;
     Inventario objInventario;
     Multas objMultas;
+   SancionCrear objSancion;
+   HistoralPrestamo objHistorialPrestamo;
+   PrestamoE objPrestamoE;
+   SalaLecturaE objSalaLecturaE;
 
     public Controlador() {
+        
+        objSucursal=new Sucursal();
+        objSucursal.getBtnBuscar().addActionListener(this);
+        objSucursal.getBtnDevoluciones().addActionListener(this);
+        objSucursal.getBtnEjemplar().addActionListener(this);
+        objSucursal.getBtnEvento().addActionListener(this);
+        objSucursal.getBtnGuardar().addActionListener(this);
+        objSucursal.getBtnIcono().addActionListener(this);
+        objSucursal.getBtnInicio().addActionListener(this);
+        objSucursal.getBtnNotificacion().addActionListener(this);
+        objSucursal.getBtnPerfil().addActionListener(this);
+        objSucursal.getBtnReservas().addActionListener(this);
+        
+        
+        objSalaLecturaE=new SalaLecturaE();
+        objSalaLecturaE.getBtnGuardar().addActionListener(this);
+        objSalaLecturaE.getBtnVolver().addActionListener(this);
+        
+        objPrestamoE=new PrestamoE();
+        objPrestamoE.getBtnEnviar().addActionListener(this);
+        objPrestamoE.getBtnVolver().addActionListener(this);
+        
+        
+        objHistorialPrestamo=new HistoralPrestamo();
+        objHistorialPrestamo.getBtnVolver().addActionListener(this);
+                
+                
+        objSancion=new SancionCrear();
+        objSancion.getBtnVolver().addActionListener(this);
+        objSancion.getBtnGuardar().addActionListener(this);
+       
         objLogin = new Login();
         objLogin.setVisible(true);
         objLogin.getBtnAcceder().addActionListener(this);
+        objLogin.getBtnRegistrarse().addActionListener(this);
+        
+        objRegistrar=new Usuarios();
+        objRegistrar.getBtnGuardar().addActionListener(this);
 
         objInicioU = new InicioUsuario();
         objInicioU.getBtnReservas().addActionListener(this);
@@ -156,19 +195,11 @@ public class Controlador implements ActionListener {
         objLibro.getBtnPerfil().addActionListener(this);
         objLibro.getBtnReservas().addActionListener(this);
         
-<<<<<<< HEAD
+
         objInventario=new Inventario();
-        objInventario.getBtnBuscar().addActionListener(this);
-        objInventario.getBtnCrear().addActionListener(this);
-        objInventario.getBtnDevoluciones().addActionListener(this);
-        objInventario.getBtnEjemplar().addActionListener(this);
-        objInventario.getBtnEvento().addActionListener(this);
-        objInventario.getBtnIcono().addActionListener(this);
-        objInventario.getBtnNotificacion().addActionListener(this);
-        objInventario.getBtnPerfil().addActionListener(this);
-        objInventario.getBtnReservas().addActionListener(this);
+        
         objInventario.getBtnVolver().addActionListener(this);
-=======
+
         objEvento = new Evento();
         objEvento.getBtnBuscar().addActionListener(this);
         objEvento.getBtnCrear().addActionListener(this);
@@ -233,7 +264,7 @@ public class Controlador implements ActionListener {
         
         objNotificacionE = new NotificacionE();
         objNotificacionE.getBtnVolver().addActionListener(this);
->>>>>>> origin/master
+
 
     }// cierra constructor
 
@@ -242,6 +273,18 @@ public class Controlador implements ActionListener {
         if (objLogin.getBtnAcceder() == e.getSource()) {
             login();
 
+        }
+        
+        if (objLogin.getBtnRegistrarse()==e.getSource()) {
+           objRegistrar.setVisible(true);
+            objLogin.dispose();
+            
+        }
+        if (objRegistrar.getBtnGuardar()==e.getSource()) {
+             insertarUsuario();
+             objRegistrar.dispose();
+             objLogin.setVisible(true);
+             
         }
 
         if (objMiPerfilE.getBtnVolver() == e.getSource()) {
@@ -263,6 +306,27 @@ public class Controlador implements ActionListener {
             objMultas.setVisible(true);
             objMiPerfilE.dispose();
         }
+        if (objMiPerfilE.getBtnSanciones()==e.getSource()) {
+            objSancion.setVisible(true);
+            objMiPerfilE.dispose();
+        }
+        if (objMiPerfilE.getBtnNotificaciones()==e.getSource()) {
+            objNotificacionE.setVisible(true);
+            objMiPerfilE.dispose();
+        }
+        if (objMiPerfilE.getBtnHistorial()==e.getSource()) {
+            objHistorialPrestamo.setVisible(true);
+             objMiPerfilE.dispose();
+        }
+        if (objMiPerfilE.getBtnPrestamo()==e.getSource()) {
+            objPrestamoE.setVisible(true);
+             objMiPerfilE.dispose();
+        }
+        if (objMiPerfilE.getBtnSala()==e.getSource()) {
+            objSalaLecturaE.setVisible(true);
+             objMiPerfilE.dispose();
+        }
+        
 
         if (objMiPerfilU.getBtnCerrarSesion() == e.getSource()) {
             usuarioLogueado = null;
@@ -288,6 +352,31 @@ public class Controlador implements ActionListener {
             objProveedor.setVisible(false);
             objInicioE.setVisible(true);
         }
+        if (objProveedor.getBtnEvento()==e.getSource()) {
+            objEvento.setVisible(true);
+            objProveedor.dispose();
+        }
+        if (objProveedor.getBtnDevoluciones()==e.getSource()) {
+            objDevolucionE.setVisible(true);
+            objProveedor.dispose();
+        }
+        if (objProveedor.getBtnNotificacion()==e.getSource()) {
+            objNotificacionE.setVisible(true);
+            objProveedor.dispose();
+        }
+        if (objProveedor.getBtnBuscar()==e.getSource()) {
+            objBuscarLibroE.setVisible(true);
+            objProveedor.dispose();
+        }
+        if (objProveedor.getBtnEjemplar()==e.getSource()) {
+            objEjemplar.setVisible(true);
+            objProveedor.dispose();
+        }
+        if (objProveedor.getBtnInicio()==e.getSource()) {
+            objInicioE.setVisible(true);
+            objProveedor.dispose();
+        }
+        
         if (objInicioE.getBtnIcono() == e.getSource()) {
             miPerfilE();
             objInicioE.dispose();
@@ -396,6 +485,54 @@ public class Controlador implements ActionListener {
             objAutor.dispose();
         }
         
+        if (objSucursal.getBtnBuscar()==e.getSource()) {
+            objBuscarLibroE.setVisible(true);
+            objSucursal.dispose();
+        }
+        
+        if (objSucursal.getBtnDevoluciones()==e.getSource()) {
+            objDevolucionE.setVisible(true);
+            objSucursal.dispose();
+        }
+        
+        if (objSucursal.getBtnEjemplar()==e.getSource()) {
+            objEjemplar.setVisible(true);
+            objSucursal.dispose();
+        }
+        
+        if (objSucursal.getBtnEvento()==e.getSource()) {
+            objEvento.setVisible(true);
+            objSucursal.dispose();
+        }
+        
+        if (objSucursal.getBtnGuardar()==e.getSource()) {
+            insertarSucursal();
+             objSucursal.dispose();
+        }
+        
+        if (objSucursal.getBtnIcono()==e.getSource()) {
+            miPerfilE();
+            objSucursal.dispose();
+        }
+        if (objSucursal.getBtnInicio()==e.getSource()) {
+            objInicioE.setVisible(true);
+            objSucursal.dispose();
+        }
+        if (objSucursal.getBtnNotificacion()==e.getSource()) {
+            objNotificacionE.setVisible(true);
+            objSucursal.dispose();
+        }
+        
+        if (objSucursal.getBtnPerfil()==e.getSource()) {
+             miPerfilE();
+            objSucursal.dispose();
+        }
+        
+        if (objSucursal.getBtnReservas()==e.getSource()) {
+            objReservaE.setVisible(true);
+            objSucursal.dispose();
+        }
+        
        
         
 
@@ -450,9 +587,16 @@ public class Controlador implements ActionListener {
     }// cierr ingresar proveedor
 
     public void insertarUsuario() {
+        
         int rol = 2;
         String Nombre = objRegistrar.getTxtNombre().getText();
-        objU.insertarUsuario(Nombre, Nombre, Nombre, Nombre, Nombre, rol, Nombre, Nombre);
+        String apellido=objRegistrar.getTxtApellido().getText();
+        String cc =objRegistrar.getTxtCedula().getText();
+        String correo=objRegistrar.getTxtCorreo().getText();
+        String telefono=objRegistrar.getTxtTelefono().getText();
+        String clave=objRegistrar.getPwdContraseña().getText();
+        String Direccion=objRegistrar.getTxtDireccion().getText();
+        objU.insertarUsuario(cc, Nombre, apellido, correo, telefono, rol, clave, Direccion);
     }
     
     public void insertarAutor(){
@@ -462,6 +606,12 @@ public class Controlador implements ActionListener {
         
         AutorModelo.insertarAutor(nombre, apellido, nacionalidad);
     }
+    
+    public void insertarSucursal(){
+        String nombre =objSucursal.getTxtNombre().getText();
+        String direccion=objSucursal.getTxtUbicacion().getText();
+        SucursalModelo.insertarSucursal(nombre, direccion);
+    }// cierra insertar sucursal
             
             
 }// cierra class

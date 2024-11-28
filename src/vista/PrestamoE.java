@@ -41,8 +41,8 @@ public class PrestamoE extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
+        btnEnviar = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jTextField4 = new javax.swing.JTextField();
@@ -59,9 +59,9 @@ public class PrestamoE extends javax.swing.JFrame {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "Entregado", "Pendiente" }));
 
-        jButton1.setText("Volver");
+        btnVolver.setText("Volver");
 
-        jButton2.setText("Enviar");
+        btnEnviar.setText("Enviar");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel5.setText("Prestamos");
@@ -96,9 +96,9 @@ public class PrestamoE extends javax.swing.JFrame {
                             .addComponent(jTextField4)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(188, 188, 188)
-                        .addComponent(jButton1)
+                        .addComponent(btnVolver)
                         .addGap(146, 146, 146)
-                        .addComponent(jButton2)))
+                        .addComponent(btnEnviar)))
                 .addContainerGap(183, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -128,8 +128,8 @@ public class PrestamoE extends javax.swing.JFrame {
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(btnVolver)
+                    .addComponent(btnEnviar))
                 .addGap(116, 116, 116))
         );
 
@@ -154,8 +154,8 @@ public class PrestamoE extends javax.swing.JFrame {
      */
    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnEnviar;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -170,21 +170,6 @@ public class PrestamoE extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 
-    public JButton getjButton1() {
-        return jButton1;
-    }
-
-    public void setjButton1(JButton jButton1) {
-        this.jButton1 = jButton1;
-    }
-
-    public JButton getjButton2() {
-        return jButton2;
-    }
-
-    public void setjButton2(JButton jButton2) {
-        this.jButton2 = jButton2;
-    }
 
     public JComboBox<String> getjComboBox1() {
         return jComboBox1;
@@ -282,9 +267,27 @@ public class PrestamoE extends javax.swing.JFrame {
         this.jTextField4 = jTextField4;
     }
 
+    public JButton getBtnEnviar() {
+        return btnEnviar;
+    }
+
+    public void setBtnEnviar(JButton btnEnviar) {
+        this.btnEnviar = btnEnviar;
+    }
+
+    public JButton getBtnVolver() {
+        return btnVolver;
+    }
+
+    public void setBtnVolver(JButton btnVolver) {
+        this.btnVolver = btnVolver;
+    }
+    
+    
+
     public PrestamoE(JButton jButton1, JButton jButton2, JComboBox<String> jComboBox1, JLabel jLabel1, JLabel jLabel2, JLabel jLabel3, JLabel jLabel4, JLabel jLabel5, JLabel jLabel6, JPanel jPanel1, JTextField jTextField1, JTextField jTextField2, JTextField jTextField3, JTextField jTextField4) {
-        this.jButton1 = jButton1;
-        this.jButton2 = jButton2;
+        this.btnVolver = jButton1;
+        this.btnEnviar = jButton2;
         this.jComboBox1 = jComboBox1;
         this.jLabel1 = jLabel1;
         this.jLabel2 = jLabel2;
